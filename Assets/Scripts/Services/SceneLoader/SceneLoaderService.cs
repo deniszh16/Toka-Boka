@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace Services.SceneLoader
 {
+    [RequireComponent(typeof(CanvasGroup))]
     public class SceneLoaderService : MonoBehaviour, ISceneLoaderService
     {
         [Header("Экран затемнения")]

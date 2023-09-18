@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2905480470855137306
 Transform:
@@ -75,3 +75,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneLoader: {fileID: 3512873545772586207, guid: 0e7140f7fe6218c499219b8758aeb716, type: 3}
+  _localizationService: {fileID: 2028246394331299640, guid: 54d0c7f031fd6b741898310e0bbb13cb, type: 3}

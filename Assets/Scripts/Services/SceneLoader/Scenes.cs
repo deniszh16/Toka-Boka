@@ -2,6 +2,7 @@
 {
     public enum Scenes
     {
-        MainMenu = 1
+        MainMenu = 1,
+        Levels = 2
     }
 }
