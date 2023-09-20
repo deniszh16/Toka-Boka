@@ -11,9 +11,12 @@ namespace Services.SceneLoader
         [SerializeField] private CanvasGroup _blackout;
 
         public void LoadSceneAsync(Scenes scene, bool screensaver, float delay) =>
-            _ = StartCoroutine(LoadSceneAsyncCoroutine(scene, screensaver, delay));
+            _ = StartCoroutine(LoadSceneAsyncCoroutine(scene.ToString(), screensaver, delay));
 
-        private IEnumerator LoadSceneAsyncCoroutine(Scenes scene, bool screensaver, float delay)
+        public void LoadLevelAsync(int levelNumber) =>
+            _ = StartCoroutine(LoadSceneAsyncCoroutine($"{Scenes.Level}_{levelNumber}", screensaver: true, delay: 0));
+
+        private IEnumerator LoadSceneAsyncCoroutine(string scene, bool screensaver, float delay)
         {
             yield return new WaitForSeconds(delay);
 

@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: key_LevelSelection
     m_Metadata:
       m_Items: []
+  - m_Id: 1808439810830336
+    m_Key: key_StartLevel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

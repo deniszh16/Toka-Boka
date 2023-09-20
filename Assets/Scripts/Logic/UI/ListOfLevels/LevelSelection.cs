@@ -1,4 +1,5 @@
 ﻿using Services.PersistentProgress;
+using Services.SceneLoader;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -15,17 +16,23 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private Transform _container;
 
         private int _characterNumber;
+        private int _selectedLevel;
         private GameObject _currentСharacter;
 
         private IPersistentProgressService _progressService;
+        private ISceneLoaderService _sceneLoaderService;
 
         [Inject]
-        private void Construct(IPersistentProgressService progressService) =>
+        private void Construct(IPersistentProgressService progressService, ISceneLoaderService sceneLoaderService)
+        {
             _progressService = progressService;
+            _sceneLoaderService = sceneLoaderService;
+        }
 
         private void Start()
         {
-            _characterNumber = _progressService.UserProgress.Progress - 1;
+            _selectedLevel = _progressService.UserProgress.Progress;
+            _characterNumber = _selectedLevel - 1;
             CreateCharacter();
         }
 
@@ -38,16 +45,20 @@ namespace Logic.UI.ListOfLevels
                 _currentСharacter = handle.Result;
         }
 
-        public void SelectLevel(int characterNumber)
+        public void SelectLevel(int buttonNumber)
         {
-            if (_characterNumber != characterNumber - 1)
+            if (_characterNumber != buttonNumber - 1)
             {
                 if (_currentСharacter)
                     _characters[_characterNumber].ReleaseInstance(_currentСharacter);
 
-                _characterNumber = characterNumber - 1;
+                _selectedLevel = buttonNumber;
+                _characterNumber = _selectedLevel - 1;
                 CreateCharacter();
             }
         }
+
+        public void GoToLevel() =>
+            _sceneLoaderService.LoadLevelAsync(_selectedLevel);
     }
 }

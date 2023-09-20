@@ -10,7 +10,7 @@ namespace Data
         
         public UserProgress()
         {
-            Progress = 3;
+            Progress = 1;
         }
     }
 }
