@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: key_StartGame
     m_Metadata:
       m_Items: []
+  - m_Id: 1798445052833792
+    m_Key: key_LevelSelection
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -30,6 +30,10 @@ MonoBehaviour:
     m_Localized: Tap to start...
     m_Metadata:
       m_Items: []
+  - m_Id: 1798445052833792
+    m_Localized: Level selection
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
