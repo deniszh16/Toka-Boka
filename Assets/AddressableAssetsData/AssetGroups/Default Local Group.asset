@@ -16,7 +16,67 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 43da6e678eeb72142be94190384a4480
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: d8386788bd6e8d4428505d659a33429d
+    m_Address: Character_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db99dd60be4997e4f8d69bf0cc8fcdc5
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c318cc516f59f64c81ce81835a1d72d
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c17773cff914494a8767afc927ce6a0
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_4.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d387872a181fa4c4d83fc1134f4693a0
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_5.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0373b3440ef3aa8419906cd51fcaa1d9
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_6.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 278571a207ead45449564146cf39d0b9
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_7.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 799cc7dca613e03458a3053332f80c53
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_8.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 082f3802d604a2340947c61d142be444
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_9.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 666a1071883525d43849de500f4c413c
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_10.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46dca2faba0e2624ab0a3dd40f26fa42
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_11.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 002d0b9c316cdb04698ff3b9c5183ca6
+    m_Address: Assets/Content/Prefabs/UI/Characters/Character_12.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8f3726635b9806419bdc551387742a0, type: 2}
   m_SchemaSet:
