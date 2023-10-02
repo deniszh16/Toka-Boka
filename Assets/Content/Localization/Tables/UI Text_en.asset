@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: Start
     m_Metadata:
       m_Items: []
+  - m_Id: 5929502714998784
+    m_Localized: Hi. It's great to have you here. Help me find the items I need....
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

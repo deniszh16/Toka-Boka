@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: key_StartLevel
     m_Metadata:
       m_Items: []
+  - m_Id: 5929502714998784
+    m_Key: key_Training_1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

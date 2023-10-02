@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Logic.UI
+namespace Logic.UI.Buttons
 {
     [RequireComponent(typeof(Button))]
     public class SceneOpenButton : MonoBehaviour
