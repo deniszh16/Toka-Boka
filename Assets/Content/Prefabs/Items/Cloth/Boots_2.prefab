@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632843783225981858}
   - component: {fileID: 6308467316079626783}
-  - component: {fileID: 4214661316215350569}
+  - component: {fileID: 4133143292059143218}
   m_Layer: 7
   m_Name: Boots_2
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4214661316215350569
-BoxCollider2D:
+--- !u!60 &4133143292059143218
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +129,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.46, y: 0.56}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.42446873, y: 0.2927656}
+      - {x: -0.6883475, y: 0.067648515}
+      - {x: -0.62263626, y: -0.25241145}
+      - {x: 0.3362615, y: -0.27810708}
+      - {x: 0.6952138, y: -0.22030303}
+      - {x: 0.69395494, y: 0.09537077}
+      - {x: 0.4314166, y: 0.27553117}
+  m_UseDelaunayMesh: 0

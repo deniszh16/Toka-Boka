@@ -1,4 +1,4 @@
-﻿namespace StateMachine
+﻿namespace Services.StateMachine.States
 {
     public interface IState
     {

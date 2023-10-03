@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9164230405090281827}
   - component: {fileID: 3211404011371879544}
-  - component: {fileID: 6590861806842679819}
+  - component: {fileID: 2342440659872318914}
   m_Layer: 7
   m_Name: Animal_1
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6590861806842679819
-BoxCollider2D:
+--- !u!60 &2342440659872318914
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +129,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7, y: 1.95}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.37256074, y: -0.37749326}
+      - {x: 0.64450634, y: -0.92714685}
+      - {x: -0.6682555, y: -0.9267428}
+      - {x: -0.35236287, y: -0.3277014}
+      - {x: -0.7405319, y: 0.41273466}
+      - {x: 0.058265507, y: 1.0043529}
+      - {x: 0.8367253, y: 0.28085488}
+  m_UseDelaunayMesh: 0

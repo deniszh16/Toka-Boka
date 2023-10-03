@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4461718652935410562}
   - component: {fileID: 3227468056279948106}
-  - component: {fileID: -811802325007630885}
+  - component: {fileID: -4151856517711008707}
   m_Layer: 7
   m_Name: Cap_2
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-811802325007630885
-BoxCollider2D:
+--- !u!60 &-4151856517711008707
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +129,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3, y: 0.6}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.64224535, y: -0.24448596}
+      - {x: 0.01443037, y: -0.29759055}
+      - {x: -0.6548309, y: -0.21713018}
+      - {x: -0.4983096, y: -0.022341555}
+      - {x: -0.37566358, y: 0.30794537}
+      - {x: 0.36061496, y: 0.30959}
+  m_UseDelaunayMesh: 0

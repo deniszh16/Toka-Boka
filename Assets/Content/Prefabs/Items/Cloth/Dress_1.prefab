@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042967828285010659}
   - component: {fileID: 41484342629147318}
-  - component: {fileID: 5100373460985836486}
+  - component: {fileID: 3499764253664484871}
   m_Layer: 7
   m_Name: Dress_1
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5100373460985836486
-BoxCollider2D:
+--- !u!60 &3499764253664484871
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +129,17 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.45, y: 1.65}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.71999997, y: -0.5}
+      - {x: 0.549667, y: -0.7460563}
+      - {x: -0.006244451, y: -0.8055486}
+      - {x: -0.43841276, y: -0.80528927}
+      - {x: -0.74555063, y: -0.5656038}
+      - {x: -0.50681925, y: -0.021015793}
+      - {x: -0.76903397, y: 0.17088714}
+      - {x: -0.15507817, y: 0.8545527}
+      - {x: 0.1826998, y: 0.86098254}
+      - {x: 0.7461964, y: 0.150965}
+      - {x: 0.53411573, y: -0.07383524}
+  m_UseDelaunayMesh: 0
