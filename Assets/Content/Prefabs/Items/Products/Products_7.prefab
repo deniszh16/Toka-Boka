@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3126609091022662233}
   - component: {fileID: 2333917390202486452}
-  - component: {fileID: 2128322382316628139}
+  - component: {fileID: 4363969014270580186}
+  - component: {fileID: 141762026238158058}
   m_Layer: 7
   m_Name: Products_7
   m_TagString: Untagged
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 91a02f6384715da4ca18dec64c344ba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
-  m_FlipY: 1
+  m_FlipX: 0
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.56, y: 1.07}
   m_AdaptiveModeThreshold: 0.5
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2128322382316628139
-BoxCollider2D:
+--- !u!60 &4363969014270580186
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,37 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4, y: 0.55}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.0975689, y: 0.260507}
+      - {x: -0.299854, y: 0.28539062}
+      - {x: -0.59265804, y: 0.20216385}
+      - {x: -0.7051839, y: -0.027515523}
+      - {x: -0.59234643, y: -0.23877887}
+      - {x: -0.4302258, y: -0.28941363}
+      - {x: -0.26710558, y: -0.28289747}
+      - {x: 0.1701912, y: -0.17453565}
+      - {x: 0.3455299, y: -0.22274359}
+      - {x: 0.56196946, y: -0.14400698}
+      - {x: 0.6783906, y: -0.16675913}
+      - {x: 0.69655895, y: -0.09334183}
+      - {x: 0.457325, y: 0.16605665}
+  m_UseDelaunayMesh: 0
+--- !u!114 &141762026238158058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172234278502311662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: ec710b1d70eebc14a974eeba86acbaf3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

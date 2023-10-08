@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1899787933306552118}
   - component: {fileID: 5549854401065148425}
   - component: {fileID: 540521785565717804}
+  - component: {fileID: 2482694266716728627}
   m_Layer: 7
   m_Name: Dishes_1
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &2482694266716728627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158976189071720557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: cdb68bf2ec199c0488e33f120abfaf9d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

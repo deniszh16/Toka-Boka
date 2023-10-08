@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2130311590190036275}
   - component: {fileID: 382723757624000682}
-  - component: {fileID: 6993414879199922765}
+  - component: {fileID: 4735125138354247714}
   m_Layer: 7
   m_Name: Products_1
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6993414879199922765
+--- !u!61 &4735125138354247714
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,5 +129,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4, y: 1.6}
+  m_Size: {x: 4, y: 1.64}
   m_EdgeRadius: 0

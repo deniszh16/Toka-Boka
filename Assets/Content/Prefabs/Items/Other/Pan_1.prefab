@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1073300964738964329}
   - component: {fileID: 2482525865274557972}
-  - component: {fileID: 4807783828162562013}
+  - component: {fileID: 6997680544719801581}
+  - component: {fileID: 5883921304296069904}
   m_Layer: 7
   m_Name: Pan_1
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: f37aea6b571dbd84eb0ed22a263d4f0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.99, y: 0.5}
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4807783828162562013
-BoxCollider2D:
+--- !u!60 &6997680544719801581
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,36 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.95, y: 0.5}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.97231334, y: -0.113298915}
+      - {x: -0.2237676, y: -0.11226626}
+      - {x: -0.043648988, y: -0.21372743}
+      - {x: 0.5723532, y: -0.22381042}
+      - {x: 0.92535627, y: -0.083606705}
+      - {x: 0.9824139, y: 0.09217282}
+      - {x: 0.8169662, y: 0.21244834}
+      - {x: 0.42315972, y: 0.24115056}
+      - {x: -0.035622895, y: 0.19771793}
+      - {x: -0.20063744, y: 0.13339373}
+      - {x: -0.29162177, y: 0.0013095737}
+      - {x: -0.98385394, y: 0.0033124909}
+  m_UseDelaunayMesh: 0
+--- !u!114 &5883921304296069904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670215468064755219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: a630027114d890549b121f7c50d87389
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

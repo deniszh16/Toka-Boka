@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2442593155126264693}
   - component: {fileID: 893634820210555598}
-  - component: {fileID: 3775485178040612197}
+  - component: {fileID: 5097034321755651247}
+  - component: {fileID: 7465320358937820464}
   m_Layer: 7
   m_Name: Plants_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3775485178040612197
-BoxCollider2D:
+--- !u!60 &5097034321755651247
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,42 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 5}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.83738106, y: 0.6402912}
+      - {x: -1.3189895, y: 0.47387865}
+      - {x: -0.556062, y: -0.74679863}
+      - {x: -0.14489287, y: -1.3547931}
+      - {x: -0.4908991, y: -1.4446533}
+      - {x: -0.40960574, y: -2.3152547}
+      - {x: 0.06755668, y: -2.5745628}
+      - {x: 0.4937601, y: -2.3449593}
+      - {x: 0.62, y: -1.5}
+      - {x: 0.2053982, y: -1.2988487}
+      - {x: 0.24518736, y: -0.7683511}
+      - {x: 1.2709877, y: 0.92553294}
+      - {x: 1.0088227, y: 1.2760389}
+      - {x: 0.70221996, y: 1.4942822}
+      - {x: 0.4680612, y: 2.5521758}
+      - {x: 0.12173766, y: 2.3489344}
+      - {x: -0.1832121, y: 1.5957308}
+      - {x: -0.58292353, y: 2.280108}
+      - {x: -0.8910215, y: 2.2871711}
+  m_UseDelaunayMesh: 0
+--- !u!114 &7465320358937820464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458258369578278357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: e36315eb905efcd45ba102e71ccd4a54
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

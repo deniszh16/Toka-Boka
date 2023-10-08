@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8569939135000117252}
   - component: {fileID: 4314978259979983226}
   - component: {fileID: 302266883399344812}
+  - component: {fileID: -8259050224619784400}
   m_Layer: 7
   m_Name: Book_1
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.35, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &-8259050224619784400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7194220529399290258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 75f13070d572f1c43b625e751651502a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

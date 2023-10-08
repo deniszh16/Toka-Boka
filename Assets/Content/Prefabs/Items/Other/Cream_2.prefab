@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1299963849132140679}
   - component: {fileID: 1480318728280662466}
-  - component: {fileID: 7043305977305365265}
+  - component: {fileID: 559835733851628738}
+  - component: {fileID: 2253857287708199083}
   m_Layer: 7
   m_Name: Cream_2
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7043305977305365265
-BoxCollider2D:
+--- !u!60 &559835733851628738
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,33 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 1.5}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.30880108, y: 0.24501997}
+      - {x: -0.32320434, y: -0.7056204}
+      - {x: 0.06617134, y: -0.76606494}
+      - {x: 0.32107696, y: -0.6850914}
+      - {x: 0.3213356, y: 0.19292393}
+      - {x: 0.20796987, y: 0.32910958}
+      - {x: 0.29952145, y: 0.5421551}
+      - {x: 0.09849936, y: 0.7602017}
+      - {x: -0.12692308, y: 0.7692308}
+  m_UseDelaunayMesh: 0
+--- !u!114 &2253857287708199083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5511298352704273732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 5d27bf576c422224fb9c261598d0e7f5
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

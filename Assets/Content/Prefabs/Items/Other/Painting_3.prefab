@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7682976146606101719}
   - component: {fileID: 2341904548602337874}
   - component: {fileID: 2670128747668097432}
+  - component: {fileID: -5559156877523341219}
   m_Layer: 7
   m_Name: Painting_3
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &-5559156877523341219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368783990770566747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: a12dba8a67770094d852b159719acbcc
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

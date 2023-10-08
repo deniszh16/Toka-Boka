@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 821113140026530023}
   - component: {fileID: 2534161573719205911}
   - component: {fileID: 1928914853030377052}
+  - component: {fileID: 7228799306953026113}
   m_Layer: 7
   m_Name: Toy_2
   m_TagString: Untagged
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.89, y: 0.85}
+    oldSize: {x: 1.2714286, y: 1.2142857}
     newSize: {x: 0.89, y: 0.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.25, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &7228799306953026113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5535225441339976728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 278d7910b74e30a47993cd7f21f40242
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

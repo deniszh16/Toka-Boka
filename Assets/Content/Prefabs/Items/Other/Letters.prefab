@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5927181199390195383}
   - component: {fileID: 7786239153653380577}
   - component: {fileID: 6370708875052172485}
+  - component: {fileID: 3370740486469392305}
   m_Layer: 7
   m_Name: Letters
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.5, y: 2.3}
   m_EdgeRadius: 0
+--- !u!114 &3370740486469392305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973340464416320410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 4e6b37cf4a553b74b90f356933f6e91c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

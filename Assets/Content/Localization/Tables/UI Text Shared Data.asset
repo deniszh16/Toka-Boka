@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: key_Training_1
     m_Metadata:
       m_Items: []
+  - m_Id: 6866692152340480
+    m_Key: key_Training_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

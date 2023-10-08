@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8264461277076931144}
   - component: {fileID: 6347924075631816145}
-  - component: {fileID: 4222599329455517498}
+  - component: {fileID: 8062445782915672559}
+  - component: {fileID: 8060227722053716332}
   m_Layer: 7
   m_Name: Toy_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4222599329455517498
-BoxCollider2D:
+--- !u!60 &8062445782915672559
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,46 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.85, y: 1.25}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.26127246, y: -0.12768984}
+      - {x: 0.41421568, y: -0.00076856464}
+      - {x: 0.4330971, y: 0.20215365}
+      - {x: 0.36463395, y: 0.34416485}
+      - {x: 0.40119344, y: 0.52071977}
+      - {x: 0.3318563, y: 0.5934282}
+      - {x: 0.23705052, y: 0.6067997}
+      - {x: 0.1295002, y: 0.5266496}
+      - {x: -0.1228506, y: 0.5366496}
+      - {x: -0.2712505, y: 0.6169498}
+      - {x: -0.3932497, y: 0.5303002}
+      - {x: -0.3542613, y: 0.3672317}
+      - {x: -0.4216762, y: 0.19367848}
+      - {x: -0.37191862, y: -0.039735768}
+      - {x: -0.24585094, y: -0.12743616}
+      - {x: -0.35464117, y: -0.28228468}
+      - {x: -0.36958134, y: -0.4332536}
+      - {x: -0.19464116, y: -0.6149402}
+      - {x: -0.16499999, y: -0.6231339}
+      - {x: 0.1516268, y: -0.61976075}
+      - {x: 0.3598301, y: -0.4641654}
+      - {x: 0.37694204, y: -0.35145652}
+  m_UseDelaunayMesh: 0
+--- !u!114 &8060227722053716332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146993173807095797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 53b70ca50746db0458a5f86bea545c96
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

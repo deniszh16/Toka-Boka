@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8798825166900957704}
   - component: {fileID: 762266083022788736}
-  - component: {fileID: 5623736875367436585}
+  - component: {fileID: 3183158186504436236}
+  - component: {fileID: 4097100091157247017}
   m_Layer: 7
   m_Name: Cutlery_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5623736875367436585
-BoxCollider2D:
+--- !u!60 &3183158186504436236
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 1.35}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.21126296, y: 0.69339746}
+      - {x: 0.18013416, y: 0.2803315}
+      - {x: 0.13639039, y: -0.15747832}
+      - {x: 0.24459869, y: -0.20971707}
+      - {x: 0.23993282, y: -0.66683817}
+      - {x: 0.0008453429, y: -0.6912539}
+      - {x: -0.26384854, y: -0.63109416}
+      - {x: -0.16707, y: -0.21601377}
+      - {x: -0.051590756, y: -0.14150266}
+      - {x: -0.09162059, y: 0.2847082}
+      - {x: -0.1422862, y: 0.6901769}
+  m_UseDelaunayMesh: 0
+--- !u!114 &4097100091157247017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279992398408530727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: cb2ee82cf293ef94e90261ed1fbc103e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

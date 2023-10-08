@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6888114830899052712}
   - component: {fileID: 7814198036184883862}
-  - component: {fileID: 3721209124991553170}
+  - component: {fileID: 908682107612787657}
+  - component: {fileID: 2656523095833219688}
   m_Layer: 7
   m_Name: Pillow_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3721209124991553170
-BoxCollider2D:
+--- !u!60 &908682107612787657
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,38 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.5, y: 1.15}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7295282, y: 0.5507296}
+      - {x: -0.48547107, y: 0.57652605}
+      - {x: -0.99280643, y: 0.4110461}
+      - {x: -1.2530847, y: 0.0019254088}
+      - {x: -1.2315111, y: -0.20303346}
+      - {x: -1.087353, y: -0.35000145}
+      - {x: -0.48200205, y: -0.45738757}
+      - {x: -0.24327347, y: -0.54116476}
+      - {x: 0.17158173, y: -0.56943595}
+      - {x: 0.5002325, y: -0.5178542}
+      - {x: 0.6524033, y: -0.38735574}
+      - {x: 1.120596, y: -0.3173557}
+      - {x: 1.2658412, y: -0.09872112}
+      - {x: 1.2120385, y: 0.12145674}
+  m_UseDelaunayMesh: 0
+--- !u!114 &2656523095833219688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517049195313726714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: c231d8a8c1a94674da4376917191113d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

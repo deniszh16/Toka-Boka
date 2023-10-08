@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9050694136885994744}
   - component: {fileID: 2742309183341673792}
-  - component: {fileID: 1803930902908821488}
+  - component: {fileID: 7422956862583533067}
+  - component: {fileID: 5309868892536430152}
   m_Layer: 7
   m_Name: Umbrella
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1803930902908821488
-BoxCollider2D:
+--- !u!60 &7422956862583533067
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,38 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.8, y: 2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33252987, y: 1.0685837}
+      - {x: 0.49479267, y: 0.8057635}
+      - {x: 0.9356029, y: 0.25402948}
+      - {x: 0.13138904, y: 0.22772631}
+      - {x: 0.12497753, y: -0.72781503}
+      - {x: 0.44320685, y: -0.76802546}
+      - {x: 0.45243815, y: -0.94338256}
+      - {x: 0.20646289, y: -1.0724072}
+      - {x: -0.085481286, y: -0.9206788}
+      - {x: -0.13030842, y: 0.21462893}
+      - {x: -0.9299564, y: 0.26180863}
+      - {x: -0.4642411, y: 0.79202163}
+      - {x: -0.350575, y: 1.0514023}
+      - {x: -0.018524408, y: 1.0097399}
+  m_UseDelaunayMesh: 0
+--- !u!114 &5309868892536430152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080307108131546241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 6b233fa15b9528c4a8b09f5ffab853d8
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

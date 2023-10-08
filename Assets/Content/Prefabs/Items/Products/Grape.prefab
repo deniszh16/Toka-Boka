@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1816718134093579215}
   - component: {fileID: 7541358761397581325}
-  - component: {fileID: 2811470532778796741}
+  - component: {fileID: 464660720801592852}
+  - component: {fileID: 1553196495195479596}
   m_Layer: 7
   m_Name: Grape
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 301bcb93e67a33e4fabc1b0d20239eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.5, y: 1.43}
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2811470532778796741
-BoxCollider2D:
+--- !u!60 &464660720801592852
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,39 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4, y: 1.35}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.1608041, y: 0.6421493}
+      - {x: -0.44532922, y: 0.2929734}
+      - {x: -0.5093947, y: -0.1249234}
+      - {x: -0.72878873, y: -0.26406854}
+      - {x: -0.6782461, y: -0.71928084}
+      - {x: -0.47915545, y: -0.6709434}
+      - {x: -0.3318859, y: -0.51002914}
+      - {x: -0.1121404, y: -0.58163166}
+      - {x: 0.03, y: -0.445}
+      - {x: 0.26, y: -0.445}
+      - {x: 0.56699204, y: 0.26383048}
+      - {x: 0.7258545, y: 0.37369162}
+      - {x: 0.73304737, y: 0.48135054}
+      - {x: 0.5086181, y: 0.5778308}
+      - {x: 0.26010516, y: 0.7147555}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1553196495195479596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2739915074528906029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: d6c7dfb809e73eb49add4c83049799c2
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

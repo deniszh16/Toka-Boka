@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1042967828285010659}
   - component: {fileID: 41484342629147318}
   - component: {fileID: 3499764253664484871}
+  - component: {fileID: -7736106017784407983}
   m_Layer: 7
   m_Name: Dress_1
   m_TagString: Untagged
@@ -143,3 +144,21 @@ PolygonCollider2D:
       - {x: 0.7461964, y: 0.150965}
       - {x: 0.53411573, y: -0.07383524}
   m_UseDelaunayMesh: 0
+--- !u!114 &-7736106017784407983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710053722874053818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 0609913d7cd5ab740816ea805ac5a0b6
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

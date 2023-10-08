@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3158584941247848375}
   - component: {fileID: 418255276370138633}
-  - component: {fileID: 1780151373580263061}
+  - component: {fileID: 1991006905526812758}
+  - component: {fileID: 4484828653152669429}
   m_Layer: 7
   m_Name: Flower_4
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1780151373580263061
-BoxCollider2D:
+--- !u!60 &1991006905526812758
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,36 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5, y: 2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4131546, y: 0.8169979}
+      - {x: -0.344984, y: 1.0932229}
+      - {x: -0.46547747, y: 0.672388}
+      - {x: -0.27467585, y: 0.40815985}
+      - {x: -0.89097446, y: 0.23299208}
+      - {x: -0.5583677, y: -0.08662191}
+      - {x: -0.67428684, y: -0.3303532}
+      - {x: -0.6719837, y: -0.6394949}
+      - {x: -0.18714523, y: -1.1080523}
+      - {x: 0.26873493, y: -1.088167}
+      - {x: 0.6086795, y: -0.22097231}
+      - {x: 0.88, y: -0.25}
+      - {x: 0.89, y: -0.21}
+  m_UseDelaunayMesh: 0
+--- !u!114 &4484828653152669429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2844205512324926007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 5d248b11c44939a4bb76f436d640ca09
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

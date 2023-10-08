@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9097923699641613264}
   - component: {fileID: 659801863702267209}
-  - component: {fileID: 6962629290229959394}
+  - component: {fileID: 3279485477741814025}
+  - component: {fileID: 4385314011533160549}
   m_Layer: 7
   m_Name: Globe_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6962629290229959394
-BoxCollider2D:
+--- !u!60 &3279485477741814025
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,41 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1, y: 1.7}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.39760023, y: -0.02708061}
+      - {x: 0.24189128, y: -0.38370305}
+      - {x: 0.29771483, y: -0.5283419}
+      - {x: 0.32656595, y: -0.8576337}
+      - {x: -0.3342023, y: -0.8686301}
+      - {x: -0.3606285, y: -0.7229575}
+      - {x: 0.042256832, y: -0.40431952}
+      - {x: -0.3083232, y: -0.31828913}
+      - {x: -0.48358428, y: -0.15493011}
+      - {x: -0.58646, y: 0.0938029}
+      - {x: -0.52628493, y: 0.45453706}
+      - {x: -0.30318448, y: 0.6766609}
+      - {x: -0.27060086, y: 0.88480306}
+      - {x: -0.08536254, y: 0.784434}
+      - {x: 0.3124249, y: 0.6960835}
+      - {x: 0.5829142, y: 0.3409199}
+      - {x: 0.53738403, y: -0.08919576}
+  m_UseDelaunayMesh: 0
+--- !u!114 &4385314011533160549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997806976430142018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: cf6ae091e8680df498bf20e53efe198d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

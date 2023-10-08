@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 356997245097894458}
   - component: {fileID: 1578998093238953637}
   - component: {fileID: 2469377405610435214}
+  - component: {fileID: -428862209278781965}
   m_Layer: 7
   m_Name: Flower_2
   m_TagString: Untagged
@@ -131,3 +132,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1, y: 1.9}
   m_EdgeRadius: 0
+--- !u!114 &-428862209278781965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2723945538633303210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 1a2c46351e42bee43901322496caae7d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

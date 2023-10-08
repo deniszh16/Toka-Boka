@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 655612782088202771}
   - component: {fileID: 4078719992127901187}
-  - component: {fileID: 4739721822220604223}
+  - component: {fileID: 1989108704411096638}
+  - component: {fileID: 2474625261442836653}
   m_Layer: 7
   m_Name: Scooter
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4739721822220604223
-BoxCollider2D:
+--- !u!60 &1989108704411096638
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,40 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3, y: 1.95}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.418869, y: -0.92745817}
+      - {x: 1.4957466, y: -0.5166686}
+      - {x: 1.3489861, y: -0.1879293}
+      - {x: 1.0588319, y: -0.17133525}
+      - {x: 0.808069, y: -0.3989545}
+      - {x: -0.65299684, y: -0.38337475}
+      - {x: -1.0390713, y: -0.013394415}
+      - {x: -0.997268, y: 0.62295645}
+      - {x: -0.6720595, y: 0.6596589}
+      - {x: -0.650904, y: 0.8578131}
+      - {x: -1.4481413, y: 1.0210862}
+      - {x: -1.4553657, y: 0.81683534}
+      - {x: -1.1923333, y: 0.7153517}
+      - {x: -1.2862892, y: -0.28782302}
+      - {x: -1.5486113, y: -0.6041387}
+      - {x: -1.3850147, y: -0.9243804}
+  m_UseDelaunayMesh: 0
+--- !u!114 &2474625261442836653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145384608096625096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 1c5311369f09d154a919ae52dff28766
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

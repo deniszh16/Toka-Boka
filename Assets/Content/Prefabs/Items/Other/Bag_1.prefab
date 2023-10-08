@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7367803871814561720}
   - component: {fileID: 4586498011826894048}
   - component: {fileID: 1570992020641287738}
+  - component: {fileID: 1981117410144551268}
   m_Layer: 7
   m_Name: Bag_1
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.35, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &1981117410144551268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084392516138063446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 8b54c8a29114f57489c852e438c03cc1
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7948877606179425653}
   - component: {fileID: 3076519324142675836}
-  - component: {fileID: 5677209979935409199}
+  - component: {fileID: 4624200141253995471}
+  - component: {fileID: 1744402069259813279}
   m_Layer: 7
   m_Name: GoldEgg
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5677209979935409199
-BoxCollider2D:
+--- !u!60 &4624200141253995471
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,36 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7, y: 0.8}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.34333333, y: -0.15333334}
+      - {x: 0.3296688, y: -0.014202984}
+      - {x: 0.21633546, y: 0.25453418}
+      - {x: 0.05, y: 0.42000002}
+      - {x: -0.07, y: 0.42000002}
+      - {x: -0.21000001, y: 0.30666667}
+      - {x: -0.3181391, y: 0.09562711}
+      - {x: -0.36333334, y: -0.15333334}
+      - {x: -0.27971137, y: -0.32455617}
+      - {x: -0.13513461, y: -0.42120087}
+      - {x: 0.114472, y: -0.4162833}
+      - {x: 0.27484676, y: -0.30195192}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1744402069259813279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416075765773553065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 67587d9c45851cd4aa6a429310d5c3da
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

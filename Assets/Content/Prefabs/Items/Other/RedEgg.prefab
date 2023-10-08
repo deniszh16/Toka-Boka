@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1159516673890737395}
   - component: {fileID: 1927217156572453486}
-  - component: {fileID: 2117584658374470008}
+  - component: {fileID: 7829432634809531334}
+  - component: {fileID: 1520580323930551889}
   m_Layer: 7
   m_Name: RedEgg
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2117584658374470008
-BoxCollider2D:
+--- !u!60 &7829432634809531334
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,38 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.65, y: 0.85}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.3213284, y: -0.17653155}
+      - {x: 0.32251367, y: 0.007295085}
+      - {x: 0.17082027, y: 0.3272878}
+      - {x: 0.010935165, y: 0.42213807}
+      - {x: -0.17219932, y: 0.32276633}
+      - {x: -0.26402345, y: 0.1713181}
+      - {x: -0.32100388, y: -0.0020151623}
+      - {x: -0.32794484, y: -0.18331018}
+      - {x: -0.2619537, y: -0.30620208}
+      - {x: -0.18532695, y: -0.3793686}
+      - {x: -0.04363978, y: -0.41128868}
+      - {x: 0.09490384, y: -0.39907613}
+      - {x: 0.22354105, y: -0.33635098}
+      - {x: 0.28626606, y: -0.25461122}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1520580323930551889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920365585730644106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: a03a6e71f4ac4534ebd2da24ee287d9d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

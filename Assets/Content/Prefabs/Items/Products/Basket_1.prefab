@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8546036943693534608}
   - component: {fileID: 2043842097981768019}
-  - component: {fileID: 3714186931112775809}
+  - component: {fileID: 6584177534348693419}
+  - component: {fileID: 5171030980077334723}
   m_Layer: 7
   m_Name: Basket_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3714186931112775809
-BoxCollider2D:
+--- !u!60 &6584177534348693419
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.4, y: 2.1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.78999996, y: -0.9}
+      - {x: 0.402895, y: -1.0094723}
+      - {x: -0.18931949, y: -1.044688}
+      - {x: -0.8411168, y: -0.9420414}
+      - {x: -1.141535, y: -0.38919628}
+      - {x: -1.158923, y: 0.1464814}
+      - {x: -0.9434568, y: 0.65006685}
+      - {x: -0.59570193, y: 0.96422786}
+      - {x: 0.14391148, y: 1.0491464}
+      - {x: 0.7467906, y: 0.69949925}
+      - {x: 1.2023612, y: 0.052216798}
+  m_UseDelaunayMesh: 1
+--- !u!114 &5171030980077334723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161928894798427881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 70d3321a554509341a5fb5f683aa7fd3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

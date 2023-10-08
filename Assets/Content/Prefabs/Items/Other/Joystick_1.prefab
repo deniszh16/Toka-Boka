@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8389281108654488650}
   - component: {fileID: 3404533829118648349}
-  - component: {fileID: 7761629666970986044}
+  - component: {fileID: 996849854827887995}
+  - component: {fileID: 8262275926943542560}
   m_Layer: 7
   m_Name: Joystick_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7761629666970986044
-BoxCollider2D:
+--- !u!60 &996849854827887995
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 1.15}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.9747423, y: -0.2377122}
+      - {x: -0.6244942, y: -0.5786518}
+      - {x: 0.42828536, y: -0.57820493}
+      - {x: 0.8997574, y: -0.438491}
+      - {x: 1, y: -0.016369157}
+      - {x: 0.83, y: 0.25}
+      - {x: 0.76, y: 0.29}
+      - {x: 0.58, y: 0.34}
+      - {x: -0.28276482, y: 0.5756424}
+      - {x: -0.56072986, y: 0.37616724}
+      - {x: -0.93056715, y: 0.1508202}
+  m_UseDelaunayMesh: 0
+--- !u!114 &8262275926943542560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8178993942903680140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: 950fb9ca20934f34cb60479a6b2bcab4
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

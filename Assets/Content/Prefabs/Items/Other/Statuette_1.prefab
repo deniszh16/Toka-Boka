@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5129670887775363440}
   - component: {fileID: 387453958536052531}
-  - component: {fileID: 2466010874049043538}
+  - component: {fileID: 8640544817580738169}
+  - component: {fileID: 6178438397507679373}
   m_Layer: 7
   m_Name: Statuette_1
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2466010874049043538
-BoxCollider2D:
+--- !u!60 &8640544817580738169
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,5 +130,39 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9, y: 1.7}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4617601, y: 0.120322734}
+      - {x: 0.24884547, y: 0.034017026}
+      - {x: 0.28615573, y: -0.20829704}
+      - {x: 0.2981205, y: -0.7881922}
+      - {x: 0.02898933, y: -0.8592562}
+      - {x: -0.19138117, y: -0.85259724}
+      - {x: -0.30930337, y: -0.76683134}
+      - {x: -0.20343114, y: -0.49078634}
+      - {x: -0.322419, y: -0.27251902}
+      - {x: -0.1950682, y: -0.06226313}
+      - {x: -0.46150026, y: 0.19729787}
+      - {x: -0.42848134, y: 0.6049149}
+      - {x: -0.15213908, y: 0.8142975}
+      - {x: 0.2033737, y: 0.8506497}
+      - {x: 0.49465054, y: 0.44978276}
+  m_UseDelaunayMesh: 0
+--- !u!114 &6178438397507679373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316148056335458501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: ac30f64a974a58b45868aff6bf42d017
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

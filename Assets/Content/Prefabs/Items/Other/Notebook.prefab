@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6113854337657796731}
   - component: {fileID: 1833225149503263771}
-  - component: {fileID: 5843851692461593437}
+  - component: {fileID: 23073281911370850}
+  - component: {fileID: 8816151258469256919}
   m_Layer: 7
   m_Name: Notebook
   m_TagString: Untagged
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5843851692461593437
-BoxCollider2D:
+--- !u!60 &23073281911370850
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.1, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,5 +130,32 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.2, y: 1.2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.69451314, y: -0.3448962}
+      - {x: 1.28, y: -0.35999998}
+      - {x: 1.1527516, y: -0.49825472}
+      - {x: 0.7961294, y: -0.5937878}
+      - {x: -0.83405185, y: -0.5953924}
+      - {x: -1.1322381, y: 0.11958766}
+      - {x: -1.2597773, y: 0.5756937}
+      - {x: 0.36223, y: 0.570446}
+  m_UseDelaunayMesh: 0
+--- !u!114 &8816151258469256919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713423865203977113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: ac2f49bdd4b149f419c8f4869dff098b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

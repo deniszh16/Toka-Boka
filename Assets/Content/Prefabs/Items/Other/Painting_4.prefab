@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 14078484039564039}
   - component: {fileID: 5516341285385105993}
   - component: {fileID: 8836716063400462406}
+  - component: {fileID: 626664809214670962}
   m_Layer: 7
   m_Name: Painting_4
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &626664809214670962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589036239640194449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: aeed7fe173b6ab340ac9c45570872bae
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30

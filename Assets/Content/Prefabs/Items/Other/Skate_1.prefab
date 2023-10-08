@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 484506156380147367}
   - component: {fileID: 3270114709024604418}
   - component: {fileID: 7454609001785689174}
+  - component: {fileID: 884982046711160558}
   m_Layer: 7
   m_Name: Skate_1
   m_TagString: Untagged
@@ -131,3 +132,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &884982046711160558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022657755923607305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a10742052417db9a9be58359d3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadedIcon:
+    m_AssetGUID: c273f0bc9ed798f44bdfac2158c70edc
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _seconds: 30
