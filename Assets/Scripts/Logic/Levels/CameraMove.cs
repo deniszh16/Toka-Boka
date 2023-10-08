@@ -12,6 +12,8 @@ namespace Logic.Levels
 
         [Header("Виртуальная камера")]
         [SerializeField] private CinemachineVirtualCamera _virtualCamera;
+        
+        public bool Activity { get; set; }
 
         private Camera _camera;
         private Transform _virtualCameraTransform;
@@ -29,7 +31,7 @@ namespace Logic.Levels
 
         private void Update()
         {
-            if (_movingVirtualCamera == false)
+            if (Activity == false || _movingVirtualCamera == false)
                 return;
             
             _direction = _touchPosition - _camera.ScreenToWorldPoint(Input.mousePosition);

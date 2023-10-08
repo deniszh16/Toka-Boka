@@ -8,7 +8,6 @@ namespace Logic.UI.ListOfLevels
     public class LevelOpenButton : MonoBehaviour
     {
         private Button _button;
-
         private LevelSelection _levelSelection;
 
         [Inject]
