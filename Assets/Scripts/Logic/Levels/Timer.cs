@@ -34,7 +34,7 @@ namespace Logic.Levels
 
         public void SetTimer()
         {
-            _seconds = 35;
+            _seconds = 30;
             _currentTime = _seconds;
         }
 

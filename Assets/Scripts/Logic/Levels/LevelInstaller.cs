@@ -11,6 +11,7 @@ namespace Logic.Levels
         [SerializeField] private CameraMove _movingCamera;
         [SerializeField] private SearchItem _searchItem;
         [SerializeField] private Timer _timer;
+        [SerializeField] private GamePause _gamePause;
         
         public override void InstallBindings()
         {
@@ -20,6 +21,7 @@ namespace Logic.Levels
             BindCameraMove();
             BindSearchItem();
             BindTimer();
+            BindGamePause();
         }
 
         private void BindGameStateMachine()
@@ -42,5 +44,8 @@ namespace Logic.Levels
 
         private void BindTimer() =>
             Container.BindInstance(_timer).AsSingle();
+
+        private void BindGamePause() =>
+            Container.BindInstance(_gamePause).AsSingle();
     }
 }

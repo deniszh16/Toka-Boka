@@ -45,7 +45,6 @@ namespace Logic.Levels
             {
                 _currentItem = handle.Result;
                 _timer.SetTimer();
-                _timer.ChangeTimerActivity(value: true);
             }
         }
     }
