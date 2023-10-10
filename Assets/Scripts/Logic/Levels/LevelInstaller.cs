@@ -12,6 +12,7 @@ namespace Logic.Levels
         [SerializeField] private SearchItem _searchItem;
         [SerializeField] private Timer _timer;
         [SerializeField] private GamePause _gamePause;
+        [SerializeField] private ItemSelection _itemSelection;
         
         public override void InstallBindings()
         {
@@ -22,6 +23,7 @@ namespace Logic.Levels
             BindSearchItem();
             BindTimer();
             BindGamePause();
+            BindItemSelection();
         }
 
         private void BindGameStateMachine()
@@ -47,5 +49,8 @@ namespace Logic.Levels
 
         private void BindGamePause() =>
             Container.BindInstance(_gamePause).AsSingle();
+
+        private void BindItemSelection() =>
+            Container.BindInstance(_itemSelection).AsSingle();
     }
 }

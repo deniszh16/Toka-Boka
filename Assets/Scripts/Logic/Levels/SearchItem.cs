@@ -47,5 +47,20 @@ namespace Logic.Levels
                 _timer.SetTimer();
             }
         }
+
+        public bool FindSelectedItem(Item item)
+        {
+            Item itemOfTask = _levelItems.TaskItems[_currentItemNumber];
+            if (item.Equals(itemOfTask))
+            {
+                _currentItemNumber++;
+                if (_currentItemNumber < _levelItems.TaskItems.Count)
+                    ShowCurrentItem();
+
+                return true;
+            }
+
+            return false;
+        }
     }
 }
