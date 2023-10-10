@@ -24,21 +24,26 @@ namespace Services.StateMachine.States
         {
             _cameraMove.Activity = true;
             _searchItem.IconContainer.SetActive(true);
-            _timer.TimerCompleted += LevelLost;
+            _searchItem.AllItemsFound += OnLevelPassed;
+            _timer.TimerCompleted += OnLevelLost;
             _timer.ChangeTimerActivity(value: true);
             _itemSelection.ChangeActivity(activity: true);
             _gamePause.ChangeButtonVisibility(visibility: true);
         }
 
-        private void LevelLost() =>
+        private void OnLevelPassed() =>
+            _stateMachine.Enter<CompletedState>();
+
+        private void OnLevelLost() =>
             _stateMachine.Enter<LosingState>();
 
         public override void Exit()
         {
             _cameraMove.Activity = false;
             _searchItem.IconContainer.SetActive(false);
+            _searchItem.AllItemsFound -= OnLevelPassed;
             _timer.ChangeTimerActivity(value: false);
-            _timer.TimerCompleted -= LevelLost;
+            _timer.TimerCompleted -= OnLevelLost;
             _itemSelection.ChangeActivity(activity: false);
         }
     }

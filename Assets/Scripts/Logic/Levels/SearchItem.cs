@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
@@ -12,6 +13,8 @@ namespace Logic.Levels
 
         public GameObject IconContainer =>
             _container.gameObject;
+
+        public event Action AllItemsFound;
         
         private LevelItems _levelItems;
         private Timer _timer;
@@ -31,7 +34,7 @@ namespace Logic.Levels
         {
             if (_currentItem != null && _item != null)
                 _item.ReleaseInstance(_currentItem.gameObject);
-            
+
             _item = _levelItems.TaskItems[_currentItemNumber].ShadedIcon;
             if (_item != null) CreateItem();
         }
@@ -56,6 +59,7 @@ namespace Logic.Levels
                 _currentItemNumber++;
                 if (_currentItemNumber < _levelItems.TaskItems.Count)
                     ShowCurrentItem();
+                else AllItemsFound?.Invoke();
 
                 return true;
             }
