@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -16,19 +17,21 @@ namespace Logic.Levels
 
         public event Action AllItemsFound;
         
-        private LevelItems _levelItems;
-        private Timer _timer;
-
-        [Inject]
-        private void Construct(LevelItems levelItems, Timer timer)
-        {
-            _levelItems = levelItems;
-            _timer = timer;
-        }
-
         private int _currentItemNumber;
         private AssetReferenceGameObject _item;
         private GameObject _currentItem;
+        
+        private LevelItems _levelItems;
+        private LevelScore _levelScore;
+        private LevelTimer _levelTimer;
+
+        [Inject]
+        private void Construct(LevelItems levelItems, LevelScore levelScore, LevelTimer levelTimer)
+        {
+            _levelItems = levelItems;
+            _levelScore = levelScore;
+            _levelTimer = levelTimer;
+        }
 
         public void ShowCurrentItem()
         {
@@ -47,7 +50,7 @@ namespace Logic.Levels
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 _currentItem = handle.Result;
-                _timer.SetTimer();
+                _levelTimer.SetTimer();
             }
         }
 
@@ -58,13 +61,26 @@ namespace Logic.Levels
             {
                 _currentItemNumber++;
                 if (_currentItemNumber < _levelItems.TaskItems.Count)
+                {
                     ShowCurrentItem();
-                else AllItemsFound?.Invoke();
+                    _levelScore.ChangeScore(_levelTimer.GetCurrentTime());
+                }
+                else
+                {
+                    _ = StartCoroutine(OnAllItemsFound());
+                }
 
                 return true;
             }
 
+            _levelTimer.ChangeTimerSeconds(-10);
             return false;
+        }
+
+        private IEnumerator OnAllItemsFound()
+        {
+            yield return new WaitForSeconds(0.5f); 
+            AllItemsFound?.Invoke();
         }
     }
 }

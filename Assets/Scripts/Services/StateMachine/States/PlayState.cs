@@ -6,12 +6,13 @@ namespace Services.StateMachine.States
     {
         private readonly CameraMove _cameraMove;
         private readonly SearchItem _searchItem;
-        private readonly Timer _timer;
+        private readonly LevelTimer _timer;
         private readonly ItemSelection _itemSelection;
+        
         private readonly GamePause _gamePause;
 
         public PlayState(GameStateMachine stateMachine, CameraMove cameraMove, SearchItem searchItem,
-            Timer timer, ItemSelection itemSelection, GamePause gamePause) : base(stateMachine)
+            LevelTimer timer, ItemSelection itemSelection, GamePause gamePause) : base(stateMachine)
         {
             _cameraMove = cameraMove;
             _searchItem = searchItem;
@@ -42,8 +43,8 @@ namespace Services.StateMachine.States
             _cameraMove.Activity = false;
             _searchItem.IconContainer.SetActive(false);
             _searchItem.AllItemsFound -= OnLevelPassed;
-            _timer.ChangeTimerActivity(value: false);
             _timer.TimerCompleted -= OnLevelLost;
+            _timer.ChangeTimerActivity(value: false);
             _itemSelection.ChangeActivity(activity: false);
         }
     }

@@ -8,9 +8,14 @@ namespace Logic.Levels
         [Header("Слой объектов")]
         [SerializeField] private LayerMask _layerMask;
         
+        [Header("Звездный эффект")]
+        [SerializeField] private ParticleSystem _starEffect;
+        
         private bool _activity;
+        
         private Vector2 _tapPosition;
         private float _distance;
+        
         private Ray _ray;
         private RaycastHit2D _hit;
         private Item _currentItem;
@@ -65,6 +70,8 @@ namespace Logic.Levels
             {
                 _currentItem.StartAnimation(Item.CorrectItem);
                 _currentItem.DisableCollider();
+                _starEffect.transform.position = _currentItem.transform.position;
+                _starEffect.Play();
             }
             else
             {

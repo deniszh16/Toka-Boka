@@ -6,18 +6,19 @@ namespace Services.StateMachine.States
     {
         private readonly GamePause _gamePause;
         
-        public PauseState(GameStateMachine stateMachine, GamePause gamePause) : base(stateMachine) =>
-            _gamePause = gamePause;
+        public PauseState(GameStateMachine stateMachine, GamePause gamePause)
+            : base(stateMachine) => _gamePause = gamePause;
 
         public override void Enter()
         {
             _gamePause.ChangeButtonVisibility(visibility: false);
-            _gamePause.ChangePausePanelVisibility(true);
+            _gamePause.ChangePausePanelVisibility(visibility: true);
         }
 
         public override void Exit()
         {
-            _gamePause.ChangePausePanelVisibility(false);
+            _gamePause.ChangeButtonVisibility(visibility: true);
+            _gamePause.ChangePausePanelVisibility(visibility: false);
         }
     }
 }

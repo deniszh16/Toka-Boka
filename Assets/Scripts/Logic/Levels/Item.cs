@@ -3,6 +3,7 @@ using UnityEngine.AddressableAssets;
 
 namespace Logic.Levels
 {
+    [RequireComponent(typeof(Animator), typeof(Collider2D))]
     public class Item : MonoBehaviour
     {
         [Header("Затемненная иконка")]
@@ -18,23 +19,14 @@ namespace Logic.Levels
 
         private void Awake()
         {
-            if (gameObject.TryGetComponent(out Animator animator))
-                _animator = animator;
-
-            if (gameObject.TryGetComponent(out Collider2D collider))
-                _collider = collider;
+            _animator = GetComponent<Animator>();
+            _collider = GetComponent<Collider2D>();
         }
 
-        public void StartAnimation(int clip)
-        {
-            if (_animator != null)
-                _animator.SetTrigger(clip);
-        }
+        public void StartAnimation(int clip) =>
+            _animator.SetTrigger(clip);
 
-        public void DisableCollider()
-        {
-            if (_collider != null)
-                _collider.enabled = false;
-        }
+        public void DisableCollider() =>
+            _collider.enabled = false;
     }
 }

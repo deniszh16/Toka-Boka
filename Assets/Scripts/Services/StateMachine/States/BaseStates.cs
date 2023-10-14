@@ -2,7 +2,7 @@
 {
     public abstract class BaseStates : IState
     {
-        public readonly GameStateMachine _stateMachine;
+        protected readonly GameStateMachine _stateMachine;
 
         protected BaseStates(GameStateMachine stateMachine) =>
             _stateMachine = stateMachine;

@@ -1,17 +1,19 @@
-﻿namespace Services.StateMachine.States
+﻿using Logic.Levels;
+
+namespace Services.StateMachine.States
 {
     public class LosingState : BaseStates
     {
-        public LosingState(GameStateMachine stateMachine) : base(stateMachine)
-        {
-        }
+        private readonly LevelResults _levelResults;
+        
+        public LosingState(GameStateMachine stateMachine, LevelResults levelResults)
+            : base(stateMachine) =>
+            _levelResults = levelResults;
 
-        public override void Enter()
-        {
-        }
+        public override void Enter() =>
+            _levelResults.ShowLossPanel(visibility: true);
 
-        public override void Exit()
-        {
-        }
+        public override void Exit() =>
+            _levelResults.ShowLossPanel(visibility: false);
     }
 }

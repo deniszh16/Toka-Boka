@@ -10,9 +10,11 @@ namespace Logic.Levels
         [SerializeField] private TrainingPanel _trainingPanel;
         [SerializeField] private CameraMove _movingCamera;
         [SerializeField] private SearchItem _searchItem;
-        [SerializeField] private Timer _timer;
+        [SerializeField] private LevelTimer _levelTimer;
         [SerializeField] private GamePause _gamePause;
         [SerializeField] private ItemSelection _itemSelection;
+        [SerializeField] private LevelScore _levelScore;
+        [SerializeField] private LevelResults _levelResults;
         
         public override void InstallBindings()
         {
@@ -24,6 +26,8 @@ namespace Logic.Levels
             BindTimer();
             BindGamePause();
             BindItemSelection();
+            BindLevelScore();
+            BindLevelResults();
         }
 
         private void BindGameStateMachine()
@@ -45,12 +49,18 @@ namespace Logic.Levels
             Container.BindInstance(_searchItem).AsSingle();
 
         private void BindTimer() =>
-            Container.BindInstance(_timer).AsSingle();
+            Container.BindInstance(_levelTimer).AsSingle();
 
         private void BindGamePause() =>
             Container.BindInstance(_gamePause).AsSingle();
 
         private void BindItemSelection() =>
             Container.BindInstance(_itemSelection).AsSingle();
+        
+        private void BindLevelScore() =>
+            Container.BindInstance(_levelScore).AsSingle();
+
+        private void BindLevelResults() =>
+            Container.BindInstance(_levelResults).AsSingle();
     }
 }

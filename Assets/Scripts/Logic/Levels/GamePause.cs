@@ -24,7 +24,7 @@ namespace Logic.Levels
             if (pause) _gameStateMachine.Enter<PauseState>();
             else _gameStateMachine.Enter<PlayState>();
         }
-
+        
         public void ChangeButtonVisibility(bool visibility) =>
             _pauseButton.SetActive(visibility);
 

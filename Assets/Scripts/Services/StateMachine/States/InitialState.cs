@@ -20,6 +20,7 @@ namespace Services.StateMachine.States
         {
             _levelItems.SelectElementsForTask();
             _searchItem.ShowCurrentItem();
+            
             CheckTraining();
         }
 
