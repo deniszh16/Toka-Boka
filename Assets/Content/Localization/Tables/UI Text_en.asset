@@ -46,6 +46,22 @@ MonoBehaviour:
     m_Localized: Only there's not much time, we need to hurry.
     m_Metadata:
       m_Items: []
+  - m_Id: 9425426011500544
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9432070262992896
+    m_Localized: Double hearts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9937273563230208
+    m_Localized: Losing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9937612865646592
+    m_Localized: Continue game
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

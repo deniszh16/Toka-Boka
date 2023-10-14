@@ -43,6 +43,22 @@ MonoBehaviour:
     m_Key: key_Training_2
     m_Metadata:
       m_Items: []
+  - m_Id: 9425426011500544
+    m_Key: key_Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9432070262992896
+    m_Key: key_Doubling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9937273563230208
+    m_Key: key_Losing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9937612865646592
+    m_Key: key_Continue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
