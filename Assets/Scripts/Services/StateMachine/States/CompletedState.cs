@@ -7,14 +7,17 @@ namespace Services.StateMachine.States
     public class CompletedState : BaseStates
     {
         private readonly LevelScore _levelScore;
+        private readonly CurrentLevel _currentLevel;
         private readonly LevelResults _levelResults;
         private readonly IPersistentProgressService _progressService;
         private readonly ISaveLoadService _saveLoadService;
         
-        public CompletedState(GameStateMachine stateMachine, LevelScore levelScore, LevelResults levelResults,
-            IPersistentProgressService progressService, ISaveLoadService saveLoadService) : base(stateMachine)
+        public CompletedState(GameStateMachine stateMachine, LevelScore levelScore, CurrentLevel currentLevel,
+            LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
+            : base(stateMachine)
         {
             _levelScore = levelScore;
+            _currentLevel = currentLevel;
             _levelResults = levelResults;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
@@ -25,6 +28,10 @@ namespace Services.StateMachine.States
             _levelResults.ShowVictoryPanel();
             _levelResults.ShowCurrentScore(_levelScore.Score);
             _progressService.UserProgress.Hearts += _levelScore.Score;
+
+            if (_progressService.UserProgress.Progress <= _currentLevel.LevelNumber)
+                _progressService.UserProgress.Progress++;
+            
             _saveLoadService.SaveProgress();
         }
 

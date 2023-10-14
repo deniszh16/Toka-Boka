@@ -20,6 +20,7 @@ namespace Logic.Levels
         
         private GamePause _gamePause;
         private LevelScore _levelScore;
+        private CurrentLevel _currentLevel;
         private LevelResults _levelResults;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
@@ -27,7 +28,7 @@ namespace Logic.Levels
         [Inject]
         private void Construct(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel, CameraMove cameraMove,
             SearchItem searchItem, LevelTimer levelTimer, ItemSelection itemSelection, GamePause gamePause, LevelScore levelScore,
-            LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
+            CurrentLevel currentLevel, LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
         {
             _stateMachine = stateMachine;
             _trainingPanel = trainingPanel;
@@ -40,6 +41,7 @@ namespace Logic.Levels
             
             _gamePause = gamePause;
             _levelScore = levelScore;
+            _currentLevel = currentLevel;
             _levelResults = levelResults;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
@@ -52,7 +54,7 @@ namespace Logic.Levels
             _stateMachine.AddState(new PlayState(_stateMachine, _cameraMove, _searchItem, _levelTimer, _itemSelection, _gamePause));
             _stateMachine.AddState(new PauseState(_stateMachine, _gamePause));
             _stateMachine.AddState(new LosingState(_stateMachine, _levelResults));
-            _stateMachine.AddState(new CompletedState(_stateMachine, _levelScore, _levelResults, _progressService, _saveLoadService));
+            _stateMachine.AddState(new CompletedState(_stateMachine, _levelScore, _currentLevel, _levelResults, _progressService, _saveLoadService));
         }
 
         private void Start() =>

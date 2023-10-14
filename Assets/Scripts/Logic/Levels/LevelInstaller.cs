@@ -7,6 +7,7 @@ namespace Logic.Levels
     public class LevelInstaller : MonoInstaller
     {
         [SerializeField] private LevelItems _levelItems;
+        [SerializeField] private CurrentLevel _currentLevel;
         [SerializeField] private TrainingPanel _trainingPanel;
         [SerializeField] private CameraMove _movingCamera;
         [SerializeField] private SearchItem _searchItem;
@@ -20,6 +21,7 @@ namespace Logic.Levels
         {
             BindGameStateMachine();
             BindLevelItems();
+            BindCurrentLevel();
             BindTrainingPanel();
             BindCameraMove();
             BindSearchItem();
@@ -38,6 +40,9 @@ namespace Logic.Levels
 
         private void BindLevelItems() =>
             Container.BindInstance(_levelItems).AsSingle();
+        
+        private void BindCurrentLevel() =>
+            Container.BindInstance(_currentLevel).AsSingle();
 
         private void BindTrainingPanel() =>
             Container.BindInstance(_trainingPanel).AsSingle();
