@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1ce94cffc93241c49af2672914d8fc71
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235877
+  packageName: PluginYG - Yandex Game integration
+  packageVersion: 1.4
+  assetPath: Assets/WebGLTemplates/PluginYG/TemplateData/favicon.ico
+  uploadId: 611441
