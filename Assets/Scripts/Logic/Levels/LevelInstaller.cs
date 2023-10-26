@@ -1,4 +1,5 @@
-﻿using Services.StateMachine;
+﻿using Logic.UI.Buttons;
+using Services.StateMachine;
 using UnityEngine;
 using Zenject;
 
@@ -12,6 +13,8 @@ namespace Logic.Levels
         [SerializeField] private CameraMove _movingCamera;
         [SerializeField] private SearchItem _searchItem;
         [SerializeField] private LevelTimer _levelTimer;
+        [SerializeField] private ItemCounter _itemCounter;
+        [SerializeField] private HintButton _hintButton;
         [SerializeField] private GamePause _gamePause;
         [SerializeField] private ItemSelection _itemSelection;
         [SerializeField] private LevelScore _levelScore;
@@ -25,7 +28,9 @@ namespace Logic.Levels
             BindTrainingPanel();
             BindCameraMove();
             BindSearchItem();
-            BindTimer();
+            BindLevelTimer();
+            BindItemCounter();
+            BindHintButton();
             BindGamePause();
             BindItemSelection();
             BindLevelScore();
@@ -53,8 +58,14 @@ namespace Logic.Levels
         private void BindSearchItem() =>
             Container.BindInstance(_searchItem).AsSingle();
 
-        private void BindTimer() =>
+        private void BindLevelTimer() =>
             Container.BindInstance(_levelTimer).AsSingle();
+
+        private void BindItemCounter() =>
+            Container.BindInstance(_itemCounter).AsSingle();
+        
+        private void BindHintButton() =>
+            Container.BindInstance(_hintButton).AsSingle();
 
         private void BindGamePause() =>
             Container.BindInstance(_gamePause).AsSingle();

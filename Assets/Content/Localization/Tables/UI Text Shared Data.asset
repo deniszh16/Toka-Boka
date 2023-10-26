@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: key_Continue
     m_Metadata:
       m_Items: []
+  - m_Id: 11234584343982080
+    m_Key: key_Training_3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

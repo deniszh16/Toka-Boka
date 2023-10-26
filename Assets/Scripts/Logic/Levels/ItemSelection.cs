@@ -59,6 +59,9 @@ namespace Logic.Levels
                             _currentItem = item;
                             CheckSelectedItem();
                         }
+
+                        if (_hit.collider.TryGetComponent(out OpeningFurniture furniture))
+                            furniture.OpenFurniture();
                     }
                 }
             }

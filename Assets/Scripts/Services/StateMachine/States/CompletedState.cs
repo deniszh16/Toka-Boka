@@ -1,6 +1,7 @@
 ﻿using Logic.Levels;
 using Services.PersistentProgress;
 using Services.SaveLoad;
+using UnityEngine;
 
 namespace Services.StateMachine.States
 {
@@ -8,16 +9,18 @@ namespace Services.StateMachine.States
     {
         private readonly LevelScore _levelScore;
         private readonly CurrentLevel _currentLevel;
+        private readonly GamePause _gamePause;
         private readonly LevelResults _levelResults;
         private readonly IPersistentProgressService _progressService;
         private readonly ISaveLoadService _saveLoadService;
         
-        public CompletedState(GameStateMachine stateMachine, LevelScore levelScore, CurrentLevel currentLevel,
+        public CompletedState(GameStateMachine stateMachine, LevelScore levelScore, CurrentLevel currentLevel, GamePause gamePause,
             LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
             : base(stateMachine)
         {
             _levelScore = levelScore;
             _currentLevel = currentLevel;
+            _gamePause = gamePause;
             _levelResults = levelResults;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
@@ -25,7 +28,8 @@ namespace Services.StateMachine.States
 
         public override void Enter()
         {
-            _levelResults.ShowVictoryPanel();
+            _gamePause.ChangeButtonVisibility(visibility: false);
+            _levelResults.ShowVictoryPanel(Camera.main.transform.position);
             _levelResults.ShowCurrentScore(_levelScore.Score);
             _progressService.UserProgress.Hearts += _levelScore.Score;
 

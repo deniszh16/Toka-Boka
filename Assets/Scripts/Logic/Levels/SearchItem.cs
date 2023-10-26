@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Logic.UI.Buttons;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -20,17 +21,25 @@ namespace Logic.Levels
         private int _currentItemNumber;
         private AssetReferenceGameObject _item;
         private GameObject _currentItem;
-        
+
+        public GameObject CurrentItem =>
+            _currentItem;
+
         private LevelItems _levelItems;
         private LevelScore _levelScore;
         private LevelTimer _levelTimer;
+        private ItemCounter _itemCounter;
+        private HintButton _hintButton;
 
         [Inject]
-        private void Construct(LevelItems levelItems, LevelScore levelScore, LevelTimer levelTimer)
+        private void Construct(LevelItems levelItems, LevelScore levelScore,
+            LevelTimer levelTimer, ItemCounter itemCounter, HintButton hintButton)
         {
             _levelItems = levelItems;
             _levelScore = levelScore;
             _levelTimer = levelTimer;
+            _itemCounter = itemCounter;
+            _hintButton = hintButton;
         }
 
         public void ShowCurrentItem()
@@ -51,6 +60,8 @@ namespace Logic.Levels
             {
                 _currentItem = handle.Result;
                 _levelTimer.SetTimer();
+                _itemCounter.UpdateCounter(currentItem: _currentItemNumber + 1, totalItems: _levelItems.NumberOfTasks);
+                _hintButton.CustomizeHint(_currentItem.GetComponent<ItemIcon>());
             }
         }
 

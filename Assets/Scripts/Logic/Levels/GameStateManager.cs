@@ -54,7 +54,7 @@ namespace Logic.Levels
             _stateMachine.AddState(new PlayState(_stateMachine, _cameraMove, _searchItem, _levelTimer, _itemSelection, _gamePause));
             _stateMachine.AddState(new PauseState(_stateMachine, _gamePause));
             _stateMachine.AddState(new LosingState(_stateMachine, _levelResults));
-            _stateMachine.AddState(new CompletedState(_stateMachine, _levelScore, _currentLevel, _levelResults, _progressService, _saveLoadService));
+            _stateMachine.AddState(new CompletedState(_stateMachine, _levelScore, _currentLevel, _gamePause, _levelResults, _progressService, _saveLoadService));
         }
 
         private void Start() =>

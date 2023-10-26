@@ -62,6 +62,10 @@ MonoBehaviour:
     m_Localized: Continue game
     m_Metadata:
       m_Items: []
+  - m_Id: 11234584343982080
+    m_Localized: And look everywhere. Some lockers open...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

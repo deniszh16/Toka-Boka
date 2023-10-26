@@ -8,18 +8,33 @@ namespace Data
         public int Progress;
         public int Hearts;
         public int Locale;
-        
+
+        public event Action HeartsAdded;
+        public event Action NotEnoughHearts;
+
         public UserProgress()
         {
             Progress = 1;
+            Hearts = 100;
         }
 
-        public void ChangeNumberOfHearts(int value)
+        public void AddHearts(int value)
         {
             Hearts += value;
+            HeartsAdded?.Invoke();
+        }
+
+        public bool SubtractHearts(int value)
+        {
+            if (Hearts < value)
+            {
+                NotEnoughHearts?.Invoke();
+                return false;
+            }
             
-            if (Hearts < 0)
-                Hearts = 0;
+            Hearts -= value;
+            HeartsAdded?.Invoke();
+            return true;
         }
     }
 }
