@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4956673493525886600}
   - component: {fileID: 4494003155493117610}
   - component: {fileID: 5747896756839255779}
+  - component: {fileID: 2577104271640535409}
   m_Layer: 5
   m_Name: Icon_Animal_GrayCat
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2577104271640535409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427572668223541980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 5747896756839255779}

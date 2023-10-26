@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4922930973716524855}
   - component: {fileID: 5582378715084778895}
   - component: {fileID: 1212297047926384903}
+  - component: {fileID: 1550669108620442080}
   m_Layer: 5
   m_Name: Icon_HandheldGameConsole
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1550669108620442080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055765337815539765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 1212297047926384903}

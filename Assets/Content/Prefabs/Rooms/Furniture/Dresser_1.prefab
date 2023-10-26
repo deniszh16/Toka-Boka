@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7587118657316247785}
   - component: {fileID: 6341886940610141052}
   - component: {fileID: 8560704506136053545}
+  - component: {fileID: 3026946416995116393}
   m_Layer: 7
   m_Name: Dresser_1
   m_TagString: Untagged
@@ -131,3 +132,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.9, y: 2.2}
   m_EdgeRadius: 0
+--- !u!114 &3026946416995116393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8105292655262250833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de823dc3b84048b7ac7a5333f3d034a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _openSprite: {fileID: 21300000, guid: 0bb26e3dc0013f84a8924838a6f872aa, type: 3}
+  _backlightEffect: {fileID: 0}
+  _items: []

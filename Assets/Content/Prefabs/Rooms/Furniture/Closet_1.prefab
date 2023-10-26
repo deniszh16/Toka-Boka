@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6956972972701714301}
   - component: {fileID: 4161393908211857817}
   - component: {fileID: 6428265939922573634}
+  - component: {fileID: 8753228359788794715}
   m_Layer: 7
   m_Name: Closet_1
   m_TagString: Untagged
@@ -135,11 +136,22 @@ PolygonCollider2D:
       - {x: -1.3532033, y: -3.2799983}
       - {x: 1.3265233, y: -3.258957}
       - {x: 1.949376, y: -3.4787517}
-      - {x: 1.894288, y: -1.1593028}
+      - {x: 1.894288, y: -1.2213815}
       - {x: -1.7588897, y: -1.2000529}
-      - {x: -1.7351799, y: 0.55982417}
-      - {x: 1.858767, y: 0.5624112}
-      - {x: 1.8233385, y: 3.4940543}
-      - {x: -1.8538637, y: 3.4320307}
-      - {x: -1.9296418, y: -1.1881434}
+      - {x: -1.9063627, y: -1.211423}
   m_UseDelaunayMesh: 0
+--- !u!114 &8753228359788794715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2244873216304113337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de823dc3b84048b7ac7a5333f3d034a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _openSprite: {fileID: 21300000, guid: 54682cb4431474049abdc23e7b26fe35, type: 3}
+  _backlightEffect: {fileID: 0}
+  _items: []

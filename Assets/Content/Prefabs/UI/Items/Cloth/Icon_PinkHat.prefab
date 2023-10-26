@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1865793272536118236}
   - component: {fileID: 7814181320811357889}
   - component: {fileID: 3541159810695046461}
+  - component: {fileID: -709597706195906376}
   m_Layer: 5
   m_Name: Icon_PinkHat
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-709597706195906376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804815523121210142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 3541159810695046461}

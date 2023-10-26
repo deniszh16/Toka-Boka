@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 53729021148368321}
   - component: {fileID: 1791789721570771361}
   - component: {fileID: 6716936721001023422}
+  - component: {fileID: -4513809136801221279}
   m_Layer: 5
   m_Name: icon_BlueBoots
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-4513809136801221279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027458921164523214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 6716936721001023422}

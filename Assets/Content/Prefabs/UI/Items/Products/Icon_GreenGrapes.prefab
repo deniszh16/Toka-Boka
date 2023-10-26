@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2330945165068999378}
   - component: {fileID: 7796055519364519162}
   - component: {fileID: 7003159773486428875}
+  - component: {fileID: 3009560808865666915}
   m_Layer: 5
   m_Name: Icon_GreenGrapes
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3009560808865666915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702890178227056981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 7003159773486428875}

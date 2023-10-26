@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7895029726758154975}
   - component: {fileID: 5202267676103389863}
   - component: {fileID: 1721914240398076041}
+  - component: {fileID: 1738752218955560439}
   m_Layer: 5
   m_Name: Icon_Toy_GreenWorm
   m_TagString: Untagged
@@ -75,3 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1738752218955560439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767327110376621174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63239d4cab84c09831efe0e606285f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 1721914240398076041}

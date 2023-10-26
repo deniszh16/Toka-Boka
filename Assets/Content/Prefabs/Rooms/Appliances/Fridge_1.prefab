@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 865003899938184798}
   - component: {fileID: 8110599982417101080}
   - component: {fileID: 8861150950614744656}
+  - component: {fileID: 8683583325982014751}
   m_Layer: 7
   m_Name: Fridge_1
   m_TagString: Untagged
@@ -131,3 +132,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &8683583325982014751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8856451242116936620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de823dc3b84048b7ac7a5333f3d034a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _openSprite: {fileID: 21300000, guid: e3b64dad0bc09c649b422055dd2cfa65, type: 3}
+  _backlightEffect: {fileID: 0}
+  _items: []
