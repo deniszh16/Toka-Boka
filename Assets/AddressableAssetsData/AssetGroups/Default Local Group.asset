@@ -498,7 +498,47 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e93ab3df64204f846b31930cbce4b5b2
-    m_Address: Assets/Content/Prefabs/UI/Items/Icon_Plants_7.prefab
+    m_Address: Icon_Plants_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddc6756f20325214eb070e5e31338d4d
+    m_Address: Icon_Lemon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab23d7e0bcaa5f34295f512e9066520e
+    m_Address: Icon_Cake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 805424517cdb77a428d0fff32a7d6480
+    m_Address: Icon_PicnicBasket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 745f49af1ded45f45a8be500f65f04a1
+    m_Address: Icon_Chicken
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2260ebfa4bc2bbe43b6d594ca8f4c2e1
+    m_Address: Icon_BlueCan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ca9244f621408a46a5dcb0bfe47ae83
+    m_Address: Icon_ChickenEggs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0522530af727f9746b30f08595f74e48
+    m_Address: Icon_InflatableRing
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e305ba727acf2a945ad7cc43cbcf11b9
+    m_Address: Icon_Sweater_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
