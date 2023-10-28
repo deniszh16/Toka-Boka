@@ -542,6 +542,76 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55c56f14f4816e347bcd49bea71dda8d
+    m_Address: Icon_LushPalmTree
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15ae04055c4561e46a65bc9e39a7ab84
+    m_Address: Icon_PinkLaptop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff9ba30d97615424cb3de0bb6dd551b2
+    m_Address: Icon_Aquarium
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8b237978287e0f4e9b253816c119195
+    m_Address: Icon_RedDogBed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 586b9e0ad23a21b449efcd472d7b8e7f
+    m_Address: Icon_LightBulldog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b8dd41ebfb08924cac2c8bb493edeac
+    m_Address: Icon_LightBrownDog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9af80051add5a6345af25b66e04afb73
+    m_Address: Icon_BlueWallClock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 213b4ad0ec89ba04c81814b7695aabf3
+    m_Address: Icon_TennisBall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a44a667372e54db4ba2c5c09363e6610
+    m_Address: Icon_RedBirdPainting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e565b63a75ffcd048b97e76a979e8d11
+    m_Address: Icon_BlackCamera
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2794977ef1dac564a8efa4b5d4639ac7
+    m_Address: Icon_DarkBlueBook
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1f5e01910106f5409a229bf0629aa49
+    m_Address: Icon_SprayPaint
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4de2f0318277324495e2f0ee3bce387
+    m_Address: Icon_BrownBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bbdc98bf1c3767419c9e461314454f2
+    m_Address: Icon_ComputerMouse
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8f3726635b9806419bdc551387742a0, type: 2}
   m_SchemaSet:
