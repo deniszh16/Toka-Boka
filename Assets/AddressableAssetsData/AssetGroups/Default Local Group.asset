@@ -612,6 +612,236 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a68005dd770f303418fd3d20712c46a7
+    m_Address: Icon_Candlestick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01ab8b72150213442866994cea78e66c
+    m_Address: Icon_FlowerInPotOnLegs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1da81e4a68e13f409df4d4f5e5f2e65
+    m_Address: Icon_BrownSuitcase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b74efb702d56a0e4ab8b2cb63e70d628
+    m_Address: Icon_Scissors
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3aedf73bc020d5b4895c44e19db9d073
+    m_Address: Icon_RedWhiteBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d5c623e66adab44ea970fe6d6437826
+    m_Address: Icon_LightDogBed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b6a15f27eeffb14eafd48689aee8be9
+    m_Address: Icon_PortraitOfHamster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac778c36747935b40bca11d240ef32c4
+    m_Address: Icon_GreenSweater
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d2d6304e11a2654dbb914ee5689543a
+    m_Address: Icon_DeskLamp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70ed3f6e90d86194b97a88c71262a833
+    m_Address: Icon_PencilCaseWithHandles
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 185bf35fa5cb2d14187820f984cb043d
+    m_Address: Icon_DogBowl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a421e13618abe064e87d46c9c6327eac
+    m_Address: Icon_BlueCrystal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ac82fa83d5548e44adcd283441dc1cd
+    m_Address: Icon_GrayCat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 237dd8b4935410f4c905249b3f819249
+    m_Address: Icon_BunchOfLetters
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 561b6394a911d9842a52adeac19f4432
+    m_Address: Icon_Stickers
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c96df4024607584c87e5cb494f83f5e
+    m_Address: Icon_FlowerWithLargeLeaves
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6959b00b28ca1e498888c3b2567a93b
+    m_Address: Icon_Microwave
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64e5b649680867449988d73507ab7d7b
+    m_Address: Icon_Watermelon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e1636bd07d197646a6fab12956fae0d
+    m_Address: Icon_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a0aa16eb61e0404b93627dae1fdc9ca
+    m_Address: Icon_TeaSet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 429f6c3ad61d36b438c36bbbb32b074f
+    m_Address: Icon_BottleOfMilk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cae662f7d3993a74082b4636b555e796
+    m_Address: Icon_BunchOfBananas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c744ea88573f7494d913e9e5c760b42f
+    m_Address: Icon_Towel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8ea8026010916d4eb92a74753293062
+    m_Address: Icon_Champagne
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d252c2eeae7614a4eb6627432e09ba3a
+    m_Address: Icon_CanOfLemonade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bd5568816c9cec48812f6c9e024c6be
+    m_Address: Icon_HamburgerToy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fcff56a27705b54eae1464349c31203
+    m_Address: Icon_SetOfGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4095457b2e6caa4285a698c2e40f38c
+    m_Address: Icon_HalfLoafOfBread
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d736143e8fbd6b458a5ec1db26dd2c3
+    m_Address: Icon_FruitPainting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c20acc33a916d5f4abf58ae835e9e877
+    m_Address: Icon_Radio
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02e486f567caa8c4e97711bbe71e5f90
+    m_Address: Icon_DishSponge
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47063fa84a18c354a8349d69d5ecaed6
+    m_Address: Icon_Ketchup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54cff62a7debf294db2483b6c958c760
+    m_Address: Icon_ChocolateDonut
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 32af380e239b0c24384afbaca9c7f05b
+    m_Address: Icon_Sauce
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8405ddd436b8f2a41b3eae7119718fb4
+    m_Address: Icon_PlateOfFruit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d27daa21b55ece40b34cf7c49817278
+    m_Address: Icon_DiamondBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6c538c30430cfd429459924224f29e2
+    m_Address: Icon_TomatoesOnions
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6498c41963389d244a36b327968fdc7e
+    m_Address: Icon_EmptyBottle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b412d0be40c2493409ed91a80131ceab
+    m_Address: Icon_WickerBasket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0a66413cb93e204c892e65e4ebc7cb6
+    m_Address: Icon_Certificate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 603b00d9fc5897445af39737eccecb6d
+    m_Address: Icon_LightTeapot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdc607695862c7b479ec2a9863bd0a98
+    m_Address: Icon_MulticoloredCarpet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77f208091e24205458e06b2a4aadfcff
+    m_Address: Icon_LushFlowerInPot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22726eeec21608e4ea37e784e29cd44a
+    m_Address: Icon_SausageOnPlate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbbc1c3e5a6a3554f816c17ba268acaa
+    m_Address: Assets/Content/Icon_ToyBox.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de5b5acf72a70b84b8455a878e2eceba
+    m_Address: Assets/Content/Icon_Pumpkin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8f3726635b9806419bdc551387742a0, type: 2}
   m_SchemaSet:

@@ -19,6 +19,9 @@ namespace Logic.Levels
         private void Awake() =>
             _image = GetComponent<Image>();
 
+        private void Start() =>
+            SetTimer();
+
         private void Update()
         {
             if (_activity == false)

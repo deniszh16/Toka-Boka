@@ -22,9 +22,6 @@ namespace Logic.Levels
         private AssetReferenceGameObject _item;
         private GameObject _currentItem;
 
-        public GameObject CurrentItem =>
-            _currentItem;
-
         private LevelItems _levelItems;
         private LevelScore _levelScore;
         private LevelTimer _levelTimer;
