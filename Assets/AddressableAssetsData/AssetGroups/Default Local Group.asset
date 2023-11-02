@@ -842,6 +842,106 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 708cb840eb93a4945bfddae3da2b2584
+    m_Address: Assets/Content/Icon_BlueShampoo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40cc615172c8a5046bd71b9cd36ad16c
+    m_Address: Assets/Content/Icon_ToiletPaper.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cedcc46f072219f429585c2fc18eaa75
+    m_Address: Assets/Content/Icon_PictureOfMouse.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea1b4062e7e5d934397c76896649dd43
+    m_Address: Assets/Content/Icon_FeedingJar.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0b0849fc6845684c91c22872c2d2904
+    m_Address: Assets/Content/Icon_LadybugToy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d665e9a8b6154bf4280704718dd84b62
+    m_Address: Assets/Content/Icon_CareKit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e33fde65f8f2c144bf5cee85e208662
+    m_Address: Assets/Content/Icon_ChildrenPotty.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cb925a6ef05d9b41b7450367513472e
+    m_Address: Assets/Content/Icon_BabyShampoo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78601893426c2a743a4e9d4ec3a491d1
+    m_Address: Assets/Content/Icon_CatBowl.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b65f0d9207c9b7442ac75a3db1cb8f31
+    m_Address: Assets/Content/Icon_DarkCosmeticBag.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bc745e0dd5e6844180f7d8df9dd23bb
+    m_Address: Assets/Content/Icon_Stickers.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42e37794ff7c4254eb3c96fc3ca4ae77
+    m_Address: Assets/Content/Icon_HangingFlowerWithLargeLeaves.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8c05326a2a501041b82b66ffd5f2e93
+    m_Address: Assets/Content/Icon_Toothbrushes.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc3dd54e5f218d04cbc189add10f7f81
+    m_Address: Assets/Content/Icon_WhiteCandle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc64b0a85703a1842ae795d23d16fdd8
+    m_Address: Assets/Content/Icon_CabbageToy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfef2b0ad859d1748929e04075613dc4
+    m_Address: Assets/Content/Icon_Powder.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 568a62efd1943804fa1f0f6fa8cff5c9
+    m_Address: Assets/Content/Icon_YellowPillow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25086680446d0234fac95aa353c33047
+    m_Address: Assets/Content/Icon_Broom.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8d06afd147ba604dbe23a5b3866de13
+    m_Address: Assets/Content/Icon_TreeInPot.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 273b75232912bd0448e1ef0798fbf59d
+    m_Address: Assets/Content/Icon_BlueTube.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8f3726635b9806419bdc551387742a0, type: 2}
   m_SchemaSet:

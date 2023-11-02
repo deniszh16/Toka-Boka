@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shadedIcon:
-    m_AssetGUID: 
+    m_AssetGUID: 55c56f14f4816e347bcd49bea71dda8d
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

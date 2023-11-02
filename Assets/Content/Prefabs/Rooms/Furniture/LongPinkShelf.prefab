@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6995779357912545142}
   - component: {fileID: 5454415576143615066}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LongPinkShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
