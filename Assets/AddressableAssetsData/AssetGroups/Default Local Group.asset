@@ -942,6 +942,166 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72defa2d3a6ff7b4494e280f480da53b
+    m_Address: Icon_WhiteTV
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19494d87894692b4d91ba065a055768c
+    m_Address: Icon_IvyFlower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8dcabfa12fed704085738ea9cdf3d25
+    m_Address: Icon_RoseInVase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e52b1db9651c48e4ca5cc5e13ed42135
+    m_Address: Icon_RoundPillow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6aa169f85fec1f74490c8718309fbe9f
+    m_Address: Icon_Sunglasses
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f2d9242ca3400e41a2533131d84451c
+    m_Address: Icon_BlueGuitar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8880c0bf6194a5644b7152ee9c68fa7d
+    m_Address: Icon_BrownSweater
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc5aeec83d6f8c3408bc2c18bb1a08ec
+    m_Address: Icon_StripedSweater
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a42de12b9db98ca4a90962ee7bb224d2
+    m_Address: Icon_GreenJacket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6de5471f60380a4b8b79ac062bba080
+    m_Address: Icon_WhiteShirt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0b1bcaccc8936345a2bdf8d2be9cd55
+    m_Address: Icon_Toy_WaterGun
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b6afb30c1ddfad41acb71ba75e79991
+    m_Address: Icon_VaseWithChopsticks
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 475459fa36784384791a2540033682af
+    m_Address: Icon_EmptyCart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0499f0819ae87f14fa385938528f7a4f
+    m_Address: Icon_BlackPillow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bed18846d9d84c4280c6909c11fc6ca
+    m_Address: Icon_Shepherd
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5faf211ae44d5a04699222b1ca5543f8
+    m_Address: Icon_SmallFlowerInPot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84b8f395c10dbb34ba27e27cfbb96b66
+    m_Address: Icon_Camera
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba24d51000825c94393d16a92115e742
+    m_Address: Icon_MulticoloredBag
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fdbee2476e706c42b0362a2cadad1d1
+    m_Address: Icon_Basketball
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a26b3d0fbfab60f4baab24eac932b8f5
+    m_Address: Icon_Magazine_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66abac270065cd342af6e611e0f0b47c
+    m_Address: Icon_Magazine_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8be25c49c922ea44e94f9417e730a5df
+    m_Address: Icon_Laptop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1ed59aba101f214b87d3ab42f922cea
+    m_Address: Icon_BasketOfFlowers
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 254155352f19d454db781115031a8fe1
+    m_Address: Icon_GoldenKey
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0eec6ca8bce0d684aaa6f6b613c72ecc
+    m_Address: Icon_GoldBar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 619efd4b699b1a14d862b6fb02b42dcc
+    m_Address: Icon_PackOfChips
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0576bb6710de5a34bbdcdc441060f118
+    m_Address: Icon_HorseFigurine
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0284153a6f1d5de4e9da9b0f5903df32
+    m_Address: Icon_MusicColumn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ad0a9643f29839498fe5ccbbd4cb792
+    m_Address: Icon_ParrotPortrait
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6bbc5a10169477f4eb07b4811fed101a
+    m_Address: Icon_PinkShoes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8429f812b82fc194a9efbee98dd89e95
+    m_Address: Icon_YellowBow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc6fef8d768250944a2b8461c07a6bfa
+    m_Address: Assets/Content/Icon_BottleOfWater.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8f3726635b9806419bdc551387742a0, type: 2}
   m_SchemaSet:
