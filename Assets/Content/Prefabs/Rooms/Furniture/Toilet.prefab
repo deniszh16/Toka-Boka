@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1191410968338885871}
   - component: {fileID: 1803523190818988444}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Toilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

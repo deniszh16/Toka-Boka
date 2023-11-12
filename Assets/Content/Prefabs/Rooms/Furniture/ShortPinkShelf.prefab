@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8016481558746259381}
   - component: {fileID: 234194116329035603}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ShortPinkShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}

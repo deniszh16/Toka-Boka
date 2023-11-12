@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7753408658393064068}
   - component: {fileID: 1957905095084471167}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bath
   m_TagString: Untagged
   m_Icon: {fileID: 0}

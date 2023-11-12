@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Data
 {
@@ -7,15 +8,23 @@ namespace Data
     {
         public int Progress;
         public int Hearts;
+
+        public List<int> Stars;
+        
         public int Locale;
 
         public event Action HeartsAdded;
         public event Action NotEnoughHearts;
+        public event Action StarsChanged; 
 
         public UserProgress()
         {
             Progress = 1;
             Hearts = 100;
+
+            Stars = new List<int>(capacity: 12);
+            for (int i = 0; i < Stars.Capacity; i++)
+                Stars.Add(item: 0);
         }
 
         public void AddHearts(int value)
@@ -35,6 +44,12 @@ namespace Data
             Hearts -= value;
             HeartsAdded?.Invoke();
             return true;
+        }
+
+        public void ChangeStars(int levelNumber, int value)
+        {
+            Stars[levelNumber] += value;
+            StarsChanged?.Invoke();
         }
     }
 }

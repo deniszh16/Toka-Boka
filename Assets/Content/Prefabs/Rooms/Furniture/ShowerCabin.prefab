@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780700952980950023}
   - component: {fileID: 6294702786229676445}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ShowerCabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

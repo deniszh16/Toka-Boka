@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8171083364049515116}
   - component: {fileID: 110811554742766276}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BabyChangingTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
