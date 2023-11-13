@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: ef9d30fc123c1a04980871bbf72bd385, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8592605612754599939
   m_TableData:
   - m_Id: 114093830144
     m_Localized: TOKA BOKA
@@ -66,6 +67,15 @@ MonoBehaviour:
     m_Localized: And look everywhere. Some lockers open...
     m_Metadata:
       m_Items: []
+  - m_Id: 21405919407202304
+    m_Localized: 'Pets: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 8592605612754599939
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8592605612754599939
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00605bfe910c4c00

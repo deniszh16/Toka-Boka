@@ -10187,7 +10187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8746750020655203647, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
       propertyPath: _numberOfTasks
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8746750020655203647, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
       propertyPath: _items.Array.size

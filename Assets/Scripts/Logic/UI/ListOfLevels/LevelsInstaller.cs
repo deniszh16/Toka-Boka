@@ -6,11 +6,18 @@ namespace Logic.UI.ListOfLevels
     public class LevelsInstaller : MonoInstaller
     {
         [SerializeField] private LevelSelection _levelSelection;
+        [SerializeField] private OpenPets _openPets;
         
-        public override void InstallBindings() =>
+        public override void InstallBindings()
+        {
             BindLevelSelection();
+            BindOpenPets();
+        }
 
         private void BindLevelSelection() =>
             Container.BindInstance(_levelSelection).AsSingle();
+        
+        private void BindOpenPets() =>
+            Container.BindInstance(_openPets).AsSingle();
     }
 }

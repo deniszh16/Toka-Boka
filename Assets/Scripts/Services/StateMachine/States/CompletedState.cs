@@ -32,6 +32,8 @@ namespace Services.StateMachine.States
             _levelResults.ShowVictoryPanel(Camera.main.transform.position);
             _levelResults.ShowCurrentScore(_levelScore.Score);
             _progressService.UserProgress.Hearts += _levelScore.Score;
+            _progressService.UserProgress.ChangeAttempts(levelNumber: _currentLevel.LevelNumber - 1);
+            _progressService.UserProgress.ChangeStars(levelNumber: _currentLevel.LevelNumber - 1, value: 1);
 
             if (_progressService.UserProgress.Progress <= _currentLevel.LevelNumber)
                 _progressService.UserProgress.Progress++;

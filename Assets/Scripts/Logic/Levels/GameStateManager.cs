@@ -49,7 +49,7 @@ namespace Logic.Levels
 
         private void Awake()
         {
-            _stateMachine.AddState(new InitialState(_stateMachine, _levelItems, _trainingPanel, _searchItem)); 
+            _stateMachine.AddState(new InitialState(_stateMachine, _levelItems, _trainingPanel, _searchItem, _currentLevel, _progressService)); 
             _stateMachine.AddState(new TrainingState(_stateMachine, _trainingPanel));
             _stateMachine.AddState(new PlayState(_stateMachine, _cameraMove, _searchItem, _levelTimer, _itemSelection, _gamePause));
             _stateMachine.AddState(new PauseState(_stateMachine, _gamePause));

@@ -9,7 +9,7 @@ namespace Logic.Levels
         [Header("Предметы уровня")]
         [SerializeField] private List<Item> _items;
 
-        [Header("Количество заданий")]
+        [Header("Базовое количество заданий")]
         [SerializeField] private int _numberOfTasks;
 
         public int NumberOfTasks => _numberOfTasks;
@@ -22,6 +22,12 @@ namespace Logic.Levels
 
         private void Awake() =>
             TaskItems = new List<Item>();
+
+        public void SetNumberOfTasks(int addition)
+        {
+            if (addition > 2) addition = 2;
+            _numberOfTasks += addition * 3;
+        }
 
         public void SelectElementsForTask()
         {

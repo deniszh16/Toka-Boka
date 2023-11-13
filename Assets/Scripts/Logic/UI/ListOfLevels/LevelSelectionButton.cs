@@ -15,6 +15,8 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private GameObject _iconLock;
         [SerializeField] private GameObject _textNumber;
         [SerializeField] private GameObject _iconComplete;
+        [SerializeField] private GameObject _starsIcon;
+        [SerializeField] private NumberOfStars _numberOfStars;
         
         [Header("Спрайты кнопки")]
         [SerializeField] private Sprite _levelOpen;
@@ -42,9 +44,17 @@ namespace Logic.UI.ListOfLevels
         private void OnEnable()
         {
             if (_number == _progressService.UserProgress.Progress)
+            {
                 CustomizeButton(_textNumber, _levelOpen);
+            }
             else if (_number < _progressService.UserProgress.Progress)
+            {
                 CustomizeButton(_iconComplete, _levelPassed);
+                _starsIcon.SetActive(true);
+
+                int stars = _progressService.UserProgress.GetNumberOfStars(_number - 1);
+                _numberOfStars.ShowNumberOfStars(stars);
+            }
         }
 
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
