@@ -1,5 +1,6 @@
 ﻿using Services.PersistentProgress;
 using Services.SaveLoad;
+using Services.Sound;
 using Services.StateMachine;
 using Services.StateMachine.States;
 using UnityEngine;
@@ -24,11 +25,13 @@ namespace Logic.Levels
         private LevelResults _levelResults;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
+        private ISoundService _soundService;
 
         [Inject]
-        private void Construct(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel, CameraMove cameraMove,
-            SearchItem searchItem, LevelTimer levelTimer, ItemSelection itemSelection, GamePause gamePause, LevelScore levelScore,
-            CurrentLevel currentLevel, LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
+        private void Construct(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel,
+            CameraMove cameraMove, SearchItem searchItem, LevelTimer levelTimer, ItemSelection itemSelection, GamePause gamePause,
+            LevelScore levelScore, CurrentLevel currentLevel, LevelResults levelResults, IPersistentProgressService progressService,
+            ISaveLoadService saveLoadService, ISoundService soundService)
         {
             _stateMachine = stateMachine;
             _trainingPanel = trainingPanel;
@@ -45,13 +48,14 @@ namespace Logic.Levels
             _levelResults = levelResults;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
+            _soundService = soundService;
         }
 
         private void Awake()
         {
             _stateMachine.AddState(new InitialState(_stateMachine, _levelItems, _trainingPanel, _searchItem, _currentLevel, _progressService)); 
             _stateMachine.AddState(new TrainingState(_stateMachine, _trainingPanel));
-            _stateMachine.AddState(new PlayState(_stateMachine, _cameraMove, _searchItem, _levelTimer, _itemSelection, _gamePause));
+            _stateMachine.AddState(new PlayState(_stateMachine, _cameraMove, _searchItem, _levelTimer, _itemSelection, _gamePause, _soundService));
             _stateMachine.AddState(new PauseState(_stateMachine, _gamePause));
             _stateMachine.AddState(new LosingState(_stateMachine, _gamePause, _levelResults));
             _stateMachine.AddState(new CompletedState(_stateMachine, _levelScore, _currentLevel, _gamePause, _levelResults, _progressService, _saveLoadService));

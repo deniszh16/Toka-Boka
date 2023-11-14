@@ -13,7 +13,7 @@ namespace Services.StateMachine.States
         private readonly LevelResults _levelResults;
         private readonly IPersistentProgressService _progressService;
         private readonly ISaveLoadService _saveLoadService;
-        
+
         public CompletedState(GameStateMachine stateMachine, LevelScore levelScore, CurrentLevel currentLevel, GamePause gamePause,
             LevelResults levelResults, IPersistentProgressService progressService, ISaveLoadService saveLoadService)
             : base(stateMachine)

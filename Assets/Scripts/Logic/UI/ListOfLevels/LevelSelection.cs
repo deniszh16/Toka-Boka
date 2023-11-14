@@ -1,6 +1,7 @@
 ﻿using Services.PersistentProgress;
 using Services.SaveLoad;
 using Services.SceneLoader;
+using Services.Sound;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -32,15 +33,17 @@ namespace Logic.UI.ListOfLevels
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
         private ISceneLoaderService _sceneLoaderService;
+        private ISoundService _soundService;
 
         [Inject]
         private void Construct(OpenPets openPets, IPersistentProgressService progressService,
-            ISaveLoadService saveLoadService, ISceneLoaderService sceneLoaderService)
+            ISaveLoadService saveLoadService, ISceneLoaderService sceneLoaderService, ISoundService soundService)
         {
             _openPets = openPets;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
             _sceneLoaderService = sceneLoaderService;
+            _soundService = soundService;
         }
 
         private void Start()
@@ -97,7 +100,10 @@ namespace Logic.UI.ListOfLevels
             }
         }
 
-        public void GoToLevel() =>
+        public void GoToLevel()
+        {
+            _soundService.StopBackgroundMusic();
             _sceneLoaderService.LoadLevelAsync(_selectedLevel);
+        }
     }
 }

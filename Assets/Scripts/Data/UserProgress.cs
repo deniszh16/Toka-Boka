@@ -14,6 +14,7 @@ namespace Data
         public List<PetSet> PetSets;
 
         public int Locale;
+        public bool Sound;
 
         public event Action HeartsAdded;
         public event Action NotEnoughHearts;
@@ -23,6 +24,8 @@ namespace Data
         {
             Progress = 1;
             Hearts = 100;
+
+            Sound = true;
             
             Attempts = new List<int>(capacity: 12);
             Stars = new List<int>(capacity: 12);

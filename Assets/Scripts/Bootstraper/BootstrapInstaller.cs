@@ -2,6 +2,7 @@ using Services.Localization;
 using Services.PersistentProgress;
 using Services.SaveLoad;
 using Services.SceneLoader;
+using Services.Sound;
 using UnityEngine;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace Bootstraper
     public class BootstrapInstaller : MonoInstaller
     {
         [SerializeField] private SceneLoaderService _sceneLoader;
+        [SerializeField] private SoundService _soundService;
         [SerializeField] private LocalizationService _localizationService;
 
         private IPersistentProgressService _progressService;
@@ -19,6 +21,7 @@ namespace Bootstraper
         {
             BindPersistentProgress();
             BindSaveLoadService();
+            BindSoundService();
             BindLocalizationService();
             BindSceneLoader();
         }
@@ -33,6 +36,12 @@ namespace Bootstraper
         {
             _saveLoadService = new SaveLoadService(_progressService);
             Container.BindInstance(_saveLoadService).AsSingle();
+        }
+        
+        private void BindSoundService()
+        {
+            SoundService soundService = Container.InstantiatePrefabForComponent<SoundService>(_soundService);
+            Container.Bind<ISoundService>().To<SoundService>().FromInstance(soundService).AsSingle();
         }
         
         private void BindLocalizationService()

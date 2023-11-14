@@ -1,4 +1,5 @@
 ﻿using Logic.Levels;
+using Services.Sound;
 
 namespace Services.StateMachine.States
 {
@@ -10,15 +11,17 @@ namespace Services.StateMachine.States
         private readonly ItemSelection _itemSelection;
         
         private readonly GamePause _gamePause;
+        private readonly ISoundService _soundService;
 
-        public PlayState(GameStateMachine stateMachine, CameraMove cameraMove, SearchItem searchItem,
-            LevelTimer timer, ItemSelection itemSelection, GamePause gamePause) : base(stateMachine)
+        public PlayState(GameStateMachine stateMachine, CameraMove cameraMove, SearchItem searchItem, LevelTimer timer,
+            ItemSelection itemSelection, GamePause gamePause, ISoundService soundService) : base(stateMachine)
         {
             _cameraMove = cameraMove;
             _searchItem = searchItem;
             _timer = timer;
             _itemSelection = itemSelection;
             _gamePause = gamePause;
+            _soundService = soundService;
         }
 
         public override void Enter()
@@ -30,6 +33,7 @@ namespace Services.StateMachine.States
             _timer.ChangeTimerActivity(value: true);
             _itemSelection.ChangeActivity(activity: true);
             _gamePause.ChangeButtonVisibility(visibility: true);
+            _soundService.SettingBackgroundMusic();
         }
 
         private void OnLevelPassed() =>
@@ -46,6 +50,7 @@ namespace Services.StateMachine.States
             _timer.TimerCompleted -= OnLevelLost;
             _timer.ChangeTimerActivity(value: false);
             _itemSelection.ChangeActivity(activity: false);
+            _soundService.StopBackgroundMusic();
         }
     }
 }
