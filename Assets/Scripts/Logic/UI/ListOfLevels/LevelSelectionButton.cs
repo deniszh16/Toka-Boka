@@ -46,31 +46,45 @@ namespace Logic.UI.ListOfLevels
             if (_number == _progressService.UserProgress.Progress)
             {
                 CustomizeButton(_textNumber, _levelOpen);
+                
+                ShowNumberOfStars();
+                _progressService.UserProgress.StarsChanged += ShowNumberOfStars;
             }
             else if (_number < _progressService.UserProgress.Progress)
             {
                 CustomizeButton(_iconComplete, _levelPassed);
-                _starsIcon.SetActive(true);
-
-                int stars = _progressService.UserProgress.GetNumberOfStars(_number - 1);
-                _numberOfStars.ShowNumberOfStars(stars);
+                
+                ShowNumberOfStars();
+                _progressService.UserProgress.StarsChanged += ShowNumberOfStars;
             }
         }
 
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
         {
             _button.onClick.AddListener(SelectLevel);
-            _button.interactable = true;
+            
+            if (_number < 7) 
+                _button.interactable = true;
 
             buttonElement.SetActive(true);
             _iconLock.SetActive(false);
+            _starsIcon.SetActive(true);
             _image.sprite = sprite;
         }
 
         private void SelectLevel() =>
             _levelSelection.SelectLevel(_number);
-        
-        private void OnDisable() =>
+
+        private void ShowNumberOfStars()
+        {
+            int stars = _progressService.UserProgress.GetNumberOfStars(_number - 1);
+            _numberOfStars.ShowNumberOfStars(stars);
+        }
+
+        private void OnDisable()
+        {
             _button.onClick.RemoveListener(SelectLevel);
+            _progressService.UserProgress.StarsChanged -= ShowNumberOfStars;
+        }
     }
 }

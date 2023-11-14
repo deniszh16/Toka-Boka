@@ -1,4 +1,5 @@
 ﻿using Services.PersistentProgress;
+using Services.SaveLoad;
 using Services.SceneLoader;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -12,31 +13,34 @@ namespace Logic.UI.ListOfLevels
         [Header("Персонажи")]
         [SerializeField] private AssetReferenceGameObject[] _characters;
         
-        [Header("Питомцы")]
+        [Header("Питомцы персонажей")]
         [SerializeField] private AssetReferenceGameObject[] _pets;
 
-        [Header("Контейнер для персонажей")]
+        [Header("Контейнеры для объектов")]
         [SerializeField] private Transform _container;
-        
-        [Header("Контейнер для питомцев")]
         [SerializeField] private Transform _petsContainer;
+        
+        [Header("Эффект конфетти")]
+        [SerializeField] private ParticleSystem _confetti;
 
         private int _characterNumber;
         private int _selectedLevel;
         private GameObject _currentСharacter;
         private GameObject _currentPets;
 
-        private IPersistentProgressService _progressService;
-        private ISceneLoaderService _sceneLoaderService;
         private OpenPets _openPets;
+        private IPersistentProgressService _progressService;
+        private ISaveLoadService _saveLoadService;
+        private ISceneLoaderService _sceneLoaderService;
 
         [Inject]
-        private void Construct(IPersistentProgressService progressService,
-            ISceneLoaderService sceneLoaderService, OpenPets openPets)
+        private void Construct(OpenPets openPets, IPersistentProgressService progressService,
+            ISaveLoadService saveLoadService, ISceneLoaderService sceneLoaderService)
         {
-            _progressService = progressService;
-            _sceneLoaderService = sceneLoaderService;
             _openPets = openPets;
+            _progressService = progressService;
+            _saveLoadService = saveLoadService;
+            _sceneLoaderService = sceneLoaderService;
         }
 
         private void Start()
@@ -64,7 +68,14 @@ namespace Logic.UI.ListOfLevels
         private void OnPetInstantiated(AsyncOperationHandle<GameObject> handle)
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
                 _currentPets = handle.Result;
+                if (_currentPets.TryGetComponent(out CharacterPets characterPets))
+                {
+                    characterPets.Construct(_progressService, _saveLoadService, _confetti);
+                    characterPets.CheckPets(_characterNumber);
+                }
+            }
         }
 
         public void SelectLevel(int buttonNumber)

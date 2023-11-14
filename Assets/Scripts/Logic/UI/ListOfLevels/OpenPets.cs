@@ -15,7 +15,6 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private TextMeshProUGUI _quantityText;
 
         private int _numberOfPets;
-        
         private IPersistentProgressService _progressService;
 
         [Inject]

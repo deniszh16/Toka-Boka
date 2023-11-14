@@ -23,7 +23,7 @@ namespace Data
         {
             Progress = 1;
             Hearts = 100;
-
+            
             Attempts = new List<int>(capacity: 12);
             Stars = new List<int>(capacity: 12);
             PetSets = new List<PetSet>(capacity: 12);
