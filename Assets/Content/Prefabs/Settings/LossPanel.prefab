@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6511630682494349298}
   - component: {fileID: 5096642428022362448}
   - component: {fileID: 5202170254007568131}
+  - component: {fileID: 887037786604652807}
   m_Layer: 5
   m_Name: Button_Restart
   m_TagString: Untagged
@@ -122,7 +123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6511630682494349298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 887037786604652807}
+        m_TargetAssemblyTypeName: Logic.Sounds.PlayingSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5202170254007568131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +148,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fa8515ce0848f0ad86c26364d8e925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &887037786604652807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446301911081003908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f8b19dd0854812b6d3b65a133dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoplay: 0
+  _sound: 0
 --- !u!1 &1174365459496222133
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +401,7 @@ GameObject:
   - component: {fileID: 8092214058961899825}
   - component: {fileID: 7384845964319574485}
   - component: {fileID: 3667942426709616704}
+  - component: {fileID: 3062478354388741060}
   m_Layer: 5
   m_Name: Button_Continue
   m_TagString: Untagged
@@ -483,7 +511,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8092214058961899825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3062478354388741060}
+        m_TargetAssemblyTypeName: Logic.Sounds.PlayingSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3667942426709616704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +536,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89693c9020fb4abdbaec981cb23fafd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3062478354388741060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576032839564714680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f8b19dd0854812b6d3b65a133dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoplay: 0
+  _sound: 1
 --- !u!1 &2275974854249013588
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,13 +734,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8490355176475137289}
+  - component: {fileID: 5662448901622571679}
   m_Layer: 5
   m_Name: LossPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8490355176475137289
 RectTransform:
   m_ObjectHideFlags: 0
@@ -707,6 +762,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5662448901622571679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333259546598795737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f8b19dd0854812b6d3b65a133dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoplay: 1
+  _sound: 4
 --- !u!1 &3627872174170350095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,6 +1462,7 @@ GameObject:
   - component: {fileID: 2183707780289269815}
   - component: {fileID: 8636901694044237648}
   - component: {fileID: 8605342603811098867}
+  - component: {fileID: 5774150361744177467}
   m_Layer: 5
   m_Name: Button_Menu
   m_TagString: Untagged
@@ -1502,7 +1572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2183707780289269815}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5774150361744177467}
+        m_TargetAssemblyTypeName: Logic.Sounds.PlayingSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8605342603811098867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,3 +1598,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scene: 2
+--- !u!114 &5774150361744177467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044840321338043080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f8b19dd0854812b6d3b65a133dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoplay: 0
+  _sound: 0

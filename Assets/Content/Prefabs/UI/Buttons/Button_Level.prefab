@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 6840621104431796130}
   - component: {fileID: 3989776172612268550}
   - component: {fileID: 2572176953241730507}
+  - component: {fileID: 5424840321259839049}
   m_Layer: 5
   m_Name: Button_Level
   m_TagString: Untagged
@@ -347,7 +348,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6840621104431796130}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5424840321259839049}
+        m_TargetAssemblyTypeName: Logic.Sounds.PlayingSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2572176953241730507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +381,20 @@ MonoBehaviour:
   _numberOfStars: {fileID: 293657812530472742}
   _levelOpen: {fileID: 21300000, guid: 90c1b0f0cbae75e43a8746c63071a883, type: 3}
   _levelPassed: {fileID: 21300000, guid: 82573c42ddcf95d4f9401f58ba4f4d12, type: 3}
+--- !u!114 &5424840321259839049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413084099138088893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f8b19dd0854812b6d3b65a133dc50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoplay: 0
+  _sound: 0
 --- !u!1 &6228288613956892122
 GameObject:
   m_ObjectHideFlags: 0

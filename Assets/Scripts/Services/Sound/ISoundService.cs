@@ -11,5 +11,6 @@ namespace Services.Sound
         public void SwitchSound();
         public void SettingBackgroundMusic();
         public void StopBackgroundMusic();
+        public void PlaySound(Sounds sound, bool overrideSound);
     }
 }

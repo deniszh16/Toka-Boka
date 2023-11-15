@@ -6,22 +6,25 @@ namespace Logic.Sounds
 {
     public class PlayingSound : MonoBehaviour
     {
-        [Header("Компонент звука")]
-        [SerializeField] private AudioSource _audioSource;
-
+        [Header("Автовоспроизведение звука")]
+        [SerializeField] private bool _autoplay;
+        
+        [Header("Звук объекта")]
+        [SerializeField] private Services.Sound.Sounds _sound;
+        
         private ISoundService _soundService;
 
         [Inject]
         private void Construct(ISoundService soundService) =>
             _soundService = soundService;
 
-        public void PlaySound()
+        private void Start()
         {
-            if (_soundService.SoundActivity && _audioSource.isPlaying == false)
-                _audioSource.Play();
+            if (_autoplay)
+                PlaySound();
         }
 
-        public void StopSound() =>
-            _audioSource.Stop();
+        public void PlaySound() =>
+            _soundService.PlaySound(sound: _sound, overrideSound: true);
     }
 }

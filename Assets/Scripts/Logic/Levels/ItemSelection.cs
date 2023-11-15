@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Services.Sound;
+using UnityEngine;
 using Zenject;
 
 namespace Logic.Levels
@@ -25,10 +26,14 @@ namespace Logic.Levels
 
         private Camera _mainCamera;
         private SearchItem _searchItem;
+        private ISoundService _soundService;
 
         [Inject]
-        private void Construct(SearchItem searchItem) =>
+        private void Construct(SearchItem searchItem, ISoundService soundService)
+        {
             _searchItem = searchItem;
+            _soundService = soundService;
+        }
 
         private void Awake() =>
             _mainCamera = Camera.main;
@@ -73,12 +78,14 @@ namespace Logic.Levels
             {
                 _currentItem.StartAnimation(Item.CorrectItem);
                 _currentItem.DisableCollider();
+                _soundService.PlaySound(Services.Sound.Sounds.RightChoice, overrideSound: false);
                 _starEffect.transform.position = _currentItem.transform.position;
                 _starEffect.Play();
             }
             else
             {
                 _currentItem.StartAnimation(Item.WrongItem);
+                _soundService.PlaySound(Services.Sound.Sounds.IncorrectChoice, overrideSound: false);
             }
         }
     }
