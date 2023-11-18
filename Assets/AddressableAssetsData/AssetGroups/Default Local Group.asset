@@ -2043,62 +2043,322 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c9e4b6b28508c0c40b40dc036ec3e382
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_1.prefab
+    m_Address: PetSet_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 353c37e447bf95044a0d96090d8665a6
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_2.prefab
+    m_Address: PetSet_2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62cb6d018efdd9c4ba26b4aa3fabfe4f
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_3.prefab
+    m_Address: PetSet_3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 486944f88c1f8e744bc958081274ec75
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_4.prefab
+    m_Address: PetSet_4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2ff2a0ca4ead1cb40bc47c60865680f5
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_5.prefab
+    m_Address: PetSet_5
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49e4453318d672648aa37eb4f009da25
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_6.prefab
+    m_Address: PetSet_6
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be3caf162086b0c40bb7d2cfab0c59e8
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_7.prefab
+    m_Address: PetSet_7
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8a80e5250e252a345a34cf2f16fef114
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_8.prefab
+    m_Address: PetSet_8
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e0572f1844d28fa42a8b29d3b8ce6381
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_9.prefab
+    m_Address: PetSet_9
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6486a4074ffa84842b309d9b1d25da19
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_10.prefab
+    m_Address: PetSet_10
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f6bcb90409f7e78418c8e2b259365ae0
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_11.prefab
+    m_Address: PetSet_11
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c29ef264d68ba494cb79ab50a514090a
-    m_Address: Assets/Content/Prefabs/UI/Animals/PetSet_12.prefab
+    m_Address: PetSet_12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcc4bf135e55870429392c127d1a0db2
+    m_Address: Icon_MultiColoredPackage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ace7dc8c9545ff24ab7b17225c24e541
+    m_Address: Icon_FoldedShirts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff3e2c352e05bb1459c822e4c47f4ee6
+    m_Address: Icon_HatWithHorns
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f9e32f8c63eeaa4e93fe4c6f713f7d6
+    m_Address: Icon_ComputerWithKeyboard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bf0919e093c3f34ab8692741aba1295
+    m_Address: Icon_GrayOttoman
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e601d62689f5a0448197b709b89ea0f
+    m_Address: Icon_WeedPicture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15b4ca92ed2bd3c4abffda70641fcc93
+    m_Address: Icon_BlackDress
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4bc30564a617eb489818f85ffe3eb07
+    m_Address: Icon_PioneerCostume
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3efc9ff96c6bc6c45877a51cacfac2b8
+    m_Address: Icon_FluffyGrayDog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99a4f925e13fe4a41aa0b45a35dd6e36
+    m_Address: Icon_GreenSweatshirt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1556b13960859f340ad255bddaeb0bb2
+    m_Address: Icon_PurpleBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2294a188591f79b4fb0fbec1d369ed00
+    m_Address: Icon_LittleOwl
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cf0c828f5968304dacd00c5333967c8
+    m_Address: Icon_BlackTableLamp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e1b92d50357c9b43bea1631f836cf34
+    m_Address: Icon_HenAndChicks
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09302f5b6ff4897459cbb5218d6a03d2
+    m_Address: Icon_Bottles
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: abb8261a99eeada4ba553de9b6e70277
+    m_Address: Icon_SetOfPens
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98f1b59dc772130438261b46469beb7b
+    m_Address: Icon_FlyingSaucerToy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa5a5469b151f264d8cc75659eb9753c
+    m_Address: Icon_BrownSpider
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a404e7245a476dc428d3a86f334f68a7
+    m_Address: Icon_SneakersWithBrownSole
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a7b21a1c1e0d7147a3f63623a007638
+    m_Address: Icon_LampCloud
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ded6bf6bf519b54995e045233622264
+    m_Address: Icon_GoldenTimer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 210750f012f9b334793ddff6083197d7
+    m_Address: Icon_Baseball
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed8a8356c56a54642b7506df1126e7f6
+    m_Address: Icon_GraySnake
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6a8a2113ee7b6e4cadd31e3b6b83231
+    m_Address: Icon_FireExtinguisher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6a9dba6a28eab84a89e523ae3978410
+    m_Address: Icon_PlateOfPuree
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 833977395c6b20d449719832d3e8d613
+    m_Address: Icon_BigCalendar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: addb2046863a6844a817164df1db8c60
+    m_Address: Icon_AngryGrayCat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47b4633f840d1d649a33e3de6bfe3579
+    m_Address: Icon_RoundTray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88e027cba645c334881cedd6df766381
+    m_Address: Icon_ChefsHat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08c5a1be100b2904880fa077a1aed7d8
+    m_Address: Icon_BoxOfVegetables
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02a583c7327207a499f2784022d9cae6
+    m_Address: Icon_FoodContainer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7d29c8470d4cca4085813979d29c722
+    m_Address: Icon_PinkBucket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acc7c21240a5b0043acf4b1cbe57a65c
+    m_Address: Icon_PlateOfVegetables
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cef41ba11d8d4346af5c9c663c61f8c
+    m_Address: Icon_StarCups
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75568821abccfd646b1ac6f3f0ee4df6
+    m_Address: Icon_BlackBucket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 536884e18f95d944c9e5cfea953779a2
+    m_Address: Icon_RedLemur
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7348f815babde04aaa7e3fa8c257745
+    m_Address: Icon_NapkinOnHook
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: abbaaaea3a5f8a34ab003d7086a6d38b
+    m_Address: Icon_BoxOfSandwiches
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d063fee6c9f2f7343bfe53487fe15133
+    m_Address: Icon_LionFigurine
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f612a0cffa9e4546a0b1747f3b4c2ed
+    m_Address: Icon_DirtyTrashBin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1810c1b99632a0a448a004bb65e994d6
+    m_Address: Icon_ShowerSet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76df9a85545c1b749b50d9fd28ac6b7c
+    m_Address: Icon_HairKit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3025ed3322760e74cb0678756cfa6b55
+    m_Address: Icon_LaundryBasket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4942eb761889324fa8a679523fde2b1
+    m_Address: Icon_BrownToiletPaperHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df9123f79b839a84b811f2a4a5563f5a
+    m_Address: Icon_RedBag
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8620b229517262149a520c02b1312747
+    m_Address: Icon_FabricSoftener
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d8ac5d219e2cd342aa72b63fdf1f102
+    m_Address: Icon_SoftPillow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 623ef4c3b7cc1504cb5c01344f0c08f2
+    m_Address: Icon_CreamAndGel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5a86ed758a90044f9754bb15110f6a5
+    m_Address: Icon_CandleOnStand
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcc604b84df45bc4695782a0a4fb7b1c
+    m_Address: Icon_CurlingIron
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9ae6a17b9779f544b36446f24dc2196
+    m_Address: Icon_FlowerInYellowPot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: accfcbf8ef5a4a842aef29a2443acfef
+    m_Address: Icon_BluePerfumeBottle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
