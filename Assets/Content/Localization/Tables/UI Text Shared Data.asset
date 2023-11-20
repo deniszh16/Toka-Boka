@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: key_Pets
     m_Metadata:
       m_Items: []
+  - m_Id: 23887942070415360
+    m_Key: key_Loading
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

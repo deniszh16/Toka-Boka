@@ -21,9 +21,9 @@ namespace Bootstraper
         {
             BindPersistentProgress();
             BindSaveLoadService();
-            BindSoundService();
             BindLocalizationService();
             BindSceneLoader();
+            BindSoundService();
         }
         
         private void BindPersistentProgress()
@@ -37,24 +37,24 @@ namespace Bootstraper
             _saveLoadService = new SaveLoadService(_progressService);
             Container.BindInstance(_saveLoadService).AsSingle();
         }
-        
-        private void BindSoundService()
-        {
-            SoundService soundService = Container.InstantiatePrefabForComponent<SoundService>(_soundService);
-            Container.Bind<ISoundService>().To<SoundService>().FromInstance(soundService).AsSingle();
-        }
-        
+
         private void BindLocalizationService()
         {
             LocalizationService localizationService =
                 Container.InstantiatePrefabForComponent<LocalizationService>(_localizationService);
             Container.Bind<ILocalizationService>().To<LocalizationService>().FromInstance(localizationService).AsSingle();
         }
-        
+
         private void BindSceneLoader()
         {
             SceneLoaderService sceneLoader = Container.InstantiatePrefabForComponent<SceneLoaderService>(_sceneLoader);
             Container.Bind<ISceneLoaderService>().To<SceneLoaderService>().FromInstance(sceneLoader).AsSingle();
+        }
+
+        private void BindSoundService()
+        {
+            SoundService soundService = Container.InstantiatePrefabForComponent<SoundService>(_soundService);
+            Container.Bind<ISoundService>().To<SoundService>().FromInstance(soundService).AsSingle();
         }
     }
 }

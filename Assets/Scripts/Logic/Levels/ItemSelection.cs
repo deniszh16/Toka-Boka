@@ -1,6 +1,5 @@
 ﻿using Services.Sound;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using Zenject;
 
 namespace Logic.Levels
@@ -77,16 +76,16 @@ namespace Logic.Levels
         {
             if (_searchItem.FindSelectedItem(_currentItem))
             {
-                _currentItem.StartAnimation(Item.CorrectItem);
+                _currentItem.StartAnimation(clip: Item._correctItem);
                 _currentItem.DisableCollider();
-                _soundService.PlaySound(Services.Sound.Sounds.RightChoice, overrideSound: false);
+                _soundService.PlaySound(sound: Services.Sound.Sounds.RightChoice, overrideSound: false);
                 _starEffect.transform.position = _currentItem.transform.position;
                 _starEffect.Play();
             }
             else
             {
-                _currentItem.StartAnimation(Item.WrongItem);
-                _soundService.PlaySound(Services.Sound.Sounds.IncorrectChoice, overrideSound: false);
+                _currentItem.StartAnimation(clip: Item._wrongItem);
+                _soundService.PlaySound(sound: Services.Sound.Sounds.IncorrectChoice, overrideSound: false);
             }
         }
     }

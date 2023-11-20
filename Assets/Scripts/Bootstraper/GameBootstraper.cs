@@ -2,29 +2,29 @@
 using Services.Localization;
 using Services.SceneLoader;
 using Services.SaveLoad;
+using Services.Sound;
 using UnityEngine;
 using Zenject;
 using Data;
-using Services.Sound;
 
 namespace Bootstraper
 {
     public class GameBootstraper : MonoBehaviour
     {
-        private ISceneLoaderService _sceneLoaderService;
-        private ILocalizationService _localizationService;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
+        private ILocalizationService _localizationService;
+        private ISceneLoaderService _sceneLoaderService;
         private ISoundService _soundService;
 
         [Inject]
-        private void Construct(ISceneLoaderService sceneLoaderService, ILocalizationService localizationService,
-            IPersistentProgressService progressService, ISaveLoadService saveLoadService, ISoundService soundService)
+        private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService, 
+            ILocalizationService localizationService, ISceneLoaderService sceneLoaderService, ISoundService soundService)
         {
-            _sceneLoaderService = sceneLoaderService;
-            _localizationService = localizationService;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
+            _localizationService = localizationService;
+            _sceneLoaderService = sceneLoaderService;
             _soundService = soundService;
         }
 
@@ -34,8 +34,8 @@ namespace Bootstraper
         private void Start()
         {
             LoadProgressOrInitNew();
-            _soundService.SoundActivity = _progressService.UserProgress.Sound;
             _localizationService.SetLocale(_progressService.UserProgress.Locale);
+            _soundService.SoundActivity = _progressService.UserProgress.Sound;
             _sceneLoaderService.LoadSceneAsync(Scenes.MainMenu, screensaver: false, delay: 1.5f);
         }
 

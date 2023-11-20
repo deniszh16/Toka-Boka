@@ -11,31 +11,30 @@ namespace Data
 
         public List<int> Attempts;
         public List<int> Stars;
-        public List<PetSet> PetSets;
+        public List<CharacterPets> CharacterPets;
 
         public int Locale;
         public bool Sound;
 
         public event Action HeartsAdded;
         public event Action NotEnoughHearts;
-        public event Action StarsChanged; 
+        public event Action StarsChanged;
 
         public UserProgress()
         {
             Progress = 1;
             Hearts = 100;
-
             Sound = true;
             
             Attempts = new List<int>(capacity: 12);
             Stars = new List<int>(capacity: 12);
-            PetSets = new List<PetSet>(capacity: 12);
+            CharacterPets = new List<CharacterPets>(capacity: 12);
 
             for (int i = 0; i < Stars.Capacity; i++)
             {
                 Attempts.Add(item: 0);
                 Stars.Add(item: 0);
-                PetSets.Add(item: new PetSet());
+                CharacterPets.Add(item: new CharacterPets());
             }
         }
 

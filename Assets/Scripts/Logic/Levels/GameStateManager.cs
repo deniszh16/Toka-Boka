@@ -1,8 +1,8 @@
 ﻿using Services.PersistentProgress;
-using Services.SaveLoad;
-using Services.Sound;
 using Services.StateMachine;
 using Services.StateMachine.States;
+using Services.SaveLoad;
+using Services.Sound;
 using UnityEngine;
 using Zenject;
 
@@ -28,9 +28,9 @@ namespace Logic.Levels
         private ISoundService _soundService;
 
         [Inject]
-        private void Construct(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel,
-            CameraMove cameraMove, SearchItem searchItem, LevelTimer levelTimer, ItemSelection itemSelection, GamePause gamePause,
-            LevelScore levelScore, CurrentLevel currentLevel, LevelResults levelResults, IPersistentProgressService progressService,
+        private void Construct(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel, CameraMove cameraMove,
+            SearchItem searchItem, LevelTimer levelTimer, ItemSelection itemSelection, GamePause gamePause, LevelScore levelScore,
+            CurrentLevel currentLevel, LevelResults levelResults, IPersistentProgressService progressService,
             ISaveLoadService saveLoadService, ISoundService soundService)
         {
             _stateMachine = stateMachine;

@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 namespace Services.SceneLoader
 {
-    [RequireComponent(typeof(CanvasGroup))]
     public class SceneLoaderService : MonoBehaviour, ISceneLoaderService
     {
         [Header("Экран затемнения")]
@@ -29,7 +28,7 @@ namespace Services.SceneLoader
                 _blackout.alpha = 1f;
             }
 
-            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene.ToString());
+            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene);
             while (asyncOperation.isDone != true)
                 yield return null;
 

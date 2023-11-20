@@ -1,2 +1,2 @@
-Build path: D:/Unity/Release/PluginYG/PluginYG
-Build number: 12
+Build path: C:/Users/zhurs/Desktop/TokaBoka
+Build number: 13

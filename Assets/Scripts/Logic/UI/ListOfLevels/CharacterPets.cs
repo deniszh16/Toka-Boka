@@ -7,10 +7,10 @@ namespace Logic.UI.ListOfLevels
 {
     public class CharacterPets : MonoBehaviour
     {
-        [Header("Питомцы персонажа")]
+        [Header("Изображения питомцев")]
         [SerializeField] private Image[] _pets;
         
-        [Header("Питомцы персонажа")]
+        [Header("Кнопки покупки")]
         [SerializeField] private Button[] _buttons;
 
         private int _characterNumber;
@@ -30,7 +30,7 @@ namespace Logic.UI.ListOfLevels
         public void CheckPets(int characterNumber)
         {
             _characterNumber = characterNumber;
-            bool[] characterPets = _progressService.UserProgress.PetSets[_characterNumber].Pets;
+            bool[] characterPets = _progressService.UserProgress.CharacterPets[_characterNumber].Pets;
 
             for (int i = 0; i < characterPets.Length; i++)
             {
@@ -46,7 +46,7 @@ namespace Logic.UI.ListOfLevels
 
         private void ShowConfettiEffect()
         {
-            if (_progressService.UserProgress.PetSets[_characterNumber].OpenPets >= 3)
+            if (_progressService.UserProgress.CharacterPets[_characterNumber].OpenPets >= 3)
             {
                 _confetti.gameObject.SetActive(true);
                 _confetti.Play();
@@ -62,8 +62,8 @@ namespace Logic.UI.ListOfLevels
             if (_progressService.UserProgress.Stars[_characterNumber] > 0)
             {
                 _progressService.UserProgress.ChangeStars(levelNumber: _characterNumber, value: -1);
-                _progressService.UserProgress.PetSets[_characterNumber].Pets[petNumber - 1] = true;
-                _progressService.UserProgress.PetSets[_characterNumber].OpenPets++;
+                _progressService.UserProgress.CharacterPets[_characterNumber].Pets[petNumber - 1] = true;
+                _progressService.UserProgress.CharacterPets[_characterNumber].OpenPets++;
                 _saveLoadService.SaveProgress();
                 CheckPets(_characterNumber);
             }

@@ -9,7 +9,6 @@ namespace Logic.UI.Buttons
     public class LanguageButton : MonoBehaviour
     {
         private Button _button;
-        
         private ILocalizationService _localizationService;
 
         [Inject]

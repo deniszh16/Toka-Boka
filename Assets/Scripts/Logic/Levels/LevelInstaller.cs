@@ -7,17 +7,20 @@ namespace Logic.Levels
 {
     public class LevelInstaller : MonoInstaller
     {
-        [SerializeField] private LevelItems _levelItems;
         [SerializeField] private CurrentLevel _currentLevel;
         [SerializeField] private TrainingPanel _trainingPanel;
+
         [SerializeField] private CameraMove _movingCamera;
+        [SerializeField] private LevelItems _levelItems;
         [SerializeField] private SearchItem _searchItem;
+        [SerializeField] private ItemSelection _itemSelection;
+        
         [SerializeField] private LevelTimer _levelTimer;
+        [SerializeField] private LevelScore _levelScore;
         [SerializeField] private ItemCounter _itemCounter;
+        
         [SerializeField] private HintButton _hintButton;
         [SerializeField] private GamePause _gamePause;
-        [SerializeField] private ItemSelection _itemSelection;
-        [SerializeField] private LevelScore _levelScore;
         [SerializeField] private LevelResults _levelResults;
         
         public override void InstallBindings()

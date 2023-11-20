@@ -6,10 +6,10 @@ namespace Logic.Sounds
 {
     public class PlayingSound : MonoBehaviour
     {
-        [Header("Автовоспроизведение звука")]
+        [Header("Автовоспроизведение")]
         [SerializeField] private bool _autoplay;
         
-        [Header("Звук объекта")]
+        [Header("Звук")]
         [SerializeField] private Services.Sound.Sounds _sound;
         
         private ISoundService _soundService;

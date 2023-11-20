@@ -11,11 +11,11 @@ namespace Logic.Levels
 
         public AssetReferenceGameObject ShadedIcon => _shadedIcon;
 
+        public static readonly int _correctItem = Animator.StringToHash("CorrectItem");
+        public static readonly int _wrongItem = Animator.StringToHash("WrongItem");
+        
         private Animator _animator;
         private Collider2D _collider;
-        
-        public static readonly int CorrectItem = Animator.StringToHash("CorrectItem");
-        public static readonly int WrongItem = Animator.StringToHash("WrongItem");
 
         private void Awake()
         {
