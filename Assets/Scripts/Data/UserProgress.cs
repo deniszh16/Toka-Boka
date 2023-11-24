@@ -68,5 +68,8 @@ namespace Data
             Stars[levelNumber] += value;
             StarsChanged?.Invoke();
         }
+
+        public int GetNumberOfOpenPets(int characterNumber) =>
+            CharacterPets[characterNumber - 1].OpenPets;
     }
 }

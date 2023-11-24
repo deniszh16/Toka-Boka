@@ -4,13 +4,17 @@ using Services.SaveLoad;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using YG;
 
 namespace Logic.UI.Buttons
 {
-    [RequireComponent(typeof(Button))]
     public class DoubleRewardButton : MonoBehaviour
     {
-        private Button _button;
+        [Header("Компонент кнопки")]
+        [SerializeField] private Button _button;
+        
+        private const int RewardId = 1;
+
         private LevelScore _levelScore;
         private LevelResults _levelResults;
         private IPersistentProgressService _progressService;
@@ -26,21 +30,30 @@ namespace Logic.UI.Buttons
             _saveLoadService = saveLoadService;
         }
 
-        private void Awake() =>
-            _button = GetComponent<Button>();
-
-        private void OnEnable() =>
-            _button.onClick.AddListener(DoubleCurrentScore);
-
-        private void DoubleCurrentScore()
+        private void OnEnable()
         {
-            _progressService.UserProgress.Hearts += _levelScore.Score;
-            _saveLoadService.SaveProgress();
-            _levelResults.ShowCurrentScore(_levelScore.Score * 2);
-            _button.interactable = false;
+            _button.onClick.AddListener(() => ShowVideoAds(id: 1));
+            YandexGame.RewardVideoEvent += DoubleCurrentScore;
         }
 
-        private void OnDisable() =>
-            _button.onClick.RemoveListener(DoubleCurrentScore);
+        private void ShowVideoAds(int id) =>
+            YandexGame.RewVideoShow(id);
+
+        private void DoubleCurrentScore(int id)
+        {
+            if (id == RewardId)
+            {
+                _progressService.UserProgress.Hearts += _levelScore.Score;
+                _saveLoadService.SaveProgress();
+                _levelResults.ShowCurrentScore(_levelScore.Score * 2);
+                _button.interactable = false;
+            }
+        }
+
+        private void OnDisable()
+        {
+            _button.onClick.RemoveAllListeners();
+            YandexGame.RewardVideoEvent -= DoubleCurrentScore;
+        }
     }
 }

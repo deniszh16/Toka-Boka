@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Logic.Levels
 {
-    [RequireComponent(typeof(Image))]
     public class LevelTimer : MonoBehaviour
     {
+        [Header("Компонент изображения")]
+        [SerializeField] private Image _image;
+        
         public event Action TimerCompleted;
         
         private bool _activity;
@@ -14,38 +17,45 @@ namespace Logic.Levels
         private float _currentTime;
         private float _fillingImage;
 
-        private Image _image;
-
-        private void Awake() =>
-            _image = GetComponent<Image>();
-
-        private void Start() =>
-            SetTimer();
-
-        private void Update()
-        {
-            if (_activity == false)
-                return;
-            
-            _currentTime -= Time.deltaTime;
-            _fillingImage = _currentTime / _seconds;
-            _image.fillAmount = _fillingImage;
-
-            if (_currentTime <= 0)
-                TimerCompleted?.Invoke();
-        }
-        
-        public int GetCurrentTime() =>
-            (int)_currentTime;
+        private Coroutine _timerCoroutine;
 
         public void SetTimer()
         {
             _seconds = 30;
             _currentTime = _seconds;
+            UpdateTimerScale();
         }
 
-        public void ChangeTimerActivity(bool value) =>
-            _activity = value;
+        public int GetCurrentTime() =>
+            (int)_currentTime;
+
+        public void StartTimer() =>
+            _timerCoroutine = StartCoroutine(StartTimerCoroutine());
+
+        private IEnumerator StartTimerCoroutine()
+        {
+            WaitForSeconds second = new WaitForSeconds(0.5f);
+            while (_currentTime > 0)
+            {
+                UpdateTimerScale();
+                yield return second;
+                _currentTime -= 0.5f;
+            }
+            
+            TimerCompleted?.Invoke();
+        }
+
+        private void UpdateTimerScale()
+        {
+            _fillingImage = _currentTime / _seconds;
+            _image.fillAmount = _fillingImage;
+        }
+
+        public void StopTimer()
+        {
+            if (_timerCoroutine != null)
+                StopCoroutine(_timerCoroutine);
+        }
 
         public void ChangeTimerSeconds(int value) =>
             _currentTime += value;

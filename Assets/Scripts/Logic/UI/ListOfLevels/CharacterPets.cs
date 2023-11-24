@@ -12,6 +12,9 @@ namespace Logic.UI.ListOfLevels
         
         [Header("Кнопки покупки")]
         [SerializeField] private Button[] _buttons;
+        
+        [Header("Эффекты звезд")]
+        [SerializeField] private ParticleSystem[] _effects;
 
         private int _characterNumber;
 
@@ -66,7 +69,14 @@ namespace Logic.UI.ListOfLevels
                 _progressService.UserProgress.CharacterPets[_characterNumber].OpenPets++;
                 _saveLoadService.SaveProgress();
                 CheckPets(_characterNumber);
+                ShowOpeningEffect(number: petNumber - 1);
             }
+        }
+
+        private void ShowOpeningEffect(int number)
+        {
+            _effects[number].gameObject.SetActive(true);
+            _effects[number].Play();
         }
     }
 }

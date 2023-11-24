@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440885986439350231}
   - component: {fileID: 5405630613467699305}
-  - component: {fileID: 9033590573171769920}
+  - component: {fileID: 873628437715813121}
   - component: {fileID: 5084916581356299099}
   m_Layer: 7
   m_Name: ParrotPortrait
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &9033590573171769920
-PolygonCollider2D:
+--- !u!61 &873628437715813121
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,13 +185,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.5955033, y: 0.8401037}
-      - {x: -0.58091766, y: 0.8445509}
-      - {x: -0.5913435, y: -0.80745316}
-      - {x: 0.6034583, y: -0.8002838}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.2, y: 1.7}
+  m_EdgeRadius: 0
 --- !u!114 &5084916581356299099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +204,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 5405630613467699305}
+  _collider: {fileID: 873628437715813121}

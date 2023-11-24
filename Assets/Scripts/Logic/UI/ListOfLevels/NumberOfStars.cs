@@ -3,13 +3,10 @@ using TMPro;
 
 namespace Logic.UI.ListOfLevels
 {
-    [RequireComponent(typeof(TextMeshProUGUI))]
     public class NumberOfStars : MonoBehaviour
     {
-        private TextMeshProUGUI _quantity;
-
-        private void Awake() =>
-            _quantity = GetComponent<TextMeshProUGUI>();
+        [Header("Текстовый компонент")]
+        [SerializeField] private TextMeshProUGUI _quantity;
 
         public void ShowNumberOfStars(int stars) =>
             _quantity.text = stars.ToString();

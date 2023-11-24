@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7942934629197400263}
   - component: {fileID: 2986307484065091648}
-  - component: {fileID: 1157126891931705841}
+  - component: {fileID: 8121634856409221212}
   - component: {fileID: 3098883117326429366}
   m_Layer: 7
   m_Name: Strawberry
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,7 +141,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &1157126891931705841
+--- !u!60 &8121634856409221212
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,11 +187,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.040196955, y: 0.4086327}
-      - {x: -0.3039201, y: 0.18861789}
-      - {x: -0.45937788, y: -0.2572953}
-      - {x: 0.29854858, y: -0.40492746}
-      - {x: 0.47426724, y: 0.06721744}
+    - - {x: -0.021885768, y: 0.41783863}
+      - {x: -0.36889493, y: 0.12079938}
+      - {x: -0.48711058, y: -0.21810126}
+      - {x: -0.3710894, y: -0.36942607}
+      - {x: 0.320779, y: -0.410696}
+      - {x: 0.47616744, y: -0.03465496}
+      - {x: 0.2769748, y: 0.40093738}
   m_UseDelaunayMesh: 0
 --- !u!114 &3098883117326429366
 MonoBehaviour:
@@ -210,3 +212,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 2986307484065091648}
+  _collider: {fileID: 8121634856409221212}

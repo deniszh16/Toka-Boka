@@ -71,6 +71,94 @@ MonoBehaviour:
     m_Key: key_Loading
     m_Metadata:
       m_Items: []
+  - m_Id: 23899852132167680
+    m_Key: key_Training_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24281040520851456
+    m_Key: key_Achievements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24292679215329280
+    m_Key: key_AchievementName_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24292943406149632
+    m_Key: key_AchievementDescription_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24294482279510016
+    m_Key: key_AchievementName_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24294908500488192
+    m_Key: key_AchievementDescription_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24296295376465920
+    m_Key: key_AchievementName_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24296300074086400
+    m_Key: key_AchievementDescription_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24297296779128832
+    m_Key: key_AchievementName_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24297300998598656
+    m_Key: key_AchievementDescription_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24298124621492224
+    m_Key: key_AchievementName_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24298129411387392
+    m_Key: key_AchievementDescription_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24298406118010880
+    m_Key: key_AchievementName_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24298423142690816
+    m_Key: key_AchievementDescription_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24299091752497152
+    m_Key: key_AchievementName_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24299094822727680
+    m_Key: key_AchievementDescription_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300096435105792
+    m_Key: key_AchievementName_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300100440666112
+    m_Key: key_AchievementDescription_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300621121564672
+    m_Key: key_AchievementName_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300624858689536
+    m_Key: key_AchievementDescription_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300959778058240
+    m_Key: key_AchievementName_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24300976605605888
+    m_Key: key_AchievementDescription_10
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

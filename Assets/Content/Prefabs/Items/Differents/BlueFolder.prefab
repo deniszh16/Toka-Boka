@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4, y: 0.5}
+  m_Size: {x: 1.45, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &8073508436996678311
 MonoBehaviour:
@@ -120,6 +120,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: -3507629749561844097}
+  _collider: {fileID: 7414598684071658629}
 --- !u!1 &8649945385015437025
 GameObject:
   m_ObjectHideFlags: 0

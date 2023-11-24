@@ -4,13 +4,17 @@ using Services.StateMachine.States;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using YG;
 
 namespace Logic.UI.Buttons
 {
-    [RequireComponent(typeof(Button))]
     public class ResumeButton : MonoBehaviour
     {
-        private Button _button;
+        [Header("Компонент кнопки")]
+        [SerializeField] private Button _button;
+        
+        private const int RewardId = 2;
+        
         private GameStateMachine _stateMachine;
         private SearchItem _searchItem;
         private LevelTimer _levelTimer;
@@ -23,20 +27,29 @@ namespace Logic.UI.Buttons
             _levelTimer = levelTimer;
         }
 
-        private void Awake() =>
-            _button = GetComponent<Button>();
-
-        private void OnEnable() =>
-            _button.onClick.AddListener(ContinueLevel);
-
-        private void ContinueLevel()
+        private void OnEnable()
         {
-            _levelTimer.SetTimer();
-            _stateMachine.Enter<PlayState>();
-            _searchItem.ShowCurrentItem();
+            _button.onClick.AddListener(() => ShowVideoAds(id: 2));
+            YandexGame.RewardVideoEvent += ContinueLevel;
+        }
+        
+        private void ShowVideoAds(int id) =>
+            YandexGame.RewVideoShow(id);
+
+        private void ContinueLevel(int id)
+        {
+            if (id == RewardId)
+            {
+                _levelTimer.SetTimer();
+                _stateMachine.Enter<PlayState>();
+                _searchItem.ShowCurrentItem();
+            }
         }
 
-        private void OnDisable() =>
-            _button.onClick.RemoveListener(ContinueLevel);
+        private void OnDisable()
+        {
+            _button.onClick.RemoveAllListeners();
+            YandexGame.RewardVideoEvent -= ContinueLevel;
+        }
     }
 }

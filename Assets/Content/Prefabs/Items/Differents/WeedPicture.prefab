@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7344136326499094175}
   - component: {fileID: 611011465684347808}
-  - component: {fileID: 7815002162887703976}
+  - component: {fileID: 4796845344934445501}
   - component: {fileID: 6921490144012531287}
   m_Layer: 7
   m_Name: WeedPicture
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &7815002162887703976
-PolygonCollider2D:
+--- !u!61 &4796845344934445501
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,13 +185,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.5419926, y: 0.7256575}
-      - {x: -0.5342563, y: 0.7702628}
-      - {x: -0.51128066, y: -0.71159625}
-      - {x: 0.52993095, y: -0.7111199}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.1, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!114 &6921490144012531287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +204,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 611011465684347808}
+  _collider: {fileID: 4796845344934445501}

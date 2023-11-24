@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3656488044790150958}
   - component: {fileID: 7690494837283033582}
-  - component: {fileID: 4206468142729290904}
+  - component: {fileID: 6310447840904285710}
   - component: {fileID: 1541226451480890985}
   m_Layer: 7
   m_Name: PosterWithButterfly
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4206468142729290904
-PolygonCollider2D:
+--- !u!61 &6310447840904285710
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,7 +175,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -185,13 +185,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.49900097, y: 0.50963527}
-      - {x: -0.51803714, y: 0.5054801}
-      - {x: -0.5247084, y: -0.58243847}
-      - {x: 0.52470577, y: -0.57957006}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1, y: 1.1}
+  m_EdgeRadius: 0
 --- !u!114 &1541226451480890985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +204,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 7690494837283033582}
+  _collider: {fileID: 6310447840904285710}

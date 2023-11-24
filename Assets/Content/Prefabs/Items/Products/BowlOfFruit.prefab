@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -103,15 +103,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.68577385, y: -0.055408716}
-      - {x: 0.5018368, y: 0.23041677}
+    - - {x: 0.6721037, y: -0.08274911}
       - {x: 0.32103962, y: 0.5992983}
       - {x: -0.07205582, y: 0.6058543}
-      - {x: -0.19374466, y: 0.0049910545}
-      - {x: -0.691562, y: -0.093366325}
-      - {x: -0.5221201, y: -0.5434933}
-      - {x: -0.11029816, y: -0.636549}
-      - {x: 0.5123271, y: -0.6007626}
+      - {x: -0.32019398, y: 0.025496349}
+      - {x: -0.6642216, y: -0.059190825}
+      - {x: -0.5357903, y: -0.5332406}
+      - {x: -0.15814383, y: -0.65363675}
+      - {x: 0.49865693, y: -0.5734222}
   m_UseDelaunayMesh: 0
 --- !u!114 &6512776246061684004
 MonoBehaviour:
@@ -130,6 +129,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 4836780587705309879}
+  _collider: {fileID: 8889484689003359388}
 --- !u!1 &5551488209874495852
 GameObject:
   m_ObjectHideFlags: 0

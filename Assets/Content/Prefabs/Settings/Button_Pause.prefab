@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84be886bf75b42ff8cc12b262061fc83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 4003142917886147540}
   _pauseSetting: 1
 --- !u!114 &7124536524108587619
 MonoBehaviour:
@@ -341,7 +342,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 79f6281d50952834981f402fc396dc25, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0

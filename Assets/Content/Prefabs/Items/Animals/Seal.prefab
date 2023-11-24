@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -187,14 +187,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.30228806, y: -0.2897768}
+    - - {x: 0.2573166, y: -0.254799}
       - {x: 0.5544605, y: -0.030939102}
       - {x: 0.40713543, y: 0.55841976}
-      - {x: -0.056648254, y: 0.73313546}
+      - {x: 0.013495207, y: 0.7442108}
       - {x: -0.38715488, y: 0.6018854}
       - {x: -0.5584717, y: -0.04424715}
-      - {x: -0.32172394, y: -0.26494122}
-      - {x: -0.22374213, y: -0.7247524}
+      - {x: -0.28111455, y: -0.26863298}
+      - {x: -0.19420803, y: -0.70629364}
       - {x: 0.17101848, y: -0.71758294}
   m_UseDelaunayMesh: 0
 --- !u!114 &1418970939099443041
@@ -214,3 +214,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 7498616362427066731}
+  _collider: {fileID: 3446220950032678126}

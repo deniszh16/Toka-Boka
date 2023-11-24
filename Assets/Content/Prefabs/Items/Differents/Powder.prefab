@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7504264572368549874}
   - component: {fileID: 475485499492694360}
-  - component: {fileID: 3022539139117349246}
+  - component: {fileID: 7717548923264547614}
   - component: {fileID: 8504037163528358303}
   m_Layer: 7
   m_Name: Powder
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3022539139117349246
-PolygonCollider2D:
+--- !u!70 &7717548923264547614
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,26 +176,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.37374878, y: -0.136796}
-      - {x: 0.40303993, y: 0.38621473}
-      - {x: 0.03749889, y: 0.45592052}
-      - {x: -0.34546787, y: 0.42753512}
-      - {x: -0.38411713, y: 0.055203438}
-      - {x: -0.2905432, y: -0.39614293}
-      - {x: -0.005554199, y: -0.46156263}
-      - {x: 0.29530132, y: -0.39553952}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.8, y: 0.95}
+  m_Direction: 0
 --- !u!114 &8504037163528358303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,3 +195,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 475485499492694360}
+  _collider: {fileID: 7717548923264547614}

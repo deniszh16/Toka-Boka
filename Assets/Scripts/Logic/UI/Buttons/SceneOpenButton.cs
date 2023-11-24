@@ -5,22 +5,19 @@ using Zenject;
 
 namespace Logic.UI.Buttons
 {
-    [RequireComponent(typeof(Button))]
     public class SceneOpenButton : MonoBehaviour
     {
+        [Header("Компонент кнопки")]
+        [SerializeField] private Button _button;
+        
         [Header("Сцена для загрузки")]
         [SerializeField] private Scenes _scene;
 
-        private Button _button;
-        
         private ISceneLoaderService _sceneLoaderService;
 
         [Inject]
         private void Construct(ISceneLoaderService sceneLoaderService) =>
             _sceneLoaderService = sceneLoaderService;
-
-        private void Awake() =>
-            _button = GetComponent<Button>();
 
         private void OnEnable() =>
             _button.onClick.AddListener(GoToScene);

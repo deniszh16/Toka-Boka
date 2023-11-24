@@ -5,25 +5,21 @@ using Zenject;
 
 namespace Logic.Sounds
 {
-    [RequireComponent(typeof(Button))]
     public class SoundSwitchButton : MonoBehaviour
     {
         [Header("Компоненты кнопки")]
+        [SerializeField] private Button _button;
         [SerializeField] private Image _image;
         
         [Header("Иконки состояния")]
         [SerializeField] private Sprite _active;
         [SerializeField] private Sprite _inactive;
-        
-        private Button _button;
+
         private ISoundService _soundService;
 
         [Inject]
         private void Construct(ISoundService soundService) =>
             _soundService = soundService;
-
-        private void Awake() =>
-            _button = GetComponent<Button>();
 
         private void Start() =>
             ChangeButtonIcon();

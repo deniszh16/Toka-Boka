@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5364959264199438059}
   - component: {fileID: 4183087279584688821}
-  - component: {fileID: 3447114272850039821}
+  - component: {fileID: 585720655375280047}
   - component: {fileID: 3875153833168639998}
   m_Layer: 7
   m_Name: Schedule
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3447114272850039821
-PolygonCollider2D:
+--- !u!61 &585720655375280047
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,7 +91,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.38087887, y: 0.4726165}
-      - {x: -0.38515788, y: 0.47214514}
-      - {x: -0.3893572, y: -0.5124998}
-      - {x: 0.37768734, y: -0.5004113}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.8, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &3875153833168639998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +120,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 4183087279584688821}
+  _collider: {fileID: 585720655375280047}
 --- !u!1 &2859341116098086108
 GameObject:
   m_ObjectHideFlags: 0

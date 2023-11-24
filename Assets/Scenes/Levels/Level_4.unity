@@ -5136,17 +5136,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43fd9877168f4984a5576814587ba695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelItems: {fileID: 620681924497642952}
   _currentLevel: {fileID: 1408259259681155672}
   _trainingPanel: {fileID: 1499282164}
   _movingCamera: {fileID: 2443683990972622892}
+  _levelItems: {fileID: 620681924497642952}
   _searchItem: {fileID: 7346543852274468538}
+  _itemSelection: {fileID: 619410904846012008}
   _levelTimer: {fileID: 1698807795}
+  _levelScore: {fileID: 4738320519594598206}
   _itemCounter: {fileID: 6385138635038713841}
   _hintButton: {fileID: 6385138635038713842}
   _gamePause: {fileID: 4792185262648113188}
-  _itemSelection: {fileID: 619410904846012008}
-  _levelScore: {fileID: 4738320519594598206}
   _levelResults: {fileID: 3032054717531926288}
 --- !u!4 &1469102101 stripped
 Transform:
@@ -11522,11 +11522,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1748927612808623691, guid: 2b61aec776aff7a4ca2e2c3398bd089c, type: 3}
       propertyPath: _leftBorder
-      value: -23
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1748927612808623691, guid: 2b61aec776aff7a4ca2e2c3398bd089c, type: 3}
       propertyPath: _rightBorder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1748927612808623691, guid: 2b61aec776aff7a4ca2e2c3398bd089c, type: 3}
       propertyPath: _virtualCamera

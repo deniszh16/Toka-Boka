@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4739710044351311804}
   - component: {fileID: 2558951832367047148}
-  - component: {fileID: 4794783048284253925}
+  - component: {fileID: 5357430957142824819}
   - component: {fileID: 7709115755228366493}
   m_Layer: 7
   m_Name: Certificate
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4794783048284253925
-PolygonCollider2D:
+--- !u!61 &5357430957142824819
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.692717, y: 0.5480707}
-      - {x: -0.6876233, y: 0.5766488}
-      - {x: -0.6994349, y: -0.5190892}
-      - {x: 0.70205677, y: -0.5119195}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.4, y: 1.15}
+  m_EdgeRadius: 0
 --- !u!114 &7709115755228366493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +120,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 2558951832367047148}
+  _collider: {fileID: 5357430957142824819}
 --- !u!1 &6607957437531969746
 GameObject:
   m_ObjectHideFlags: 0

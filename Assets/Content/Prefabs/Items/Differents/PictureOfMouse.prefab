@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3159216492182651370}
   - component: {fileID: 1354504750845744834}
-  - component: {fileID: 7902209855442403504}
+  - component: {fileID: 2518305514546905924}
   - component: {fileID: 2149567882077246119}
   m_Layer: 7
   m_Name: PictureOfMouse
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &7902209855442403504
-PolygonCollider2D:
+--- !u!61 &2518305514546905924
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,13 +185,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.6022286, y: 0.7462967}
-      - {x: -0.5806268, y: 0.75751716}
-      - {x: -0.5977293, y: -0.73623717}
-      - {x: 0.56267536, y: -0.7290677}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.2, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!114 &2149567882077246119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +204,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 1354504750845744834}
+  _collider: {fileID: 2518305514546905924}

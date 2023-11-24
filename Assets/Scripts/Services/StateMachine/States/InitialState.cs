@@ -9,15 +9,17 @@ namespace Services.StateMachine.States
         private readonly TrainingPanel _trainingPanel;
         private readonly SearchItem _searchItem;
         private readonly CurrentLevel _currentLevel;
+        private readonly LevelTimer _levelTimer;
         private readonly IPersistentProgressService _progressService;
 
         public InitialState(GameStateMachine stateMachine, LevelItems levelItems, TrainingPanel trainingPanel, SearchItem searchItem,
-            CurrentLevel currentLevel, IPersistentProgressService progressService) : base(stateMachine)
+            CurrentLevel currentLevel, LevelTimer levelTimer, IPersistentProgressService progressService) : base(stateMachine)
         {
             _levelItems = levelItems;
             _trainingPanel = trainingPanel;
             _searchItem = searchItem;
             _currentLevel = currentLevel;
+            _levelTimer = levelTimer;
             _progressService = progressService;
         }
 
@@ -25,6 +27,7 @@ namespace Services.StateMachine.States
         {
             _levelItems.SetNumberOfTasks(_progressService.UserProgress.Attempts[_currentLevel.LevelNumber - 1]);
             _levelItems.SelectElementsForTask();
+            _levelTimer.SetTimer();
             _searchItem.ShowCurrentItem();
             
             CheckTraining();

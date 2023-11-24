@@ -5,11 +5,14 @@ using Zenject;
 
 namespace Logic.UI.ListOfLevels
 {
-    [RequireComponent(typeof(Button), typeof(Image))]
     public class LevelSelectionButton : MonoBehaviour
     {
         [Header("Номер кнопки")]
         [SerializeField] private int _number;
+        
+        [Header("Компоненты кнопки")]
+        [SerializeField] private Button _button;
+        [SerializeField] private Image _image;
 
         [Header("Элементы кнопки")]
         [SerializeField] private GameObject _iconLock;
@@ -22,9 +25,6 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private Sprite _levelOpen;
         [SerializeField] private Sprite _levelPassed;
         
-        private Button _button;
-        private Image _image;
-
         private IPersistentProgressService _progressService;
         private LevelSelection _levelSelection;
 
@@ -33,12 +33,6 @@ namespace Logic.UI.ListOfLevels
         {
             _progressService = progressService;
             _levelSelection = levelSelection;
-        }
-
-        private void Awake()
-        {
-            _button = GetComponent<Button>();
-            _image = GetComponent<Image>();
         }
 
         private void OnEnable()
@@ -62,9 +56,7 @@ namespace Logic.UI.ListOfLevels
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
         {
             _button.onClick.AddListener(SelectLevel);
-            
-            if (_number < 7) 
-                _button.interactable = true;
+            _button.interactable = _number < 7;
 
             buttonElement.SetActive(true);
             _iconLock.SetActive(false);

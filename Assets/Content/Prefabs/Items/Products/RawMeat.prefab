@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -103,12 +103,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5860671, y: 0.041272447}
+    - - {x: -0.60488933, y: 0.18243946}
+      - {x: -0.56463605, y: -0.09763603}
       - {x: -0.36099625, y: -0.25897467}
       - {x: -0.034882665, y: -0.3326764}
-      - {x: 0.62, y: 0.055}
-      - {x: 0.59999996, y: 0.255}
-      - {x: -0.47953692, y: 0.31791946}
+      - {x: 0.5980407, y: 0.017355472}
+      - {x: 0.57034636, y: 0.23221354}
+      - {x: -0.48581102, y: 0.3398788}
   m_UseDelaunayMesh: 0
 --- !u!114 &7074214168866082445
 MonoBehaviour:
@@ -127,6 +128,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: -4469745610649431953}
+  _collider: {fileID: 2660520363697898238}
 --- !u!1 &5105890878874647317
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +203,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: 1d3614b28c20c9243bb5d5be8b952a64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3789359176333b54e8e9ecd0c271dcad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

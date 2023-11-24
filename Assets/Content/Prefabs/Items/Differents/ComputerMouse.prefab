@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2384328070047713557}
   - component: {fileID: 3542280484554551421}
-  - component: {fileID: 3422913815852003966}
+  - component: {fileID: 593668997481604326}
   - component: {fileID: 2185424919987409933}
   m_Layer: 7
   m_Name: ComputerMouse
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3422913815852003966
-PolygonCollider2D:
+--- !u!58 &593668997481604326
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,27 +176,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.017603397, y: 0.2914554}
-      - {x: -0.26891714, y: 0.23860267}
-      - {x: -0.3392954, y: 0.040935636}
-      - {x: -0.28505898, y: -0.15780792}
-      - {x: -0.17489529, y: -0.25223988}
-      - {x: 0.02393967, y: -0.27650845}
-      - {x: 0.21458578, y: -0.23659343}
-      - {x: 0.29292548, y: -0.13127863}
-      - {x: 0.3173275, y: 0.16818838}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.32
 --- !u!114 &2185424919987409933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +194,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 3542280484554551421}
+  _collider: {fileID: 593668997481604326}

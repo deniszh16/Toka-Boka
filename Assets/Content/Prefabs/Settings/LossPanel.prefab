@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fa8515ce0848f0ad86c26364d8e925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 5096642428022362448}
 --- !u!114 &887037786604652807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -536,6 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89693c9020fb4abdbaec981cb23fafd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 7384845964319574485}
 --- !u!114 &3062478354388741060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,9 +865,9 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 79f6281d50952834981f402fc396dc25, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -1113,9 +1115,9 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 79f6281d50952834981f402fc396dc25, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -1597,6 +1599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 454c8e6f7663456b97a56d330ca280dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 8636901694044237648}
   _scene: 2
 --- !u!114 &5774150361744177467
 MonoBehaviour:

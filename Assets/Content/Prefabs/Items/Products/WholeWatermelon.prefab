@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2588365387063628094}
   - component: {fileID: 3043650909404933726}
-  - component: {fileID: 3832959974153445040}
+  - component: {fileID: 3753355695428819163}
   - component: {fileID: 2488525622386740239}
   m_Layer: 7
   m_Name: WholeWatermelon
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3832959974153445040
-PolygonCollider2D:
+--- !u!70 &3753355695428819163
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,24 +176,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.6328072, y: 0.17394835}
-      - {x: 0.061439514, y: 0.5497539}
-      - {x: -0.51933414, y: 0.38225514}
-      - {x: -0.64004385, y: -0.1208348}
-      - {x: -0.14513206, y: -0.545784}
-      - {x: 0.50131786, y: -0.3379104}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.3, y: 1}
+  m_Direction: 1
 --- !u!114 &2488525622386740239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,3 +195,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 3043650909404933726}
+  _collider: {fileID: 3753355695428819163}

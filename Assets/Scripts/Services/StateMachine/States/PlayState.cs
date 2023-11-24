@@ -1,5 +1,6 @@
 ﻿using Logic.Levels;
 using Services.Sound;
+using UnityEngine;
 
 namespace Services.StateMachine.States
 {
@@ -30,7 +31,7 @@ namespace Services.StateMachine.States
             _searchItem.IconContainer.SetActive(true);
             _searchItem.AllItemsFound += OnLevelPassed;
             _timer.TimerCompleted += OnLevelLost;
-            _timer.ChangeTimerActivity(value: true);
+            _timer.StartTimer();
             _itemSelection.ChangeActivity(activity: true);
             _gamePause.ChangeButtonVisibility(visibility: true);
             _soundService.SettingBackgroundMusic();
@@ -47,8 +48,8 @@ namespace Services.StateMachine.States
             _cameraMove.Activity = false;
             _searchItem.IconContainer.SetActive(false);
             _searchItem.AllItemsFound -= OnLevelPassed;
+            _timer.StopTimer();
             _timer.TimerCompleted -= OnLevelLost;
-            _timer.ChangeTimerActivity(value: false);
             _itemSelection.ChangeActivity(activity: false);
             _soundService.StopBackgroundMusic();
         }

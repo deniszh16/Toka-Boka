@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c7db46d1914b2c86e00894851b27da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 8729957689850158610}
   _price: 25
 --- !u!95 &7736086680702571862
 Animator:
@@ -681,3 +682,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0566297735f4602b0b4eccd66cd7c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _image: {fileID: 6547324158681187399}

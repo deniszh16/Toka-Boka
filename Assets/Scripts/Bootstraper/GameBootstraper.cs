@@ -28,8 +28,11 @@ namespace Bootstraper
             _soundService = soundService;
         }
 
-        private void Awake() =>
+        private void Awake()
+        {
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            Application.targetFrameRate = 60;
+        }
 
         private void Start()
         {

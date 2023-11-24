@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751800962579949321}
   - component: {fileID: 2004151803306084735}
-  - component: {fileID: 4432612833268371189}
+  - component: {fileID: 7449876777072447498}
   - component: {fileID: 1399925707028477280}
   m_Layer: 7
   m_Name: Towels
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4432612833268371189
-PolygonCollider2D:
+--- !u!61 &7449876777072447498
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87,7 +87,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.49352878, y: 0.39452517}
-      - {x: -0.50531703, y: 0.36998594}
-      - {x: -0.5436884, y: -0.379163}
-      - {x: 0.5076846, y: -0.42272037}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.1, y: 0.85}
+  m_EdgeRadius: 0
 --- !u!114 &1399925707028477280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +120,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 2004151803306084735}
+  _collider: {fileID: 7449876777072447498}
 --- !u!1 &5481304872949581292
 GameObject:
   m_ObjectHideFlags: 0

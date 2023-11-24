@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9187349894544014173}
   - component: {fileID: 3109327305897573447}
-  - component: {fileID: 665896034323247299}
+  - component: {fileID: 6164666822970307774}
   - component: {fileID: 6409149724968095914}
   m_Layer: 7
   m_Name: RedBirdPainting
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &665896034323247299
-PolygonCollider2D:
+--- !u!61 &6164666822970307774
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,13 +185,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.59955686, y: 0.83811975}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.59731805, y: 0.8306317}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.25, y: 1.7}
+  m_EdgeRadius: 0
 --- !u!114 &6409149724968095914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +204,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 3109327305897573447}
+  _collider: {fileID: 6164666822970307774}

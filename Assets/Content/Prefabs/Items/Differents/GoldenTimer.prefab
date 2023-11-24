@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7673423768519369683}
   - component: {fileID: 4254309551577264129}
-  - component: {fileID: 3710609209790327469}
+  - component: {fileID: 9152997504765255314}
   - component: {fileID: 4648952620489491887}
   m_Layer: 7
   m_Name: GoldenTimer
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3710609209790327469
-PolygonCollider2D:
+--- !u!58 &9152997504765255314
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,25 +92,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.46961117, y: -0.1592381}
-      - {x: 0.38672203, y: 0.29322773}
-      - {x: -0.063643456, y: 0.50835395}
-      - {x: -0.46069175, y: 0.27654725}
-      - {x: -0.30935287, y: -0.32386327}
-      - {x: 0.043632865, y: -0.49384686}
-      - {x: 0.3151635, y: -0.4063909}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.5
 --- !u!114 &4648952620489491887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +110,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 4254309551577264129}
+  _collider: {fileID: 9152997504765255314}
 --- !u!1 &3965020430210763869
 GameObject:
   m_ObjectHideFlags: 0

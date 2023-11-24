@@ -56,9 +56,9 @@ namespace Logic.Levels
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 _currentItem = handle.Result;
-                _levelTimer.SetTimer();
                 _itemCounter.UpdateCounter(currentItem: _currentItemNumber + 1, totalItems: _levelItems.NumberOfTasks);
                 _hintButton.CustomizeHint(_currentItem.GetComponent<ItemIcon>());
+                _levelTimer.SetTimer();
             }
         }
 

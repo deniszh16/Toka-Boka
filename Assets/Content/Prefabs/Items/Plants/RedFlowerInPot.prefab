@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3810006540936457702}
   - component: {fileID: -1911198170911362488}
-  - component: {fileID: 8092262605738328193}
+  - component: {fileID: 2663593651412429523}
   - component: {fileID: -4116297856622165561}
   m_Layer: 7
   m_Name: RedFlowerInPot
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &8092262605738328193
-BoxCollider2D:
+--- !u!60 &2663593651412429523
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,15 +178,24 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.06}
-    newSize: {x: 2.56, y: 2.06}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.11259381, y: 1.0065358}
+      - {x: -0.93814665, y: 0.63562405}
+      - {x: -1.2519374, y: -0.08035824}
+      - {x: -0.18071109, y: -1.0214036}
+      - {x: 0.24189943, y: -1.0176549}
+      - {x: 0.72174275, y: -0.46552876}
+      - {x: 1.2780414, y: -0.3488463}
+      - {x: 1.1811419, y: 0.6806935}
+  m_UseDelaunayMesh: 0
 --- !u!114 &-4116297856622165561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,3 +213,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: -1911198170911362488}
+  _collider: {fileID: 2663593651412429523}

@@ -2,11 +2,11 @@
 
 namespace Logic.Levels
 {
-    [RequireComponent(typeof(SpriteRenderer), typeof(Collider2D))]
     public class OpeningFurniture : MonoBehaviour
     {
-        [Header("Открытый спрайт")]
-        [SerializeField] private Sprite _openSprite;
+        [Header("Компоненты объекта")]
+        [SerializeField] private Collider2D _collider; 
+        [SerializeField] private GameObject _openFurniture;
 
         [Header("Эффект подсветки")]
         [SerializeField] private ParticleSystem _backlightEffect;
@@ -14,18 +14,9 @@ namespace Logic.Levels
         [Header("Предметы внутри")]
         [SerializeField] private Item[] _items;
 
-        private SpriteRenderer _spriteRenderer;
-        private Collider2D _collider;
-
-        private void Awake()
-        {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
-            _collider = GetComponent<Collider2D>();
-        }
-
         public void OpenFurniture()
         {
-            _spriteRenderer.sprite = _openSprite;
+            _openFurniture.SetActive(true);
             _backlightEffect.gameObject.SetActive(false);
             _collider.enabled = false;
 

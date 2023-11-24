@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8439489955394106820}
   - component: {fileID: 7421037547687068623}
-  - component: {fileID: 4832601378031256810}
+  - component: {fileID: 7449434205421634873}
   - component: {fileID: 6842044390518572085}
   m_Layer: 7
   m_Name: ChildrensWatches
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4832601378031256810
-PolygonCollider2D:
+--- !u!58 &7449434205421634873
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,25 +176,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.56884575, y: -0.18320346}
-      - {x: 0.6342072, y: 0.31515867}
-      - {x: -0.09539604, y: 0.59265494}
-      - {x: -0.63725406, y: 0.27164036}
-      - {x: -0.533219, y: -0.24625012}
-      - {x: -0.1963253, y: -0.60214806}
-      - {x: 0.367813, y: -0.550859}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.6
 --- !u!114 &6842044390518572085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +194,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 7421037547687068623}
+  _collider: {fileID: 7449434205421634873}

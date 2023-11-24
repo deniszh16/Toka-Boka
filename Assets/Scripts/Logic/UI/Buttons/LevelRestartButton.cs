@@ -6,10 +6,11 @@ using Zenject;
 
 namespace Logic.UI.Buttons
 {
-    [RequireComponent(typeof(Button))]
     public class LevelRestartButton : MonoBehaviour
     {
-        private Button _button;
+        [Header("Компонент кнопки")]
+        [SerializeField] private Button _button;
+        
         private CurrentLevel _currentLevel;
         private ISceneLoaderService _sceneLoader;
 
@@ -19,9 +20,6 @@ namespace Logic.UI.Buttons
             _currentLevel = currentLevel;
             _sceneLoader = sceneLoaderService;
         }
-
-        private void Awake() =>
-            _button = GetComponent<Button>();
 
         private void OnEnable() =>
             _button.onClick.AddListener(ReloadLevel);

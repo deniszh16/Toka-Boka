@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899787933306552118}
   - component: {fileID: 877661810470262684}
-  - component: {fileID: 540521785565717804}
+  - component: {fileID: 5599317714492626139}
   - component: {fileID: 2482694266716728627}
   m_Layer: 7
   m_Name: GrayDish
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &540521785565717804
-BoxCollider2D:
+--- !u!70 &5599317714492626139
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,17 +92,8 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4285715, y: 0.47857141}
-    newSize: {x: 2, y: 0.67}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.4, y: 0.45}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.4, y: 0.47}
+  m_Direction: 1
 --- !u!114 &2482694266716728627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +111,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 877661810470262684}
+  _collider: {fileID: 5599317714492626139}
 --- !u!1 &7305114482443867514
 GameObject:
   m_ObjectHideFlags: 0

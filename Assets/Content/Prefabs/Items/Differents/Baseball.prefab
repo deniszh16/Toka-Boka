@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2247952607424667298}
   - component: {fileID: 4897368680317875839}
-  - component: {fileID: 99174541455198456}
+  - component: {fileID: 8174421120190437665}
   - component: {fileID: 2749272075467432279}
   m_Layer: 7
   m_Name: Baseball
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &99174541455198456
-PolygonCollider2D:
+--- !u!58 &8174421120190437665
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,26 +92,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.36556625, y: -0.13092232}
-      - {x: 0.38084126, y: 0.10630989}
-      - {x: 0.061689794, y: 0.38220602}
-      - {x: -0.29912502, y: 0.25561363}
-      - {x: -0.3550768, y: -0.028759241}
-      - {x: -0.30116045, y: -0.2300565}
-      - {x: -0.06969643, y: -0.37434316}
-      - {x: 0.19775283, y: -0.33754683}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.38
 --- !u!114 &2749272075467432279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +110,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 4897368680317875839}
+  _collider: {fileID: 8174421120190437665}
 --- !u!1 &7671177580401905187
 GameObject:
   m_ObjectHideFlags: 0

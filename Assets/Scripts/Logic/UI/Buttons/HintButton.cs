@@ -7,13 +7,14 @@ using Zenject;
 
 namespace Logic.UI.Buttons
 {
-    [RequireComponent(typeof(Button))]
     public class HintButton : MonoBehaviour
     {
+        [Header("Компонент кнопки")]
+        [SerializeField] private Button _button;
+        
         [Header("Стоимость подсказки")]
         [SerializeField] private int _price;
-
-        private Button _button;
+        
         private ItemIcon _currentItem;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
@@ -24,9 +25,6 @@ namespace Logic.UI.Buttons
             _progressService = progressService;
             _saveLoadService = saveLoadService;
         }
-
-        private void Awake() =>
-            _button = GetComponent<Button>();
 
         private void OnEnable() =>
             _button.onClick.AddListener(GetHint);

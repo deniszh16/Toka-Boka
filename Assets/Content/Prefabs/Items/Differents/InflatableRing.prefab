@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4648496166757861519}
   - component: {fileID: 1664362605277566128}
-  - component: {fileID: 9214963953469183463}
+  - component: {fileID: 464954203013969906}
   - component: {fileID: 6327164737748202067}
   m_Layer: 7
   m_Name: InflatableRing
@@ -130,7 +130,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,8 +141,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &9214963953469183463
-PolygonCollider2D:
+--- !u!70 &464954203013969906
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,25 +176,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.027709961, y: 0.46658164}
-      - {x: -0.7986513, y: 0.38521966}
-      - {x: -0.98121023, y: -0.09019756}
-      - {x: -0.46308988, y: -0.4695691}
-      - {x: 0.65013325, y: -0.4141488}
-      - {x: 0.97411203, y: -0.13356233}
-      - {x: 0.7917237, y: 0.32287216}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.9, y: 0.95}
+  m_Direction: 1
 --- !u!114 &6327164737748202067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +195,5 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 1664362605277566128}
+  _collider: {fileID: 464954203013969906}

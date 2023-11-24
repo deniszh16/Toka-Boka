@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3191481990714220508}
   - component: {fileID: 6943529477177583161}
-  - component: {fileID: 1870512028722738458}
+  - component: {fileID: 4251029845730429160}
   - component: {fileID: 2214073005733848107}
   m_Layer: 7
   m_Name: RoundTray
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &1870512028722738458
-PolygonCollider2D:
+--- !u!70 &4251029845730429160
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,25 +92,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.77658886, y: 0.112403214}
-      - {x: -0.07398033, y: 0.28356934}
-      - {x: -0.7837365, y: 0.1089254}
-      - {x: -0.796517, y: -0.092837304}
-      - {x: -0.56256294, y: -0.22484231}
-      - {x: 0.12441635, y: -0.29002}
-      - {x: 0.7750071, y: -0.12729621}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.6, y: 0.55}
+  m_Direction: 1
 --- !u!114 &2214073005733848107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +111,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 6943529477177583161}
+  _collider: {fileID: 4251029845730429160}
 --- !u!1 &4030065265607568643
 GameObject:
   m_ObjectHideFlags: 0

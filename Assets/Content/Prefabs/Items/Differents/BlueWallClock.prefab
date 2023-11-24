@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2473907531439602298}
   - component: {fileID: 269153819637586254}
-  - component: {fileID: 1982047757184647631}
+  - component: {fileID: 3805443439134612076}
   - component: {fileID: 7802559044549577906}
   m_Layer: 7
   m_Name: BlueWallClock
@@ -46,7 +46,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9b57aed472fd8954d84f0cbb20b78987, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &1982047757184647631
-PolygonCollider2D:
+--- !u!58 &3805443439134612076
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,26 +92,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.32525802, y: 0.5470729}
-      - {x: -0.043403864, y: 0.6672373}
-      - {x: -0.58935815, y: 0.3307188}
-      - {x: -0.6167211, y: -0.21583176}
-      - {x: -0.15821671, y: -0.635751}
-      - {x: 0.41417015, y: -0.49795628}
-      - {x: 0.6321194, y: -0.18836188}
-      - {x: 0.59659207, y: 0.27284735}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.64
 --- !u!114 &7802559044549577906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +110,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  _animator: {fileID: 269153819637586254}
+  _collider: {fileID: 3805443439134612076}
 --- !u!1 &7772069656609461025
 GameObject:
   m_ObjectHideFlags: 0
