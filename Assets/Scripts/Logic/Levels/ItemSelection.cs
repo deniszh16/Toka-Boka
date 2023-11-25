@@ -76,6 +76,7 @@ namespace Logic.Levels
         {
             if (_searchItem.FindSelectedItem(_currentItem))
             {
+                
                 _currentItem.StartAnimation(clip: Item._correctItem);
                 _currentItem.DisableCollider();
                 _soundService.PlaySound(sound: Services.Sound.Sounds.RightChoice, overrideSound: false);

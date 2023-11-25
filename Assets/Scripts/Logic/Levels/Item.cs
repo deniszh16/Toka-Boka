@@ -18,8 +18,11 @@ namespace Logic.Levels
         public static readonly int _correctItem = Animator.StringToHash("CorrectItem");
         public static readonly int _wrongItem = Animator.StringToHash("WrongItem");
 
-        public void StartAnimation(int clip) =>
+        public void StartAnimation(int clip)
+        {
+            _animator.enabled = true;
             _animator.SetTrigger(clip);
+        }
 
         public void DisableCollider() =>
             _collider.enabled = false;

@@ -8858,6 +8858,10 @@ PrefabInstance:
       propertyPath: _container
       value: 
       objectReference: {fileID: 1861068448}
+    - target: {fileID: 6395750702929446632, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
+      propertyPath: _loadingAnObject
+      value: 
+      objectReference: {fileID: 6385138635038713843}
     - target: {fileID: 6559428878102841364, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
       propertyPath: m_Name
       value: LevelSettings
@@ -14801,6 +14805,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c7db46d1914b2c86e00894851b27da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6385138635038713843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7289196119696962907, guid: 45482d680e778dd47becb3228c1b6e70, type: 3}
+  m_PrefabInstance: {fileID: 6385138635038713840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6425895148305209803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1810108765095655126, guid: 34ce6b10a1ac81f4f849ea650cc280f7, type: 3}

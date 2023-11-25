@@ -23,7 +23,7 @@ namespace Data
         public UserProgress()
         {
             Progress = 1;
-            Hearts = 100;
+            Hearts = 125;
             Sound = true;
             
             Attempts = new List<int>(capacity: 12);

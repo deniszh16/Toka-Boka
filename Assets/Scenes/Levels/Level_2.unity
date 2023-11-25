@@ -8132,6 +8132,10 @@ PrefabInstance:
       propertyPath: _container
       value: 
       objectReference: {fileID: 1861068448}
+    - target: {fileID: 6395750702929446632, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
+      propertyPath: _loadingAnObject
+      value: 
+      objectReference: {fileID: 6385138635038713844}
     - target: {fileID: 6559428878102841364, guid: 7890dab3f7b879844ae71bbf5c6e5355, type: 3}
       propertyPath: m_Name
       value: LevelSettings
@@ -14463,6 +14467,11 @@ MonoBehaviour:
 --- !u!1 &6385138635038713843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3803252228372596384, guid: 45482d680e778dd47becb3228c1b6e70, type: 3}
+  m_PrefabInstance: {fileID: 6385138635038713840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6385138635038713844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7289196119696962907, guid: 45482d680e778dd47becb3228c1b6e70, type: 3}
   m_PrefabInstance: {fileID: 6385138635038713840}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6442827973154262259 stripped

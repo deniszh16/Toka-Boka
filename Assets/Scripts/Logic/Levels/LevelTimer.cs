@@ -37,9 +37,13 @@ namespace Logic.Levels
             WaitForSeconds second = new WaitForSeconds(0.5f);
             while (_currentTime > 0)
             {
-                UpdateTimerScale();
                 yield return second;
-                _currentTime -= 0.5f;
+                
+                if (_activity)
+                {
+                    _currentTime -= 0.5f;
+                    UpdateTimerScale();
+                }
             }
             
             TimerCompleted?.Invoke();
@@ -59,5 +63,8 @@ namespace Logic.Levels
 
         public void ChangeTimerSeconds(int value) =>
             _currentTime += value;
+
+        public void ChangeTimerActivity(bool value) =>
+            _activity = value;
     }
 }

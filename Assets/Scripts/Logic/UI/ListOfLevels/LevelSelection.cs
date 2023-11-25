@@ -24,6 +24,9 @@ namespace Logic.UI.ListOfLevels
         [Header("Эффект конфетти")]
         [SerializeField] private ParticleSystem _confetti;
 
+        [Header("Иконка загрузки")]
+        [SerializeField] private GameObject _loadingAnObject;
+
         private int _characterNumber;
         private int _selectedLevel;
         private GameObject _currentСharacter;
@@ -57,13 +60,19 @@ namespace Logic.UI.ListOfLevels
             CreatePet();
         }
 
-        private void CreateCharacter() =>
+        private void CreateCharacter()
+        {
+            _loadingAnObject.SetActive(true);
             _characters[_characterNumber].InstantiateAsync(_container).Completed += OnCharacterInstantiated;
+        }
 
         private void OnCharacterInstantiated(AsyncOperationHandle<GameObject> handle)
         {
             if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                _loadingAnObject.SetActive(false);
                 _currentСharacter = handle.Result;
+            }
         }
 
         private void CreatePet() =>
