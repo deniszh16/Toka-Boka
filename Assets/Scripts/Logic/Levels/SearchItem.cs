@@ -44,11 +44,16 @@ namespace Logic.Levels
 
         public void ShowCurrentItem()
         {
-            if (_currentItem != null && _item != null)
-                _item.ReleaseInstance(_currentItem.gameObject);
-
+            ItemCleanup();
+            
             _item = _levelItems.TaskItems[_currentItemNumber].ShadedIcon;
             if (_item != null) CreateItem();
+        }
+
+        private void ItemCleanup()
+        {
+            if (_currentItem != null && _item != null)
+                _item.ReleaseInstance(_currentItem.gameObject);
         }
 
         private void CreateItem()
@@ -99,5 +104,8 @@ namespace Logic.Levels
             yield return new WaitForSeconds(0.5f); 
             AllItemsFound?.Invoke();
         }
+
+        private void OnDestroy() =>
+            ItemCleanup();
     }
 }

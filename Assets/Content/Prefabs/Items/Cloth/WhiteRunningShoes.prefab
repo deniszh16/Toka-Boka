@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3141749009763019514}
   - component: {fileID: 1353195341010849791}
-  - component: {fileID: 6500151536645818148}
+  - component: {fileID: 4385598882343681181}
   - component: {fileID: 3570632498477407023}
   m_Layer: 7
   m_Name: WhiteRunningShoes
@@ -141,8 +143,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &6500151536645818148
-PolygonCollider2D:
+--- !u!61 &4385598882343681181
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,15 +187,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.68556976, y: -0.0014966018}
-      - {x: 0.44399112, y: 0.35076466}
-      - {x: -0.46872818, y: 0.34076414}
-      - {x: -0.71242523, y: -0.06284948}
-      - {x: -0.6495139, y: -0.3283085}
-      - {x: 0.62800586, y: -0.32551262}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.5, y: 0.7}
+  m_EdgeRadius: 0
 --- !u!114 &3570632498477407023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,4 +207,4 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 1353195341010849791}
-  _collider: {fileID: 6500151536645818148}
+  _collider: {fileID: 4385598882343681181}

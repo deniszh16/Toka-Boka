@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2696191791763611611}
   - component: {fileID: 8766919990331551733}
-  - component: {fileID: 5044979983021628300}
+  - component: {fileID: 7070979542437422497}
   - component: {fileID: 85187420349408854}
   m_Layer: 7
   m_Name: Tablet
@@ -141,8 +143,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &5044979983021628300
-PolygonCollider2D:
+--- !u!61 &7070979542437422497
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,13 +187,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.5395455, y: 0.4201881}
-      - {x: -0.54294974, y: 0.42925715}
-      - {x: -0.534462, y: -0.40054756}
-      - {x: 0.54372185, y: -0.40355825}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.12, y: 0.86}
+  m_EdgeRadius: 0
 --- !u!114 &85187420349408854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,4 +207,4 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 8766919990331551733}
-  _collider: {fileID: 5044979983021628300}
+  _collider: {fileID: 7070979542437422497}

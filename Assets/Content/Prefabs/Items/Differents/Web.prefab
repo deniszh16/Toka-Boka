@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4527118089899560458}
   - component: {fileID: 17308764482946296}
-  - component: {fileID: 7250721866102631064}
+  - component: {fileID: 1391046977625110944}
   - component: {fileID: 6994944860364846996}
   m_Layer: 7
   m_Name: Web
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &7250721866102631064
-PolygonCollider2D:
+--- !u!58 &1391046977625110944
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,25 +92,7 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.4424004, y: 0.6285613}
-      - {x: -0.09514046, y: 0.70068}
-      - {x: -0.7491277, y: 0.41564256}
-      - {x: -0.6451403, y: -0.3501763}
-      - {x: 0.027592659, y: -0.65265083}
-      - {x: 0.6211014, y: -0.43901348}
-      - {x: 0.76428115, y: 0.117298365}
-  m_UseDelaunayMesh: 0
+  m_Radius: 0.7
 --- !u!114 &6994944860364846996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +111,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 17308764482946296}
-  _collider: {fileID: 7250721866102631064}
+  _collider: {fileID: 1391046977625110944}
 --- !u!1 &3500283039678356673
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +161,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7061953400145139133}
   - component: {fileID: 2045063075862640805}
-  - component: {fileID: 3327379016775974739}
+  - component: {fileID: 2711207915114841581}
   - component: {fileID: 4054556454490812512}
   m_Layer: 7
   m_Name: BigTV
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &3327379016775974739
-PolygonCollider2D:
+--- !u!61 &2711207915114841581
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,7 +91,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.11}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.3364282, y: 0.9057024}
-      - {x: -1.3864872, y: 0.86878663}
-      - {x: -1.3896815, y: -0.7121055}
-      - {x: 1.3474921, y: -0.6945953}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 2.75, y: 1.65}
+  m_EdgeRadius: 0
 --- !u!114 &4054556454490812512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +121,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 2045063075862640805}
-  _collider: {fileID: 3327379016775974739}
+  _collider: {fileID: 2711207915114841581}
 --- !u!1 &4654286088589351023
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +171,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

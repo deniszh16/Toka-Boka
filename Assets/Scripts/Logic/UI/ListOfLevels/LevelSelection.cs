@@ -21,8 +21,9 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private Transform _container;
         [SerializeField] private Transform _petsContainer;
         
-        [Header("Эффект конфетти")]
+        [Header("Эффекты сцены")]
         [SerializeField] private ParticleSystem _confetti;
+        [SerializeField] private ParticleSystem _receivingEffect;
 
         [Header("Иконка загрузки")]
         [SerializeField] private GameObject _loadingAnObject;
@@ -52,7 +53,7 @@ namespace Logic.UI.ListOfLevels
         private void Start()
         {
             _selectedLevel = _progressService.UserProgress.Progress;
-            if (_selectedLevel >= 7) _selectedLevel = 6;
+            if (_selectedLevel >= 8) _selectedLevel = 7;
             _characterNumber = _selectedLevel - 1;
             _openPets.UpdateNumberOfPets(_characterNumber);
             
@@ -85,7 +86,7 @@ namespace Logic.UI.ListOfLevels
                 _currentPets = handle.Result;
                 if (_currentPets.TryGetComponent(out CharacterPets characterPets))
                 {
-                    characterPets.Construct(_progressService, _saveLoadService, _confetti);
+                    characterPets.Construct(_progressService, _saveLoadService, _confetti, _receivingEffect);
                     characterPets.CheckPets(_characterNumber);
                 }
             }
@@ -95,12 +96,8 @@ namespace Logic.UI.ListOfLevels
         {
             if (_characterNumber != buttonNumber - 1)
             {
-                if (_currentСharacter)
-                    _characters[_characterNumber].ReleaseInstance(_currentСharacter);
+                CharacterCleanup();
                 
-                if (_currentPets)
-                    _pets[_characterNumber].ReleaseInstance(_currentPets);
-
                 _selectedLevel = buttonNumber;
                 _characterNumber = _selectedLevel - 1;
                 _openPets.UpdateNumberOfPets(_characterNumber);
@@ -110,10 +107,22 @@ namespace Logic.UI.ListOfLevels
             }
         }
 
+        private void CharacterCleanup()
+        {
+            if (_currentСharacter)
+                _characters[_characterNumber].ReleaseInstance(_currentСharacter);
+                
+            if (_currentPets)
+                _pets[_characterNumber].ReleaseInstance(_currentPets);
+        }
+
         public void GoToLevel()
         {
             _soundService.StopBackgroundMusic();
             _sceneLoaderService.LoadLevelAsync(_selectedLevel);
         }
+
+        private void OnDestroy() =>
+            CharacterCleanup();
     }
 }

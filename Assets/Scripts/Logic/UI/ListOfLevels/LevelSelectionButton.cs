@@ -56,7 +56,7 @@ namespace Logic.UI.ListOfLevels
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
         {
             _button.onClick.AddListener(SelectLevel);
-            _button.interactable = _number < 7;
+            _button.interactable = _number < 8;
 
             buttonElement.SetActive(true);
             _iconLock.SetActive(false);

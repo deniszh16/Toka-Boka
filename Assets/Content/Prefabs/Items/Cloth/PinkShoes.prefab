@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7436724510452167995}
   - component: {fileID: 7868626902227470084}
-  - component: {fileID: 1315693725319626726}
+  - component: {fileID: 6480559643066385306}
   - component: {fileID: 1223054861206531350}
   m_Layer: 7
   m_Name: PinkShoes
@@ -141,8 +143,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &1315693725319626726
-PolygonCollider2D:
+--- !u!61 &6480559643066385306
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,17 +187,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.8563694, y: -0.17169042}
-      - {x: 0.86664987, y: 0.023368835}
-      - {x: 0.67865956, y: 0.2801093}
-      - {x: -0.6015018, y: 0.29910287}
-      - {x: -0.82734805, y: 0.15820962}
-      - {x: -0.8911108, y: -0.12414977}
-      - {x: -0.66792303, y: -0.2830759}
-      - {x: 0.683463, y: -0.28671122}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.8, y: 0.7}
+  m_EdgeRadius: 0
 --- !u!114 &1223054861206531350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,4 +207,4 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 7868626902227470084}
-  _collider: {fileID: 1315693725319626726}
+  _collider: {fileID: 6480559643066385306}

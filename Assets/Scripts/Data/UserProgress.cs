@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Data
 {
@@ -25,6 +26,7 @@ namespace Data
             Progress = 1;
             Hearts = 125;
             Sound = true;
+            Locale = Application.systemLanguage == SystemLanguage.Russian ? 0 : 1;
             
             Attempts = new List<int>(capacity: 12);
             Stars = new List<int>(capacity: 12);

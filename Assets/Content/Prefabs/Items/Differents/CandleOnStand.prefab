@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5782008785805200635}
   - component: {fileID: 6264192394155152754}
-  - component: {fileID: 2649228641481990046}
+  - component: {fileID: 5750584171426630022}
   - component: {fileID: 7571219368791731827}
   m_Layer: 7
   m_Name: CandleOnStand
@@ -141,8 +143,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &2649228641481990046
-PolygonCollider2D:
+--- !u!61 &5750584171426630022
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,15 +187,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.19678806, y: 0.4493818}
-      - {x: 0.000091947615, y: 0.49623066}
-      - {x: -0.20140964, y: 0.4514194}
-      - {x: -0.2306579, y: -0.45782718}
-      - {x: 0.05471039, y: -0.4890759}
-      - {x: 0.22667682, y: -0.43461192}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.5, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &7571219368791731827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,4 +207,4 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 6264192394155152754}
-  _collider: {fileID: 2649228641481990046}
+  _collider: {fileID: 5750584171426630022}

@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 8592605612754599939
   m_TableData:
   - m_Id: 114093830144
-    m_Localized: TOKA BOKA
+    m_Localized: 'TOKA BOKA:'
     m_Metadata:
       m_Items: []
   - m_Id: 2726880980992
@@ -121,7 +121,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 24298129411387392
-    m_Localized: Accumulate a thousand hearts by passing levels.
+    m_Localized: Accumulate three thousand hearts by passing levels.
     m_Metadata:
       m_Items: []
   - m_Id: 24298406118010880
@@ -162,6 +162,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 24300976605605888
     m_Localized: Unlock all of the sixth character's pets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27578957440593920
+    m_Localized: Sensitive pets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27578978324033536
+    m_Localized: Unlock all the pets of the seventh character.
     m_Metadata:
       m_Items: []
   references:

@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -187,10 +189,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6067261, y: 0.2356258}
-      - {x: 0.36668587, y: 0.36231327}
-      - {x: -0.038057327, y: 0.21615624}
-      - {x: -0.39753914, y: 0.38482785}
+    - - {x: 0.6377456, y: 0.21236114}
+      - {x: 0.39382797, y: 0.4010877}
+      - {x: -0.43631357, y: 0.39646018}
       - {x: -0.5987771, y: 0.24007303}
       - {x: -0.82954466, y: -0.32768795}
       - {x: 0.8260287, y: -0.33850908}

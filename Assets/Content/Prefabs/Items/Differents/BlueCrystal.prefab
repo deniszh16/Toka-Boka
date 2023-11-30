@@ -103,13 +103,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.029400826, y: 0.44727278}
-      - {x: -0.3454085, y: 0.150255}
+    - - {x: 0.0119197965, y: 0.4847321}
+      - {x: -0.37038139, y: 0.11279566}
       - {x: -0.28790134, y: -0.36801112}
-      - {x: -0.081196666, y: -0.44457698}
-      - {x: 0.17959405, y: -0.43324214}
-      - {x: 0.3031559, y: -0.23338342}
-      - {x: 0.33952808, y: 0.15613502}
+      - {x: 0.026186787, y: -0.4870309}
+      - {x: 0.27199376, y: -0.4007773}
+      - {x: 0.36949557, y: 0.08870822}
   m_UseDelaunayMesh: 0
 --- !u!114 &1056232220863396780
 MonoBehaviour:
@@ -179,6 +178,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

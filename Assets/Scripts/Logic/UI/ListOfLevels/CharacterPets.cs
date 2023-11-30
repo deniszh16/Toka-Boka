@@ -12,22 +12,21 @@ namespace Logic.UI.ListOfLevels
         
         [Header("Кнопки покупки")]
         [SerializeField] private Button[] _buttons;
-        
-        [Header("Эффекты звезд")]
-        [SerializeField] private ParticleSystem[] _effects;
 
         private int _characterNumber;
 
         private ParticleSystem _confetti;
+        private ParticleSystem _receivingEffect;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
 
-        public void Construct(IPersistentProgressService progressService,
-            ISaveLoadService saveLoadService, ParticleSystem confetti)
+        public void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
+            ParticleSystem confetti, ParticleSystem receivingEffect)
         {
             _progressService = progressService;
             _saveLoadService = saveLoadService;
             _confetti = confetti;
+            _receivingEffect = receivingEffect;
         }
 
         public void CheckPets(int characterNumber)
@@ -75,8 +74,9 @@ namespace Logic.UI.ListOfLevels
 
         private void ShowOpeningEffect(int number)
         {
-            _effects[number].gameObject.SetActive(true);
-            _effects[number].Play();
+            _receivingEffect.transform.position = _pets[number].transform.position;
+            _receivingEffect.gameObject.SetActive(true);
+            _receivingEffect.Play();
         }
     }
 }

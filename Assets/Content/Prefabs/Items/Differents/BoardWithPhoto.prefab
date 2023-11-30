@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4218921336668667979}
   - component: {fileID: 2422239981753533380}
-  - component: {fileID: 6272727260897597191}
+  - component: {fileID: 8828425612674345901}
   - component: {fileID: 6041187787555897556}
   m_Layer: 7
   m_Name: BoardWithPhoto
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &6272727260897597191
-PolygonCollider2D:
+--- !u!61 &8828425612674345901
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.7478056, y: 0.74444646}
-      - {x: -0.74860466, y: 0.7399354}
-      - {x: -0.77724725, y: -0.7503051}
-      - {x: 0.76901734, y: -0.76098883}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.55, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!114 &6041187787555897556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +121,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 2422239981753533380}
-  _collider: {fileID: 6272727260897597191}
+  _collider: {fileID: 8828425612674345901}
 --- !u!1 &4332656540463748423
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +171,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

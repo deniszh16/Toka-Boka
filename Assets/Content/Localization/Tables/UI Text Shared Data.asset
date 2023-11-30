@@ -159,6 +159,14 @@ MonoBehaviour:
     m_Key: key_AchievementDescription_10
     m_Metadata:
       m_Items: []
+  - m_Id: 27578957440593920
+    m_Key: key_AchievementName_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27578978324033536
+    m_Key: key_AchievementDescription_11
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

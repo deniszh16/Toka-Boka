@@ -49,6 +49,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632843783225981858}
   - component: {fileID: 7846287873838698433}
-  - component: {fileID: 4133143292059143218}
+  - component: {fileID: 261037391640764260}
   - component: {fileID: -8460922062893547740}
   m_Layer: 7
   m_Name: BlueBoots
@@ -141,8 +143,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4133143292059143218
-PolygonCollider2D:
+--- !u!61 &261037391640764260
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,26 +177,18 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.01}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.46, y: 0.56}
-    newSize: {x: 1.46, y: 0.56}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.42446873, y: 0.2927656}
-      - {x: -0.6883475, y: 0.023757908}
-      - {x: -0.62263626, y: -0.25241145}
-      - {x: 0.6118217, y: -0.2411511}
-      - {x: 0.7202011, y: -0.10419799}
-      - {x: 0.69395494, y: 0.09537077}
-      - {x: 0.4314166, y: 0.27553117}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.5, y: 0.6}
+  m_EdgeRadius: 0
 --- !u!114 &-8460922062893547740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,4 +207,4 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 7846287873838698433}
-  _collider: {fileID: 4133143292059143218}
+  _collider: {fileID: 261037391640764260}

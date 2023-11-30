@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159516673890737395}
   - component: {fileID: -7241384598872942248}
-  - component: {fileID: 7829432634809531334}
+  - component: {fileID: 6026306165083107139}
   - component: {fileID: 1520580323930551889}
   m_Layer: 7
   m_Name: RedEgg
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &7829432634809531334
-PolygonCollider2D:
+--- !u!70 &6026306165083107139
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,32 +92,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6933333, y: 0.85333335}
-    newSize: {x: 1.04, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.2612436, y: -0.011851804}
-      - {x: 0.2156815, y: 0.13921492}
-      - {x: 0.12103838, y: 0.27367654}
-      - {x: -0.008211717, y: 0.32640368}
-      - {x: -0.13773492, y: 0.2653257}
-      - {x: -0.2219003, y: 0.12536559}
-      - {x: -0.26356322, y: -0.019247353}
-      - {x: -0.26284543, y: -0.17182204}
-      - {x: -0.17387804, y: -0.28131115}
-      - {x: -0.07810441, y: -0.3315014}
-      - {x: 0.029118389, y: -0.3270424}
-      - {x: 0.13319759, y: -0.3090858}
-      - {x: 0.22545576, y: -0.23487249}
-      - {x: 0.25946042, y: -0.16462088}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.55, y: 0.7}
+  m_Direction: 0
 --- !u!114 &1520580323930551889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +112,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: -7241384598872942248}
-  _collider: {fileID: 7829432634809531334}
+  _collider: {fileID: 6026306165083107139}
 --- !u!1 &7769147722152794332
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +162,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

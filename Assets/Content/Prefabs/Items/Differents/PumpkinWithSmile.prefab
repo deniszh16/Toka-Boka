@@ -92,7 +92,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.08}
-  m_Size: {x: 1.45, y: 1.12}
+  m_Size: {x: 1.5, y: 1.15}
   m_Direction: 1
 --- !u!114 &796014244382324568
 MonoBehaviour:
@@ -162,6 +162,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

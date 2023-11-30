@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7355738348498038523}
   - component: {fileID: 8523690254401010617}
-  - component: {fileID: 9078102029964548736}
+  - component: {fileID: 5940712563236227002}
   - component: {fileID: 7889932450932350951}
   m_Layer: 7
   m_Name: BluePan
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &9078102029964548736
-PolygonCollider2D:
+--- !u!61 &5940712563236227002
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,7 +91,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.01}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.45738643, y: 0.5464204}
-      - {x: -0.4535516, y: 0.5573727}
-      - {x: -0.48858508, y: -0.5191831}
-      - {x: 0.4711665, y: -0.51610476}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1, y: 1.1}
+  m_EdgeRadius: 0
 --- !u!114 &7889932450932350951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +121,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 8523690254401010617}
-  _collider: {fileID: 9078102029964548736}
+  _collider: {fileID: 5940712563236227002}
 --- !u!1 &5607792790291803380
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +171,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

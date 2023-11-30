@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534391454310831453}
   - component: {fileID: 2437748287153443221}
-  - component: {fileID: 1184773045579009760}
+  - component: {fileID: 955463596621458850}
   - component: {fileID: 5519536617310122224}
   m_Layer: 7
   m_Name: WhiteCamera
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &1184773045579009760
-PolygonCollider2D:
+--- !u!61 &955463596621458850
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,7 +91,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -101,13 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.522284, y: 0.3355002}
-      - {x: -0.5158828, y: 0.3399477}
-      - {x: -0.5470263, y: -0.4155857}
-      - {x: 0.53278625, y: -0.39751467}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1.12, y: 0.85}
+  m_EdgeRadius: 0
 --- !u!114 &5519536617310122224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +121,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 2437748287153443221}
-  _collider: {fileID: 1184773045579009760}
+  _collider: {fileID: 955463596621458850}
 --- !u!1 &6785120986680788093
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +171,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

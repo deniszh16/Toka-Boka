@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2372539564479124888}
   - component: {fileID: 8568424422119532600}
-  - component: {fileID: 737904292397530753}
+  - component: {fileID: 1558678218869373319}
   - component: {fileID: 7315350536960973486}
   m_Layer: 7
   m_Name: WhiteCandle
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &737904292397530753
-PolygonCollider2D:
+--- !u!61 &1558678218869373319
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,15 +101,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.22825283, y: 0.34296638}
-      - {x: -0.013038635, y: 0.36976862}
-      - {x: -0.23435909, y: 0.34443074}
-      - {x: -0.22556746, y: -0.32538697}
-      - {x: 0.024335861, y: -0.37181282}
-      - {x: 0.2403239, y: -0.32502627}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.5, y: 0.75}
+  m_EdgeRadius: 0
 --- !u!114 &7315350536960973486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +121,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 8568424422119532600}
-  _collider: {fileID: 737904292397530753}
+  _collider: {fileID: 1558678218869373319}
 --- !u!1 &8457457790722418193
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +171,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

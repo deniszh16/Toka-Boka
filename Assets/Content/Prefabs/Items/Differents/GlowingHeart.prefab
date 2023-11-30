@@ -106,7 +106,6 @@ PolygonCollider2D:
     - - {x: 0.6028946, y: 0.00086363405}
       - {x: 0.5915398, y: 0.37823802}
       - {x: 0.33696502, y: 0.523501}
-      - {x: 0.0018138885, y: 0.4341464}
       - {x: -0.35266113, y: 0.5248428}
       - {x: -0.58787584, y: 0.35705328}
       - {x: -0.59843236, y: 0.037820823}
@@ -182,6 +181,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

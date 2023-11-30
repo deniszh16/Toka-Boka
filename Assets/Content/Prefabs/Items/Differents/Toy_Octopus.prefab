@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 821113140026530023}
   - component: {fileID: 8189336553905028636}
-  - component: {fileID: 1928914853030377052}
+  - component: {fileID: 7755632852378398692}
   - component: {fileID: 7228799306953026113}
   m_Layer: 7
   m_Name: Toy_Octopus
@@ -57,8 +57,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &1928914853030377052
-BoxCollider2D:
+--- !u!58 &7755632852378398692
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,17 +92,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2714286, y: 1.2142857}
-    newSize: {x: 0.89, y: 0.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.25, y: 1.2}
-  m_EdgeRadius: 0
+  m_Radius: 0.62
 --- !u!114 &7228799306953026113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +111,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _animator: {fileID: 8189336553905028636}
-  _collider: {fileID: 1928914853030377052}
+  _collider: {fileID: 7755632852378398692}
 --- !u!1 &6781488545073181943
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +161,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
