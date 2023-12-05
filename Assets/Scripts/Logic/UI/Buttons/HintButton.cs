@@ -14,6 +14,9 @@ namespace Logic.UI.Buttons
         
         [Header("Стоимость подсказки")]
         [SerializeField] private int _price;
+
+        [Header("Анимация подсказки")]
+        [SerializeField] private Animator _animator;
         
         private ItemIcon _currentItem;
         private IPersistentProgressService _progressService;
@@ -43,6 +46,8 @@ namespace Logic.UI.Buttons
             if (purchase)
             {
                 _currentItem.RemoveBlackout();
+                _animator.gameObject.SetActive(true);
+                _animator.Rebind();
                 _button.interactable = false;
                 _saveLoadService.SaveProgress();
             }

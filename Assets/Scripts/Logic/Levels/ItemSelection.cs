@@ -22,7 +22,7 @@ namespace Logic.Levels
         private Item _currentItem;
 
         private const float MaxDistance = 20f;
-        private const float RayLength = 20f;
+        private const float RayLength = 12f;
 
         private Camera _mainCamera;
         private SearchItem _searchItem;
@@ -64,8 +64,7 @@ namespace Logic.Levels
                             _currentItem = item;
                             CheckSelectedItem();
                         }
-
-                        if (_hit.collider.TryGetComponent(out OpeningFurniture furniture))
+                        else if (_hit.collider.TryGetComponent(out OpeningFurniture furniture))
                             furniture.OpenFurniture();
                     }
                 }
