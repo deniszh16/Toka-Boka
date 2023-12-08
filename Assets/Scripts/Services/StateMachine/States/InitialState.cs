@@ -25,7 +25,7 @@ namespace Services.StateMachine.States
 
         public override void Enter()
         {
-            _levelItems.SetNumberOfTasks(_progressService.UserProgress.Attempts[_currentLevel.LevelNumber - 1]);
+            _levelItems.SetNumberOfTasks(_progressService.GetUserProgress.Attempts[_currentLevel.LevelNumber - 1]);
             _levelItems.SelectElementsForTask();
             _levelTimer.SetTimer();
             _searchItem.ShowCurrentItem();

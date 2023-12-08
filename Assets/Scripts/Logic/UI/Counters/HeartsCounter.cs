@@ -26,20 +26,20 @@ namespace Logic.UI.Counters
 
         private void OnEnable()
         {
-            _progressService.UserProgress.HeartsAdded += UpdateCounter;
-            _progressService.UserProgress.NotEnoughHearts += StartAnimation;
+            _progressService.GetUserProgress.HeartsAdded += UpdateCounter;
+            _progressService.GetUserProgress.NotEnoughHearts += StartAnimation;
         }
 
         private void UpdateCounter() =>
-            _counterText.text = _progressService.UserProgress.Hearts.ToString();
+            _counterText.text = _progressService.GetUserProgress.Hearts.ToString();
 
         private void StartAnimation() =>
             _animator.SetTrigger(id: NotEnough);
 
         private void OnDisable()
         {
-            _progressService.UserProgress.HeartsAdded -= UpdateCounter;
-            _progressService.UserProgress.NotEnoughHearts -= StartAnimation;
+            _progressService.GetUserProgress.HeartsAdded -= UpdateCounter;
+            _progressService.GetUserProgress.NotEnoughHearts -= StartAnimation;
         }
     }
 }

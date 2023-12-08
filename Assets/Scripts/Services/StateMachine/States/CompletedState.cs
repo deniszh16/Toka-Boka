@@ -31,12 +31,12 @@ namespace Services.StateMachine.States
             _gamePause.ChangeButtonVisibility(visibility: false);
             _levelResults.ShowVictoryPanel(Camera.main.transform.position);
             _levelResults.ShowCurrentScore(_levelScore.Score);
-            _progressService.UserProgress.Hearts += _levelScore.Score;
-            _progressService.UserProgress.ChangeAttempts(levelNumber: _currentLevel.LevelNumber - 1);
-            _progressService.UserProgress.ChangeStars(levelNumber: _currentLevel.LevelNumber - 1, value: 1);
+            _progressService.GetUserProgress.Hearts += _levelScore.Score;
+            _progressService.GetUserProgress.ChangeAttempts(levelNumber: _currentLevel.LevelNumber - 1);
+            _progressService.GetUserProgress.ChangeStars(levelNumber: _currentLevel.LevelNumber - 1, value: 1);
 
-            if (_progressService.UserProgress.Progress <= _currentLevel.LevelNumber)
-                _progressService.UserProgress.Progress++;
+            if (_progressService.GetUserProgress.Progress <= _currentLevel.LevelNumber)
+                _progressService.GetUserProgress.Progress++;
             
             _saveLoadService.SaveProgress();
         }

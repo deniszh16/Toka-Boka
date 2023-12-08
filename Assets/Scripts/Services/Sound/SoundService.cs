@@ -39,10 +39,10 @@ namespace Services.Sound
 
         public void SwitchSound()
         {
-            bool activity = _progressService.UserProgress.Sound;
+            bool activity = _progressService.GetUserProgress.Sound;
             SoundActivity = !activity;
 
-            _progressService.UserProgress.Sound = SoundActivity;
+            _progressService.GetUserProgress.Sound = SoundActivity;
             _saveLoadService.SaveProgress();
             
             SoundChanged?.Invoke();

@@ -32,7 +32,7 @@ namespace Logic.UI.ListOfLevels
         public void CheckPets(int characterNumber)
         {
             _characterNumber = characterNumber;
-            bool[] characterPets = _progressService.UserProgress.CharacterPets[_characterNumber].Pets;
+            bool[] characterPets = _progressService.GetUserProgress.CharacterPets[_characterNumber].Pets;
 
             for (int i = 0; i < characterPets.Length; i++)
             {
@@ -48,7 +48,7 @@ namespace Logic.UI.ListOfLevels
 
         private void ShowConfettiEffect()
         {
-            if (_progressService.UserProgress.CharacterPets[_characterNumber].OpenPets >= 3)
+            if (_progressService.GetUserProgress.CharacterPets[_characterNumber].OpenPets >= 3)
             {
                 _confetti.gameObject.SetActive(true);
                 _confetti.Play();
@@ -61,11 +61,11 @@ namespace Logic.UI.ListOfLevels
 
         public void GetPet(int petNumber)
         {
-            if (_progressService.UserProgress.Stars[_characterNumber] > 0)
+            if (_progressService.GetUserProgress.Stars[_characterNumber] > 0)
             {
-                _progressService.UserProgress.ChangeStars(levelNumber: _characterNumber, value: -1);
-                _progressService.UserProgress.CharacterPets[_characterNumber].Pets[petNumber - 1] = true;
-                _progressService.UserProgress.CharacterPets[_characterNumber].OpenPets++;
+                _progressService.GetUserProgress.ChangeStars(levelNumber: _characterNumber, value: -1);
+                _progressService.GetUserProgress.CharacterPets[_characterNumber].Pets[petNumber - 1] = true;
+                _progressService.GetUserProgress.CharacterPets[_characterNumber].OpenPets++;
                 _saveLoadService.SaveProgress();
                 CheckPets(_characterNumber);
                 ShowOpeningEffect(number: petNumber - 1);

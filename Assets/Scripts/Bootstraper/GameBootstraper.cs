@@ -37,14 +37,14 @@ namespace Bootstraper
         private void Start()
         {
             LoadProgressOrInitNew();
-            _localizationService.SetLocale(_progressService.UserProgress.Locale);
-            _soundService.SoundActivity = _progressService.UserProgress.Sound;
+            _localizationService.SetLocale(_progressService.GetUserProgress.Locale);
+            _soundService.SoundActivity = _progressService.GetUserProgress.Sound;
             _sceneLoaderService.LoadSceneAsync(Scenes.MainMenu, screensaver: false, delay: 1.5f);
         }
 
         private void LoadProgressOrInitNew()
         {
-            _progressService.UserProgress =
+            _progressService.GetUserProgress =
                 _saveLoadService.LoadProgress() ?? new UserProgress();
         }
     }

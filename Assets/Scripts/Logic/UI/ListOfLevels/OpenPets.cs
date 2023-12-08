@@ -32,7 +32,7 @@ namespace Logic.UI.ListOfLevels
 
         public void UpdateNumberOfPets(int levelNumber)
         {
-            _numberOfPets = _progressService.UserProgress.CharacterPets[levelNumber].OpenPets;
+            _numberOfPets = _progressService.GetUserProgress.CharacterPets[levelNumber].OpenPets;
             _localizedString.Arguments[0] = _numberOfPets;
             _localizedString.RefreshString();
         }

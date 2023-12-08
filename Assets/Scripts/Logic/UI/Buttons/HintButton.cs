@@ -42,7 +42,7 @@ namespace Logic.UI.Buttons
 
         private void GetHint()
         {
-            bool purchase = _progressService.UserProgress.SubtractHearts(_price);
+            bool purchase = _progressService.GetUserProgress.SubtractHearts(_price);
             if (purchase)
             {
                 _currentItem.RemoveBlackout();

@@ -22,34 +22,34 @@ namespace Logic.UI.Achievements
 
         private void CheckAchievements()
         {
-            if (_progressService.UserProgress.Progress > 1)
+            if (_progressService.GetUserProgress.Progress > 1)
                 _achievements[0].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(1) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(1) > 2)
                 _achievements[1].UnblockCard();
 
-            if (_progressService.UserProgress.Attempts.Any(attempt => attempt >= 3))
+            if (_progressService.GetUserProgress.Attempts.Any(attempt => attempt >= 3))
                 _achievements[2].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(2) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(2) > 2)
                 _achievements[3].UnblockCard();
             
-            if (_progressService.UserProgress.Hearts >= 1000)
+            if (_progressService.GetUserProgress.Hearts >= 1000)
                 _achievements[4].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(3) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(3) > 2)
                 _achievements[5].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(4) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(4) > 2)
                 _achievements[6].UnblockCard();
             
-            if (_progressService.UserProgress.Progress > 5)
+            if (_progressService.GetUserProgress.Progress > 5)
                 _achievements[7].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(5) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(5) > 2)
                 _achievements[8].UnblockCard();
             
-            if (_progressService.UserProgress.GetNumberOfOpenPets(6) > 2)
+            if (_progressService.GetUserProgress.GetNumberOfOpenPets(6) > 2)
                 _achievements[9].UnblockCard();
         }
     }

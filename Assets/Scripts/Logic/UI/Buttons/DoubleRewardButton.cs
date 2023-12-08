@@ -43,7 +43,7 @@ namespace Logic.UI.Buttons
         {
             if (id == RewardId)
             {
-                _progressService.UserProgress.Hearts += _levelScore.Score;
+                _progressService.GetUserProgress.Hearts += _levelScore.Score;
                 _saveLoadService.SaveProgress();
                 _levelResults.ShowCurrentScore(_levelScore.Score * 2);
                 _button.interactable = false;
