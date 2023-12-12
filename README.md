@@ -4,7 +4,7 @@
 
 <p align="center">
    <img src="https://img.shields.io/badge/Engine-Unity%202023.2.1f1-brightgreen" alt="Unity Version">
-   <img src="https://img.shields.io/badge/Version-1.1.1%20(Stable)-blue" alt="Game Version">
+   <img src="https://img.shields.io/badge/Version-1.1.2%20(Stable)-blue" alt="Game Version">
 </p>
 
 ## Описание игры
