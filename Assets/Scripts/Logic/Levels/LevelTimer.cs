@@ -16,12 +16,19 @@ namespace Logic.Levels
         private float _seconds;
         private float _currentTime;
         private float _fillingImage;
+        private int _difficultyLevel;
 
         private Coroutine _timerCoroutine;
 
+        public void SetDifficultyLevel(int attempts)
+        {
+            if (attempts > 2) attempts = 2;
+            _difficultyLevel = 15 * attempts;
+        }
+
         public void SetTimer()
         {
-            _seconds = 30;
+            _seconds = 60 - _difficultyLevel;
             _currentTime = _seconds;
             UpdateTimerScale();
         }
@@ -34,14 +41,14 @@ namespace Logic.Levels
 
         private IEnumerator StartTimerCoroutine()
         {
-            WaitForSeconds second = new WaitForSeconds(0.5f);
+            WaitForSeconds second = new WaitForSeconds(1f);
             while (_currentTime > 0)
             {
                 yield return second;
                 
                 if (_activity)
                 {
-                    _currentTime -= 0.5f;
+                    _currentTime -= 1f;
                     UpdateTimerScale();
                 }
             }
