@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2847782452871559319}
   - component: {fileID: 7298623413906407766}
   m_Layer: 5
-  m_Name: DogWithGlasses
+  m_Name: Shepherd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -735, y: -235}
-  m_SizeDelta: {x: 150, y: 190}
+  m_SizeDelta: {x: 122, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2847782452871559319
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9a5515b8e4833ad40aadf52b0f6f34eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c77d98f3d8f4a1049b7875b7d7d21ed7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 4180010222654873208}
   - component: {fileID: 5947136846200918452}
   m_Layer: 5
-  m_Name: Iguana
+  m_Name: BlueMouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 35, y: -355}
-  m_SizeDelta: {x: 135, y: 190}
+  m_SizeDelta: {x: 162, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4180010222654873208
 CanvasRenderer:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7cc02e106950d94e9d415c0406749b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a0f0140b2bad4941a656dab7807660d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 1548330122599990284}
   - component: {fileID: 8400456354399228498}
   m_Layer: 5
-  m_Name: WhiteCat
+  m_Name: Pigeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,7 +247,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -505, y: -335}
-  m_SizeDelta: {x: 143, y: 190}
+  m_SizeDelta: {x: 131, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1548330122599990284
 CanvasRenderer:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a6c1866e9a1e819439dccc1814834312, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81c6735323b8a04479e337d93c503e25, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

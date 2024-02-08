@@ -53,7 +53,7 @@ namespace Logic.UI.ListOfLevels
         private void Start()
         {
             _selectedLevel = _progressService.GetUserProgress.Progress;
-            if (_selectedLevel >= 8) _selectedLevel = 7;
+            if (_selectedLevel >= 9) _selectedLevel = 8;
             _characterNumber = _selectedLevel - 1;
             _openPets.UpdateNumberOfPets(_characterNumber);
             

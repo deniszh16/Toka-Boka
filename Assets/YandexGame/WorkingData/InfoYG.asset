@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa747916aa66674d96ea40ca8a480b2, type: 3}
   m_Name: InfoYG
   m_EditorClassIdentifier: 
-  scopes: 0
+  scopes: 1
   playerPhotoSize: 0
+  autoGameReadyAPI: 1
   playerInfoSimulation:
     authorized: 1
     isMobile: 0
@@ -23,16 +24,22 @@ MonoBehaviour:
     photo: https://justplaygames.ru/public/icon_player.png
   AdWhenLoadingScene: 1
   showFirstAd: 1
+  rewardedAfterClosing: 1
   adDisplayCalls: 0
   fullscreenAdInterval: 60
   durationOfAdSimulation: 0.5
+  loadAdWithDelaySimulation: 0
   testErrorOfRewardedAdsInEditor: 0
-  saveCloud: 0
+  saveCloud: 1
   flush: 0
   localSaveSync: 1
   saveCloudInterval: 5
   saveOnQuitGame: 0
-  leaderboardEnable: 0
+  quitGameParameters:
+    objectName: YandexGame
+    methodName: _SaveProgress
+  leaderboardEnable: 1
+  saveScoreAnonymousPlayers: 1
   leaderboardSimulation:
   - technoName: advanced
     entries: 'Test LeaderBoard
@@ -173,8 +180,8 @@ MonoBehaviour:
     thisPlayer:
       rank: 2
       score: 10
-  LocalizationEnable: 0
-  callingLanguageCheck: 1
+  LocalizationEnable: 1
+  callingLanguageCheck: 0
   translateMethod: 0
   domainAutoLocalization: com
   CSVFileTranslate:
@@ -209,6 +216,35 @@ MonoBehaviour:
     de: 0
     hi: 0
   fonts:
+    defaultFont: []
+    ru: []
+    en: []
+    tr: []
+    az: []
+    be: []
+    he: []
+    hy: []
+    ka: []
+    et: []
+    fr: []
+    kk: []
+    ky: []
+    lt: []
+    lv: []
+    ro: []
+    tg: []
+    tk: []
+    uk: []
+    uz: []
+    es: []
+    pt: []
+    ar: []
+    id: []
+    ja: []
+    it: []
+    de: []
+    hi: []
+  fontsTMP:
     defaultFont: []
     ru: []
     en: []
@@ -286,11 +322,11 @@ MonoBehaviour:
     consumed: 1
   metricaEnable: 0
   metricaCounterID: 0
-  debug: 0
+  debug: 1
   archivingBuild: 1
   logoImageFormat: 1
   backgroundImageFormat: 3
   pixelRatioEnable: 0
   pixelRatioValue: 1
-  SDKStartDelay: 0
+  loadGameRun: 0
   staticRBTInGame: 0

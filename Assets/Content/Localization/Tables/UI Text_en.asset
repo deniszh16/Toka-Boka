@@ -172,6 +172,14 @@ MonoBehaviour:
     m_Localized: Unlock all the pets of the seventh character.
     m_Metadata:
       m_Items: []
+  - m_Id: 52937264863461376
+    m_Localized: Snappy pets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52937426407079936
+    m_Localized: Unlock all of the eighth character's pets.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

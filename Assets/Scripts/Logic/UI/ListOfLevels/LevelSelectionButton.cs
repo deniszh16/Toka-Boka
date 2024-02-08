@@ -20,6 +20,7 @@ namespace Logic.UI.ListOfLevels
         [SerializeField] private GameObject _iconComplete;
         [SerializeField] private GameObject _starsIcon;
         [SerializeField] private NumberOfStars _numberOfStars;
+        [SerializeField] private RectTransform _buttonGlow;
         
         [Header("Спрайты кнопки")]
         [SerializeField] private Sprite _levelOpen;
@@ -40,6 +41,7 @@ namespace Logic.UI.ListOfLevels
             if (_number == _progressService.GetUserProgress.Progress)
             {
                 CustomizeButton(_textNumber, _levelOpen);
+                ShowButtonGlowEffect();
                 
                 ShowNumberOfStars();
                 _progressService.GetUserProgress.StarsChanged += ShowNumberOfStars;
@@ -56,7 +58,7 @@ namespace Logic.UI.ListOfLevels
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
         {
             _button.onClick.AddListener(SelectLevel);
-            _button.interactable = _number < 8;
+            _button.interactable = _number < 9;
 
             buttonElement.SetActive(true);
             _iconLock.SetActive(false);
@@ -64,13 +66,22 @@ namespace Logic.UI.ListOfLevels
             _image.sprite = sprite;
         }
 
-        private void SelectLevel() =>
+        private void SelectLevel()
+        {
             _levelSelection.SelectLevel(_number);
+            ShowButtonGlowEffect();
+        }
 
         private void ShowNumberOfStars()
         {
             int stars = _progressService.GetUserProgress.GetNumberOfStars(_number - 1);
             _numberOfStars.ShowNumberOfStars(stars);
+        }
+
+        private void ShowButtonGlowEffect()
+        {
+            _buttonGlow.gameObject.SetActive(true);
+            _buttonGlow.localPosition = gameObject.transform.localPosition;
         }
 
         private void OnDisable()
