@@ -1,5 +1,5 @@
-﻿using Logic.Levels;
-using Services.SceneLoader;
+﻿using Services.SceneLoader;
+using Logic.Levels;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -10,15 +10,15 @@ namespace Logic.UI.Buttons
     {
         [Header("Компонент кнопки")]
         [SerializeField] private Button _button;
-        
-        private CurrentLevel _currentLevel;
+
         private ISceneLoaderService _sceneLoader;
+        private CurrentLevel _currentLevel;
 
         [Inject]
-        private void Construct(CurrentLevel currentLevel, ISceneLoaderService sceneLoaderService)
+        private void Construct(ISceneLoaderService sceneLoaderService, CurrentLevel currentLevel)
         {
-            _currentLevel = currentLevel;
             _sceneLoader = sceneLoaderService;
+            _currentLevel = currentLevel;
         }
 
         private void OnEnable() =>

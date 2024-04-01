@@ -1,10 +1,10 @@
-﻿using Logic.Levels;
+﻿using Logic.StateMachine.States;
+using Services.YandexService;
 using Services.StateMachine;
-using Services.StateMachine.States;
+using Logic.Levels;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
-using YG;
 
 namespace Logic.UI.Buttons
 {
@@ -16,25 +16,27 @@ namespace Logic.UI.Buttons
         private const int RewardId = 2;
         
         private GameStateMachine _stateMachine;
+        private IYandexService _yandexService;
+        
         private SearchItem _searchItem;
         private LevelTimer _levelTimer;
         
         [Inject]
-        private void Construct(GameStateMachine stateMachine, SearchItem searchItem, LevelTimer levelTimer)
+        private void Construct(GameStateMachine stateMachine, IYandexService yandexService,
+            SearchItem searchItem, LevelTimer levelTimer)
         {
             _stateMachine = stateMachine;
+            _yandexService = yandexService;
+            
             _searchItem = searchItem;
             _levelTimer = levelTimer;
         }
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(() => ShowVideoAds(id: 2));
-            YandexGame.RewardVideoEvent += ContinueLevel;
+            _button.onClick.AddListener(() => _yandexService.ShowRewardedAds(id: 2));
+            _yandexService.AdsViewed += ContinueLevel;
         }
-        
-        private void ShowVideoAds(int id) =>
-            YandexGame.RewVideoShow(id);
 
         private void ContinueLevel(int id)
         {
@@ -49,7 +51,7 @@ namespace Logic.UI.Buttons
         private void OnDisable()
         {
             _button.onClick.RemoveAllListeners();
-            YandexGame.RewardVideoEvent -= ContinueLevel;
+            _yandexService.AdsViewed -= ContinueLevel;
         }
     }
 }

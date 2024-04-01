@@ -12,7 +12,8 @@ namespace Logic.Levels
         [Header("Базовое количество заданий")]
         [SerializeField] private int _numberOfTasks;
 
-        public int NumberOfTasks => _numberOfTasks;
+        public int NumberOfTasks =>
+            _numberOfTasks;
         
         public List<Item> TaskItems { get; private set; }
         

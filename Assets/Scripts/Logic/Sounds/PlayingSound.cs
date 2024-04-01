@@ -10,7 +10,7 @@ namespace Logic.Sounds
         [SerializeField] private bool _autoplay;
         
         [Header("Звук")]
-        [SerializeField] private Services.Sound.Sounds _sound;
+        [SerializeField] private SoundsEnum _sound;
         
         private ISoundService _soundService;
 
@@ -25,6 +25,6 @@ namespace Logic.Sounds
         }
 
         public void PlaySound() =>
-            _soundService.PlaySound(sound: _sound, overrideSound: true);
+            _soundService.PlaySound(sound: _sound);
     }
 }

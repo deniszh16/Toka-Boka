@@ -28,7 +28,7 @@ namespace Services.Localization
         {
             if (_active) return;
             
-            int localeID = _progressService.GetUserProgress.Locale == 0 ? 1 : 0;
+            int localeID = _progressService.GetUserProgress.SettingsData.Locale == 0 ? 1 : 0;
             _ = StartCoroutine(ChangeLocaleCoroutine(localeID));
         }
 
@@ -37,7 +37,7 @@ namespace Services.Localization
             _active = true;
             yield return LocalizationSettings.InitializationOperation;
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeID];
-            _progressService.GetUserProgress.Locale = localeID;
+            _progressService.GetUserProgress.SettingsData.Locale = localeID;
             _saveLoadService.SaveProgress();
             _active = false;
         }

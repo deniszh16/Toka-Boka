@@ -37,9 +37,9 @@ namespace Bootstraper
         private void Start()
         {
             LoadProgressOrInitNew();
-            _localizationService.SetLocale(_progressService.GetUserProgress.Locale);
-            _soundService.SoundActivity = _progressService.GetUserProgress.Sound;
-            _sceneLoaderService.LoadSceneAsync(Scenes.MainMenu, screensaver: false, delay: 1.5f);
+            _localizationService.SetLocale(_progressService.GetUserProgress.SettingsData.Locale);
+            _soundService.SoundActivity = _progressService.GetUserProgress.SettingsData.Sound;
+            _sceneLoaderService.LoadSceneAsync(Scenes.MainMenu, screensaver: false, delay: 1f);
         }
 
         private void LoadProgressOrInitNew()

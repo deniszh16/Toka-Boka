@@ -32,9 +32,12 @@ namespace Logic.Levels
             _currentTime = _seconds;
             UpdateTimerScale();
         }
+        
+        public void ChangeTimerSeconds(int value) =>
+            _currentTime += value;
 
-        public int GetCurrentTime() =>
-            (int)_currentTime;
+        public void ChangeTimerActivity(bool value) =>
+            _activity = value;
 
         public void StartTimer() =>
             _timerCoroutine = StartCoroutine(StartTimerCoroutine());
@@ -67,11 +70,5 @@ namespace Logic.Levels
             if (_timerCoroutine != null)
                 StopCoroutine(_timerCoroutine);
         }
-
-        public void ChangeTimerSeconds(int value) =>
-            _currentTime += value;
-
-        public void ChangeTimerActivity(bool value) =>
-            _activity = value;
     }
 }

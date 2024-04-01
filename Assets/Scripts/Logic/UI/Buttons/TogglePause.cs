@@ -1,4 +1,4 @@
-﻿using Logic.Levels;
+﻿using Logic.UI.Levels;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -13,14 +13,14 @@ namespace Logic.UI.Buttons
         [Header("Включение паузы")]
         [SerializeField] private bool _pauseSetting;
         
-        private GamePause _gamePause;
+        private LevelUI _levelUI;
         
         [Inject]
-        private void Construct(GamePause gamePause) =>
-            _gamePause = gamePause;
+        private void Construct(LevelUI levelUI) =>
+            _levelUI = levelUI;
 
         private void OnEnable() =>
-            _button.onClick.AddListener(() => _gamePause.TogglePause(_pauseSetting));
+            _button.onClick.AddListener(() => _levelUI.TogglePause(_pauseSetting));
 
         private void OnDisable() =>
             _button.onClick.RemoveAllListeners();

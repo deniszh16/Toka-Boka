@@ -5,11 +5,8 @@ namespace Data
     [Serializable]
     public class CharacterPets
     {
-        public bool[] Pets;
+        public bool[] Pets = new bool[3];
         public int OpenPets;
-
-        public CharacterPets() =>
-            Pets = new bool[3];
 
         public void IncreaseNumberOfOpenPets() =>
             OpenPets++;

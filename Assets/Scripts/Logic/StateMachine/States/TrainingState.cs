@@ -1,0 +1,29 @@
+﻿using Services.StateMachine.States;
+using Services.StateMachine;
+using Logic.UI.Levels;
+
+namespace Logic.StateMachine.States
+{
+    public class TrainingState : BaseStates
+    {
+        private readonly TrainingPanel _trainingPanel;
+        
+        public TrainingState(GameStateMachine stateMachine, TrainingPanel trainingPanel)
+            : base(stateMachine) => _trainingPanel = trainingPanel;
+
+        public override void Enter()
+        {
+            _trainingPanel.TrainingCompleted += CompleteTraining;
+            _trainingPanel.ChangePanelVisibility(activity: true);
+        }
+
+        private void CompleteTraining() =>
+            _stateMachine.Enter<PlayState>();
+
+        public override void Exit()
+        {
+            _trainingPanel.TrainingCompleted -= CompleteTraining;
+            _trainingPanel.ChangePanelVisibility(activity: false);
+        }
+    }
+}

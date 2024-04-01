@@ -1,6 +1,6 @@
-﻿using Data;
-using Services.PersistentProgress;
+﻿using Services.PersistentProgress;
 using UnityEngine;
+using Data;
 
 namespace Services.SaveLoad
 {

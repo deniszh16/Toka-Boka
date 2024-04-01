@@ -39,10 +39,10 @@ namespace Services.Sound
 
         public void SwitchSound()
         {
-            bool activity = _progressService.GetUserProgress.Sound;
+            bool activity = _progressService.GetUserProgress.SettingsData.Sound;
             SoundActivity = !activity;
 
-            _progressService.GetUserProgress.Sound = SoundActivity;
+            _progressService.GetUserProgress.SettingsData.Sound = SoundActivity;
             _saveLoadService.SaveProgress();
             
             SoundChanged?.Invoke();
@@ -69,13 +69,10 @@ namespace Services.Sound
         public void StopBackgroundMusic() =>
             _audioSourceBackgroundMusic.Stop();
 
-        public void PlaySound(Sounds sound, bool overrideSound)
+        public void PlaySound(SoundsEnum sound)
         {
             if (SoundActivity)
             {
-                if (_audioSourceSounds.isPlaying && overrideSound == false)
-                    return;
-                
                 _audioSourceSounds.clip = _uiSounds[(int)sound];
                 _audioSourceSounds.Play();
             }

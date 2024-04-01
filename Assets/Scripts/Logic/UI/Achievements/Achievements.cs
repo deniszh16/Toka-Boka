@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Services.PersistentProgress;
+using System.Collections.Generic;
 using System.Linq;
-using Services.PersistentProgress;
 using UnityEngine;
 using Zenject;
 

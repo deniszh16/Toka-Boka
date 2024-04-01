@@ -1,33 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Data
 {
     [Serializable]
     public class UserProgress
     {
-        public int Progress;
-        public int Hearts;
+        public int Progress = 1;
+        public int Hearts = 25;
 
         public List<int> Attempts;
         public List<int> Stars;
         public List<CharacterPets> CharacterPets;
 
-        public int Locale;
-        public bool Sound;
-
         public event Action HeartsAdded;
         public event Action NotEnoughHearts;
         public event Action StarsChanged;
 
+        public SettingsData SettingsData  = new();
+
         public UserProgress()
         {
-            Progress = 1;
-            Hearts = 125;
-            Sound = true;
-            Locale = Application.systemLanguage == SystemLanguage.Russian ? 0 : 1;
-            
             Attempts = new List<int>(capacity: 12);
             Stars = new List<int>(capacity: 12);
             CharacterPets = new List<CharacterPets>(capacity: 12);

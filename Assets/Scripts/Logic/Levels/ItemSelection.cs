@@ -1,6 +1,6 @@
-﻿using Services.Sound;
+﻿using Services.UpdateService;
+using Services.Sound;
 using UnityEngine;
-using Zenject;
 
 namespace Logic.Levels
 {
@@ -11,6 +11,9 @@ namespace Logic.Levels
         
         [Header("Звездный эффект")]
         [SerializeField] private ParticleSystem _starEffect;
+
+        [Header("Стрелка подсказки")]
+        [SerializeField] private GameObject _arrow;
         
         private bool _activity;
         
@@ -27,12 +30,18 @@ namespace Logic.Levels
         private Camera _mainCamera;
         private SearchItem _searchItem;
         private ISoundService _soundService;
-
-        [Inject]
-        private void Construct(SearchItem searchItem, ISoundService soundService)
+        private IMonoUpdateService _monoUpdateService;
+        
+        public void Init(ISoundService soundService, IMonoUpdateService monoUpdateService,
+            SearchItem searchItem)
         {
-            _searchItem = searchItem;
-            _soundService = soundService;
+            if (_monoUpdateService == null)
+            {
+                _soundService = soundService;
+                _searchItem = searchItem;
+                _monoUpdateService = monoUpdateService;
+                _monoUpdateService.AddToUpdate(MyUpdate);
+            }
         }
 
         private void Awake() =>
@@ -41,7 +50,7 @@ namespace Logic.Levels
         public void ChangeActivity(bool activity) =>
             _activity = activity;
 
-        private void Update()
+        private void MyUpdate()
         {
             if (_activity == false)
                 return;
@@ -75,18 +84,21 @@ namespace Logic.Levels
         {
             if (_searchItem.FindSelectedItem(_currentItem))
             {
-                
                 _currentItem.StartAnimation(clip: Item._correctItem);
                 _currentItem.DisableCollider();
-                _soundService.PlaySound(sound: Services.Sound.Sounds.RightChoice, overrideSound: false);
+                _soundService.PlaySound(sound: SoundsEnum.RightChoice);
+                _arrow.SetActive(false);
                 _starEffect.transform.position = _currentItem.transform.position;
                 _starEffect.Play();
             }
             else
             {
                 _currentItem.StartAnimation(clip: Item._wrongItem);
-                _soundService.PlaySound(sound: Services.Sound.Sounds.IncorrectChoice, overrideSound: false);
+                _soundService.PlaySound(sound: SoundsEnum.IncorrectChoice);
             }
         }
+
+        private void OnDestroy() =>
+            _monoUpdateService.RemoveFromUpdate(MyUpdate);
     }
 }

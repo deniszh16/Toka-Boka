@@ -9,9 +9,6 @@ namespace Services.SceneLoader
         [Header("Экран затемнения")]
         [SerializeField] private CanvasGroup _blackout;
 
-        public string CurrentScene =>
-            SceneManager.GetActiveScene().name;
-
         public void LoadSceneAsync(Scenes scene, bool screensaver, float delay) =>
             _ = StartCoroutine(LoadSceneAsyncCoroutine(scene.ToString(), screensaver, delay));
 
@@ -20,7 +17,8 @@ namespace Services.SceneLoader
 
         private IEnumerator LoadSceneAsyncCoroutine(string scene, bool screensaver, float delay)
         {
-            yield return new WaitForSeconds(delay);
+            if (delay > 0)
+                yield return new WaitForSeconds(delay);
 
             if (screensaver)
             {

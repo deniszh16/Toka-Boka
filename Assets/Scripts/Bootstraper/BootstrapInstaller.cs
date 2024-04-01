@@ -1,4 +1,5 @@
 using Services.PersistentProgress;
+using Services.YandexService;
 using Services.Localization;
 using Services.SceneLoader;
 using Services.SaveLoad;
@@ -13,6 +14,7 @@ namespace Bootstraper
         [SerializeField] private SceneLoaderService _sceneLoader;
         [SerializeField] private SoundService _soundService;
         [SerializeField] private LocalizationService _localizationService;
+        [SerializeField] private YandexService _yandexService;
 
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
@@ -24,6 +26,7 @@ namespace Bootstraper
             BindLocalizationService();
             BindSceneLoader();
             BindSoundService();
+            BindYandexService();
         }
         
         private void BindPersistentProgress()
@@ -55,6 +58,12 @@ namespace Bootstraper
         {
             SoundService soundService = Container.InstantiatePrefabForComponent<SoundService>(_soundService);
             Container.Bind<ISoundService>().To<SoundService>().FromInstance(soundService).AsSingle();
+        }
+
+        private void BindYandexService()
+        {
+            YandexService yandexService = Container.InstantiatePrefabForComponent<YandexService>(_yandexService);
+            Container.Bind<IYandexService>().To<YandexService>().FromInstance(yandexService).AsSingle();
         }
     }
 }

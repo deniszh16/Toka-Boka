@@ -1,6 +1,6 @@
-﻿using Logic.Levels;
-using Services.PersistentProgress;
+﻿using Services.PersistentProgress;
 using Services.SaveLoad;
+using Logic.Levels;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -9,32 +9,39 @@ namespace Logic.UI.Buttons
 {
     public class HintButton : MonoBehaviour
     {
-        [Header("Компонент кнопки")]
+        [Header("Ссылки на компоненты")]
         [SerializeField] private Button _button;
+        [SerializeField] private Animator _animator;
         
         [Header("Стоимость подсказки")]
         [SerializeField] private int _price;
 
-        [Header("Анимация подсказки")]
-        [SerializeField] private Animator _animator;
+        [Header("Стрелка подсказки")]
+        [SerializeField] private GameObject _arrow;
+
+        private static readonly int Purchase = Animator.StringToHash(name: "Purchase");
+
+        private Transform _currentItem;
         
-        private ItemIcon _currentItem;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
+        private CameraMove _cameraMove;
 
         [Inject]
-        private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService)
+        private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
+            CameraMove cameraMove)
         {
             _progressService = progressService;
             _saveLoadService = saveLoadService;
+            _cameraMove = cameraMove;
         }
 
         private void OnEnable() =>
             _button.onClick.AddListener(GetHint);
 
-        public void CustomizeHint(ItemIcon itemIcon)
+        public void CustomizeHint(Transform currentItem)
         {
-            _currentItem = itemIcon;
+            _currentItem = currentItem;
             
             if (_button != null)
                 _button.interactable = true;
@@ -45,9 +52,11 @@ namespace Logic.UI.Buttons
             bool purchase = _progressService.GetUserProgress.SubtractHearts(_price);
             if (purchase)
             {
-                _currentItem.RemoveBlackout();
+                _cameraMove.MoveCameraToTarget(_currentItem.position);
+                _arrow.transform.position = _currentItem.position;
+                _arrow.SetActive(true);
                 _animator.gameObject.SetActive(true);
-                _animator.Rebind();
+                _animator.SetTrigger(id: Purchase);
                 _button.interactable = false;
                 _saveLoadService.SaveProgress();
             }

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
 using Logic.UI.Buttons;
+using Logic.UI.Levels;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using Zenject;
 
 namespace Logic.Levels
 {
@@ -25,19 +25,20 @@ namespace Logic.Levels
         private AssetReferenceGameObject _item;
         private GameObject _currentItem;
 
+        private CurrentLevel _currentLevel;
         private LevelItems _levelItems;
-        private LevelScore _levelScore;
         private LevelTimer _levelTimer;
+        
         private ItemCounter _itemCounter;
         private HintButton _hintButton;
-
-        [Inject]
-        private void Construct(LevelItems levelItems, LevelScore levelScore,
-            LevelTimer levelTimer, ItemCounter itemCounter, HintButton hintButton)
+        
+        public void Init(CurrentLevel currentLevel, LevelItems levelItems, LevelTimer levelTimer,
+            ItemCounter itemCounter, HintButton hintButton)
         {
+            _currentLevel = currentLevel;
             _levelItems = levelItems;
-            _levelScore = levelScore;
             _levelTimer = levelTimer;
+            
             _itemCounter = itemCounter;
             _hintButton = hintButton;
         }
@@ -45,7 +46,6 @@ namespace Logic.Levels
         public void ShowCurrentItem()
         {
             ItemCleanup();
-            
             _item = _levelItems.TaskItems[_currentItemNumber].ShadedIcon;
             if (_item != null) CreateItem();
         }
@@ -69,7 +69,7 @@ namespace Logic.Levels
                 _loadingAnObject.SetActive(false);
                 _currentItem = handle.Result;
                 _itemCounter.UpdateCounter(currentItem: _currentItemNumber + 1, totalItems: _levelItems.NumberOfTasks);
-                _hintButton.CustomizeHint(_currentItem.GetComponent<ItemIcon>());
+                _hintButton.CustomizeHint(_levelItems.TaskItems[_currentItemNumber].transform);
                 _levelTimer.SetTimer();
                 _levelTimer.ChangeTimerActivity(value: true);
             }
@@ -85,7 +85,7 @@ namespace Logic.Levels
                 if (_currentItemNumber < _levelItems.TaskItems.Count)
                 {
                     ShowCurrentItem();
-                    _levelScore.ChangeScore(_levelTimer.GetCurrentTime());
+                    _currentLevel.ChangeScore();
                 }
                 else
                 {

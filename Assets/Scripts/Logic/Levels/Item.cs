@@ -14,8 +14,8 @@ namespace Logic.Levels
 
         public AssetReferenceGameObject ShadedIcon => _shadedIcon;
 
-        public static readonly int _correctItem = Animator.StringToHash("CorrectItem");
-        public static readonly int _wrongItem = Animator.StringToHash("WrongItem");
+        public static readonly int _correctItem = Animator.StringToHash(name: "CorrectItem");
+        public static readonly int _wrongItem = Animator.StringToHash(name: "WrongItem");
 
         public void StartAnimation(int clip)
         {

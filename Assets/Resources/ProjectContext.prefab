@@ -77,3 +77,4 @@ MonoBehaviour:
   _sceneLoader: {fileID: 2518774055750901186, guid: 9957b82e3022e1a4b8ec886397cd74af, type: 3}
   _soundService: {fileID: 1685519824524849109, guid: 40bbd7f7aa411c344a44a22cc0d9437d, type: 3}
   _localizationService: {fileID: 2028246394331299640, guid: 54d0c7f031fd6b741898310e0bbb13cb, type: 3}
+  _yandexService: {fileID: 1877469253384343416, guid: 969add6788ad11f4ca9e9164b964aa5f, type: 3}

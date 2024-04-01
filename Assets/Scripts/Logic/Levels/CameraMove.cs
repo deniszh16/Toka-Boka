@@ -1,6 +1,8 @@
-﻿using Cinemachine;
+﻿using UnityEngine.EventSystems;
+using Services.UpdateService;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using Cinemachine;
+using DG.Tweening;
 
 namespace Logic.Levels
 {
@@ -22,14 +24,25 @@ namespace Logic.Levels
         private bool _movingVirtualCamera;
         private Vector3 _touchPosition;
         private Vector3 _direction;
-        
+
+        private IMonoUpdateService _monoUpdateService;
+
+        public void Init(IMonoUpdateService monoUpdateService)
+        {
+            if (_monoUpdateService == null)
+            {
+                _monoUpdateService = monoUpdateService;
+                _monoUpdateService.AddToUpdate(MyUpdate);
+            }
+        }
+
         private void Awake()
         {
             _camera = Camera.main;
             _virtualCameraTransform = _virtualCamera.transform;
         }
 
-        private void Update()
+        private void MyUpdate()
         {
             if (Activity == false || _movingVirtualCamera == false)
                 return;
@@ -57,5 +70,19 @@ namespace Logic.Levels
         
         public void OnPointerUp(PointerEventData eventData) =>
             _movingVirtualCamera = false;
+
+        public void MoveCameraToTarget(Vector3 targetPosition)
+        {
+            Activity = false;
+            _virtualCameraTransform.DOMoveX(targetPosition.x, duration: 0.5f)
+                .SetEase(Ease.Linear)
+                .OnComplete(() =>
+                {
+                    Activity = true;
+                });
+        }
+
+        private void OnDestroy() =>
+            _monoUpdateService?.RemoveFromUpdate(MyUpdate);
     }
 }

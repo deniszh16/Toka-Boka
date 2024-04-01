@@ -1,10 +1,11 @@
-﻿using Logic.Levels;
-using Services.PersistentProgress;
+﻿using Services.PersistentProgress;
+using Services.YandexService;
 using Services.SaveLoad;
+using Logic.UI.Levels;
+using Logic.Levels;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
-using YG;
 
 namespace Logic.UI.Buttons
 {
@@ -15,37 +16,38 @@ namespace Logic.UI.Buttons
         
         private const int RewardId = 1;
 
-        private LevelScore _levelScore;
-        private LevelResults _levelResults;
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
+        private IYandexService _yandexService;
+        
+        private CurrentLevel _currentLevel;
+        private LevelUI _levelUI;
 
         [Inject]
-        private void Construct(LevelScore levelScore, LevelResults levelResults,
-            IPersistentProgressService progressService, ISaveLoadService saveLoadService)
+        private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
+            IYandexService yandexService, CurrentLevel currentLevel, LevelUI levelUI)
         {
-            _levelScore = levelScore;
-            _levelResults = levelResults;
             _progressService = progressService;
             _saveLoadService = saveLoadService;
+            _yandexService = yandexService;
+            
+            _currentLevel = currentLevel;
+            _levelUI = levelUI;
         }
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(() => ShowVideoAds(id: 1));
-            YandexGame.RewardVideoEvent += DoubleCurrentScore;
+            _button.onClick.AddListener(() => _yandexService.ShowRewardedAds(id: 1));
+            _yandexService.AdsViewed += DoubleCurrentScore;
         }
-
-        private void ShowVideoAds(int id) =>
-            YandexGame.RewVideoShow(id);
 
         private void DoubleCurrentScore(int id)
         {
             if (id == RewardId)
             {
-                _progressService.GetUserProgress.Hearts += _levelScore.Score;
+                _progressService.GetUserProgress.Hearts += _currentLevel.Score;
                 _saveLoadService.SaveProgress();
-                _levelResults.ShowCurrentScore(_levelScore.Score * 2);
+                _levelUI.ShowCurrentScore(_currentLevel.Score * 2);
                 _button.interactable = false;
             }
         }
@@ -53,7 +55,7 @@ namespace Logic.UI.Buttons
         private void OnDisable()
         {
             _button.onClick.RemoveAllListeners();
-            YandexGame.RewardVideoEvent -= DoubleCurrentScore;
+            _yandexService.AdsViewed -= DoubleCurrentScore;
         }
     }
 }
