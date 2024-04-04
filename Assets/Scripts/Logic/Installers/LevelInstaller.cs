@@ -1,5 +1,4 @@
-﻿using Services.UpdateService;
-using Services.StateMachine;
+﻿using Services.StateMachine;
 using Logic.UI.Buttons;
 using Logic.UI.Levels;
 using Logic.Levels;
@@ -10,8 +9,6 @@ namespace Logic.Installers
 {
     public class LevelInstaller : MonoInstaller
     {
-        [SerializeField] private MonoUpdateService _monoUpdateService;
-        
         [Header("Основные компоненты")]
         [SerializeField] private CurrentLevel _currentLevel;
         [SerializeField] private CameraMove _movingCamera;
@@ -29,7 +26,6 @@ namespace Logic.Installers
         public override void InstallBindings()
         {
             BindGameStateMachine();
-            BindMonoUpdateService();
 
             BindCurrentLevel();
             BindCameraMove();
@@ -48,13 +44,6 @@ namespace Logic.Installers
         {
             GameStateMachine gameStateMachine = new GameStateMachine();
             Container.BindInstance(gameStateMachine).AsSingle();
-        }
-
-        private void BindMonoUpdateService()
-        {
-            MonoUpdateService monoUpdateService = Container.InstantiatePrefabForComponent<MonoUpdateService>(_monoUpdateService);
-            monoUpdateService.Init();
-            Container.Bind<IMonoUpdateService>().To<MonoUpdateService>().FromInstance(monoUpdateService).AsSingle();
         }
 
         private void BindCurrentLevel() =>

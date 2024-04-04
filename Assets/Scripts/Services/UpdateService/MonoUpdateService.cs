@@ -6,10 +6,7 @@ namespace Services.UpdateService
 {
     public class MonoUpdateService : MonoBehaviour, IMonoUpdateService
     {
-        private List<Action> _updateActions;
-
-        public void Init() =>
-            _updateActions = new List<Action>();
+        private List<Action> _updateActions = new();
         
         public void AddToUpdate(Action action) =>
             _updateActions.Add(action);

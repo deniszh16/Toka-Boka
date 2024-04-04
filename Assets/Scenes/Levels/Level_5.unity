@@ -7410,6 +7410,7 @@ GameObject:
   - component: {fileID: 1201733342}
   - component: {fileID: 1201733341}
   - component: {fileID: 1201733340}
+  - component: {fileID: 1201733344}
   m_Layer: 5
   m_Name: Canvas_UI
   m_TagString: Untagged
@@ -7506,6 +7507,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1201733344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201733339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326188f71c804930a68f41aa9b445004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coefficient: 1.2
+  _match: 0.5
+  "_\u0441anvasScaler": {fileID: 1201733341}
 --- !u!1001 &1221230547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8947,7 +8963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43fd9877168f4984a5576814587ba695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monoUpdateService: {fileID: 3508270572824441980, guid: dd4ec8edc42e6c14a913b987608fe37f, type: 3}
   _currentLevel: {fileID: 1408259259681155672}
   _movingCamera: {fileID: 2443683990972622892}
   _levelItems: {fileID: 620681924497642952}

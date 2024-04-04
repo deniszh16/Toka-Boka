@@ -9702,6 +9702,7 @@ GameObject:
   - component: {fileID: 1048976041}
   - component: {fileID: 1048976040}
   - component: {fileID: 1048976039}
+  - component: {fileID: 1048976042}
   m_Layer: 5
   m_Name: Canvas_UI
   m_TagString: Untagged
@@ -9798,6 +9799,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 100
   m_TargetDisplay: 0
+--- !u!114 &1048976042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048976037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326188f71c804930a68f41aa9b445004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coefficient: 1.2
+  _match: 0.5
+  "_\u0441anvasScaler": {fileID: 1048976040}
 --- !u!1 &1054259265
 GameObject:
   m_ObjectHideFlags: 0
@@ -12576,7 +12592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43fd9877168f4984a5576814587ba695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monoUpdateService: {fileID: 3508270572824441980, guid: dd4ec8edc42e6c14a913b987608fe37f, type: 3}
   _currentLevel: {fileID: 1408259259681155672}
   _movingCamera: {fileID: 2443683990972622892}
   _levelItems: {fileID: 620681924497642952}
