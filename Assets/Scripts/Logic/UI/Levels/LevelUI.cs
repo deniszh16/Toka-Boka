@@ -1,7 +1,5 @@
 ﻿using Logic.StateMachine.States;
-using Services.YandexService;
 using Services.StateMachine;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -31,14 +29,10 @@ namespace Logic.UI.Levels
         private const float _duration = 0.3f;
         
         private GameStateMachine _gameStateMachine;
-        private IYandexService _yandexService;
         
         [Inject]
-        private void Construct(GameStateMachine gameStateMachine, IYandexService yandexService)
-        {
+        private void Construct(GameStateMachine gameStateMachine) =>
             _gameStateMachine = gameStateMachine;
-            _yandexService = yandexService;
-        }
 
         public void ShowVictoryPanel(Vector3 effectPosition)
         {
@@ -46,8 +40,6 @@ namespace Logic.UI.Levels
             ChangeVisibilityOfScreenDimming(state: true);
             ShowZoomAnimation(_victoryPanel.transform);
             ShowFireworksEffects(effectPosition);
-            
-            _ = StartCoroutine(ShowAds());
         }
 
         public void ChangeVisibilityOfScreenDimming(bool state) =>
@@ -66,7 +58,6 @@ namespace Logic.UI.Levels
             _lossPanel.SetActive(visibility);
             ChangeVisibilityOfScreenDimming(visibility);
             ShowZoomAnimation(_lossPanel.transform);
-            _ = StartCoroutine(ShowAds());
         }
 
         public void ShowCurrentScore(int score) =>
@@ -94,12 +85,6 @@ namespace Logic.UI.Levels
         {
             panel.transform.localScale = Vector3.zero;
             panel.DOScale(Vector3.one, _duration).SetEase(Ease.OutQuad);
-        }
-
-        private IEnumerator ShowAds()
-        {
-            yield return new WaitForSeconds(0.7f);
-            _yandexService.ShowFullScreenAds();
         }
     }
 }

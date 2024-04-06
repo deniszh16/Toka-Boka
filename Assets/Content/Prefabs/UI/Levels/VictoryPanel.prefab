@@ -1484,10 +1484,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7618667156899390057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 64.845, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 64.845, y: -52}
+  m_SizeDelta: {x: 50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3769594038979272136
 CanvasRenderer:
@@ -1649,6 +1649,7 @@ GameObject:
   - component: {fileID: 4531344279568289465}
   - component: {fileID: 4295473836455434165}
   - component: {fileID: 697218106067295462}
+  - component: {fileID: 7842053651379339366}
   - component: {fileID: 7971587061597029693}
   m_Layer: 5
   m_Name: Button_Restart
@@ -1772,6 +1773,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7842053651379339366}
+        m_TargetAssemblyTypeName: Logic.UI.Buttons.AdsButton, Assembly-CSharp
+        m_MethodName: ShowAds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &697218106067295462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1798,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 4295473836455434165}
+--- !u!114 &7842053651379339366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743470749038899192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf7d7d27c0f40e0a61bd73195903571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7971587061597029693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,6 +2025,7 @@ GameObject:
   - component: {fileID: 4520942446659203491}
   - component: {fileID: 4755133427715545881}
   - component: {fileID: 8076183924568403893}
+  - component: {fileID: 6130496515207240188}
   - component: {fileID: 6365608838417629727}
   m_Layer: 5
   m_Name: Button_Menu
@@ -2123,6 +2149,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6130496515207240188}
+        m_TargetAssemblyTypeName: Logic.UI.Buttons.AdsButton, Assembly-CSharp
+        m_MethodName: ShowAds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8076183924568403893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,6 +2175,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 4755133427715545881}
   _scene: 2
+--- !u!114 &6130496515207240188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675439598640911095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf7d7d27c0f40e0a61bd73195903571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6365608838417629727
 MonoBehaviour:
   m_ObjectHideFlags: 0

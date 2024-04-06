@@ -9,8 +9,8 @@ namespace Logic.Levels
     public class CameraMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         [Header("Границы экрана")]
-        [SerializeField, Range(-100, 0)] private float _leftBorder;
-        [SerializeField, Range(0, 100)] private float _rightBorder;
+        [SerializeField] private Transform _leftBorderTransform;
+        [SerializeField] private Transform _rightBorderTransform;
 
         [Header("Виртуальная камера")]
         [SerializeField] private CinemachineVirtualCamera _virtualCamera;
@@ -57,7 +57,7 @@ namespace Logic.Levels
         
         private void CheckOutOfBounds()
         {
-            float clamp = Mathf.Clamp(_virtualCameraPosition.x, _leftBorder, _rightBorder);
+            float clamp = Mathf.Clamp(_virtualCameraPosition.x, _leftBorderTransform.position.x, _rightBorderTransform.position.x);
             _virtualCameraPosition.x = clamp;
         }
         

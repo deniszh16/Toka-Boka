@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7782315311638955824}
   - component: {fileID: 4988908800920852657}
   - component: {fileID: 5904119890879615880}
+  - component: {fileID: 7922460265396400669}
   - component: {fileID: 2833403424177359354}
   m_Layer: 5
   m_Name: Button_Restart
@@ -136,6 +137,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7922460265396400669}
+        m_TargetAssemblyTypeName: Logic.UI.Buttons.AdsButton, Assembly-CSharp
+        m_MethodName: ShowAds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5904119890879615880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +162,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 4988908800920852657}
+--- !u!114 &7922460265396400669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281414635185730817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf7d7d27c0f40e0a61bd73195903571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2833403424177359354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1034,7 @@ GameObject:
   - component: {fileID: 5216717441158943615}
   - component: {fileID: 9039648440164538715}
   - component: {fileID: 6840076890856190968}
+  - component: {fileID: 704897870985714354}
   - component: {fileID: 5051935978212781153}
   m_Layer: 5
   m_Name: Button_Menu
@@ -1132,6 +1158,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 704897870985714354}
+        m_TargetAssemblyTypeName: Logic.UI.Buttons.AdsButton, Assembly-CSharp
+        m_MethodName: ShowAds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6840076890856190968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1184,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 9039648440164538715}
   _scene: 2
+--- !u!114 &704897870985714354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8649271204615153953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf7d7d27c0f40e0a61bd73195903571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5051935978212781153
 MonoBehaviour:
   m_ObjectHideFlags: 0
