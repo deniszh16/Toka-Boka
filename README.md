@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Engine-Unity%202023.2.15f1-brightgreen" alt="Unity Version">
+   <img src="https://img.shields.io/badge/Engine-Unity%202023.2.17f1-brightgreen" alt="Unity Version">
    <img src="https://img.shields.io/badge/Version-1.2.1%20(Stable)-blue" alt="Game Version">
 </p>
 
