@@ -1,7 +1,7 @@
 ﻿using VContainer;
 using VContainer.Unity;
 
-namespace DZGames.TokaBoka.LifetimeScopes
+namespace TokaBoka.LifetimeScopes
 {
     public class SceneLifetimeScope : LifetimeScope
     {

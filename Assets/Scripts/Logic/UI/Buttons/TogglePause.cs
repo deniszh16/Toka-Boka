@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using VContainer;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class TogglePause : MonoBehaviour
     {

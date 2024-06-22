@@ -1,7 +1,7 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 
-namespace DZGames.TokaBoka.Levels
+namespace TokaBoka.Levels
 {
     public class ItemSelection : MonoBehaviour
     {

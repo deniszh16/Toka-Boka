@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class Achievement : MonoBehaviour
     {

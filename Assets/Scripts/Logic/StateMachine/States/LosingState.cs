@@ -1,7 +1,7 @@
-﻿using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.UI;
+﻿using TokaBoka.Services;
+using TokaBoka.UI;
 
-namespace DZGames.TokaBoka.StateMachine
+namespace TokaBoka.StateMachine
 {
     public class LosingState : BaseStates
     {

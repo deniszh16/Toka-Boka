@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class MonoUpdateService : MonoBehaviour, IMonoUpdateService
     {

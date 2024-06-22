@@ -2,7 +2,7 @@
 using Random = System.Random;
 using UnityEngine;
 
-namespace DZGames.TokaBoka.Levels
+namespace TokaBoka.Levels
 {
     public class LevelItems : MonoBehaviour
     {

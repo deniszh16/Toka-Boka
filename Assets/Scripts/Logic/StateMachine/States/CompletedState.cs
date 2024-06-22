@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.Levels;
-using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.UI;
+﻿using TokaBoka.Levels;
+using TokaBoka.Services;
+using TokaBoka.UI;
 using UnityEngine;
 
-namespace DZGames.TokaBoka.StateMachine
+namespace TokaBoka.StateMachine
 {
     public class CompletedState : BaseStates
     {

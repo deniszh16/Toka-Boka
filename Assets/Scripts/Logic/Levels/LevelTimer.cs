@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DZGames.TokaBoka.Levels
+namespace TokaBoka.Levels
 {
     public class LevelTimer : MonoBehaviour
     {

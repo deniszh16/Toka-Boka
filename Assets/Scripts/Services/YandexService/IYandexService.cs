@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public interface IYandexService
     {

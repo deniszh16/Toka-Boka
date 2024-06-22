@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Localization.Settings;
 using Cysharp.Threading.Tasks;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class LocalizationService : ILocalizationService
     {

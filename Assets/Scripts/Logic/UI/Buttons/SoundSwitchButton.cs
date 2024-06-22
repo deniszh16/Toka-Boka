@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class SoundSwitchButton : MonoBehaviour
     {

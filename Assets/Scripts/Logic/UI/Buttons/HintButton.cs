@@ -1,10 +1,10 @@
-﻿using DZGames.TokaBoka.Levels;
-using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Levels;
+using TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class HintButton : MonoBehaviour
     {

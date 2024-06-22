@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.StateMachine;
+using TokaBoka.Services;
+using TokaBoka.StateMachine;
 using VContainer;
 using TMPro;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class LevelUI : MonoBehaviour
     {

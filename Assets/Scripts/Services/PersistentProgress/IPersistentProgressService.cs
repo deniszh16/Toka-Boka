@@ -1,6 +1,6 @@
-﻿using DZGames.TokaBoka.Data;
+﻿using TokaBoka.Data;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public interface IPersistentProgressService
     {

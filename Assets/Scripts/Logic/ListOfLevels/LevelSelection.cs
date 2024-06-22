@@ -1,11 +1,11 @@
 ﻿using System.Threading;
-using DZGames.TokaBoka.Services;
+using TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using VContainer;
 
-namespace DZGames.TokaBoka.ListOfLevels
+namespace TokaBoka.ListOfLevels
 {
     public class LevelSelection : MonoBehaviour
     {

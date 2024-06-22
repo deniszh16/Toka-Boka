@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DZGames.TokaBoka.Levels
+namespace TokaBoka.Levels
 {
     public class OpeningFurniture : MonoBehaviour
     {

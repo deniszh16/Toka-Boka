@@ -1,11 +1,11 @@
-﻿using DZGames.TokaBoka.Levels;
-using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.StateMachine;
+﻿using TokaBoka.Levels;
+using TokaBoka.Services;
+using TokaBoka.StateMachine;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class ResumeButton : MonoBehaviour
     {

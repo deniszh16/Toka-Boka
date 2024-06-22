@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.ListOfLevels;
+﻿using TokaBoka.ListOfLevels;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace DZGames.TokaBoka.LifetimeScopes
+namespace TokaBoka.LifetimeScopes
 {
     public class LevelsLifetimeScope : LifetimeScope
     {

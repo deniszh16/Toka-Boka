@@ -1,4 +1,4 @@
-﻿namespace DZGames.TokaBoka.Services
+﻿namespace TokaBoka.Services
 {
     public abstract class BaseStates : IState
     {

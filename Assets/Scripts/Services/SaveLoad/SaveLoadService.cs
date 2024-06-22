@@ -1,7 +1,7 @@
-﻿using DZGames.TokaBoka.Data;
+﻿using TokaBoka.Data;
 using UnityEngine;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class SaveLoadService : ISaveLoadService
     {

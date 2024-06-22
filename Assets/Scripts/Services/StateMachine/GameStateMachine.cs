@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class GameStateMachine
     {

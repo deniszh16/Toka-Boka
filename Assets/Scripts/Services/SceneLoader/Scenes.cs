@@ -1,4 +1,4 @@
-﻿namespace DZGames.TokaBoka.Services
+﻿namespace TokaBoka.Services
 {
     public enum Scenes
     {

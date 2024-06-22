@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using VContainer;
 using TMPro;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class HeartsCounter : MonoBehaviour
     {

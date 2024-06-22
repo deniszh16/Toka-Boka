@@ -1,8 +1,8 @@
-﻿using DZGames.TokaBoka.Levels;
-using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.UI;
+﻿using TokaBoka.Levels;
+using TokaBoka.Services;
+using TokaBoka.UI;
 
-namespace DZGames.TokaBoka.StateMachine
+namespace TokaBoka.StateMachine
 {
     public class InitialState : BaseStates
     {

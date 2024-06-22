@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DZGames.TokaBoka.Data
+namespace TokaBoka.Data
 {
     [Serializable]
     public class CharacterPets

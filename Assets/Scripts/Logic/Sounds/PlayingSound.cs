@@ -1,8 +1,8 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using VContainer;
 
-namespace DZGames.TokaBoka.Sounds
+namespace TokaBoka.Sounds
 {
     public class PlayingSound : MonoBehaviour
     {

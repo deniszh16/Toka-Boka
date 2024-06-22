@@ -1,8 +1,8 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DZGames.TokaBoka.ListOfLevels
+namespace TokaBoka.ListOfLevels
 {
     public class CharacterPets : MonoBehaviour
     {

@@ -1,11 +1,11 @@
 ﻿using System.Threading;
 using Cysharp.Threading.Tasks;
-using DZGames.TokaBoka.Data;
-using DZGames.TokaBoka.Services;
+using TokaBoka.Data;
+using TokaBoka.Services;
 using UnityEngine;
 using VContainer;
 
-namespace DZGames.TokaBoka.Bootstrapper
+namespace TokaBoka.Bootstrapper
 {
     public class GameBootstraper : MonoBehaviour
     {

@@ -2656,7 +2656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: DZGames.TokaBoka.LifetimeScopes.GlobalLifetimeScope
+    TypeName: TokaBoka.LifetimeScopes.GlobalLifetimeScope
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 277389800}

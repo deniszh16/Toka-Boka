@@ -2,7 +2,7 @@
 using UnityEngine;
 using VContainer;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     [RequireComponent(typeof(AudioSource))]
     public class SoundService : MonoBehaviour, ISoundService
@@ -19,8 +19,9 @@ namespace DZGames.TokaBoka.Services
 
         private AudioSource _audioSourceBackgroundMusic;
         private AudioSource _audioSourceSounds;
+        
         private IPersistentProgressService _progressService;
-        private ISaveLoadService _saveLoadService; 
+        private ISaveLoadService _saveLoadService;
         
         [Inject]
         private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService)

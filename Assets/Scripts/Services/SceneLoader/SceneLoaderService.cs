@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using System;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class SceneLoaderService : MonoBehaviour, ISceneLoaderService
     {

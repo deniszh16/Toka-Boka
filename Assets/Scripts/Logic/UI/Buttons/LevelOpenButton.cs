@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.ListOfLevels;
+﻿using TokaBoka.ListOfLevels;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class LevelOpenButton : MonoBehaviour
     {

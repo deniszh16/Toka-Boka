@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Localization.Components;
 
-namespace DZGames.TokaBoka.UI
+namespace TokaBoka.UI
 {
     public class TrainingPanel : MonoBehaviour
     {

@@ -1,11 +1,11 @@
-﻿using DZGames.TokaBoka.Levels;
-using DZGames.TokaBoka.Services;
-using DZGames.TokaBoka.UI;
+﻿using TokaBoka.Levels;
+using TokaBoka.Services;
+using TokaBoka.UI;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace DZGames.TokaBoka.LifetimeScopes
+namespace TokaBoka.LifetimeScopes
 {
     public class CurrentLevelLifetimeScope : LifetimeScope
     {

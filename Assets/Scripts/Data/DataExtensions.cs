@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DZGames.TokaBoka.Data
+namespace TokaBoka.Data
 {
     public static class DataExtensions
     {

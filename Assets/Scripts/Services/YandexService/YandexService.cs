@@ -2,7 +2,7 @@
 using UnityEngine;
 using YG;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public class YandexService : MonoBehaviour, IYandexService
     {

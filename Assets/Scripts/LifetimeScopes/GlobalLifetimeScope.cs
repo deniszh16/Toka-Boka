@@ -1,9 +1,9 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace DZGames.TokaBoka.LifetimeScopes
+namespace TokaBoka.LifetimeScopes
 {
     public class GlobalLifetimeScope : LifetimeScope
     {

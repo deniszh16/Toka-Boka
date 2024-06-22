@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using Cysharp.Threading.Tasks;
 
-namespace DZGames.TokaBoka.Services
+namespace TokaBoka.Services
 {
     public interface ISceneLoaderService
     {

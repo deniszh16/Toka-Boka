@@ -1,10 +1,10 @@
-﻿using DZGames.TokaBoka.Services;
+﻿using TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.Localization;
 using VContainer;
 using TMPro;
 
-namespace DZGames.TokaBoka.ListOfLevels
+namespace TokaBoka.ListOfLevels
 {
     public class OpenPets : MonoBehaviour
     {
