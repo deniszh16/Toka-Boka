@@ -1,9 +1,9 @@
-﻿using Logic.ListOfLevels;
+﻿using DZGames.TokaBoka.ListOfLevels;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class LevelOpenButton : MonoBehaviour
     {
@@ -11,7 +11,7 @@ namespace Logic.UI.Buttons
         [SerializeField] private Button _button;
         
         private LevelSelection _levelSelection;
-
+        
         [Inject]
         private void Construct(LevelSelection levelSelection) =>
             _levelSelection = levelSelection;

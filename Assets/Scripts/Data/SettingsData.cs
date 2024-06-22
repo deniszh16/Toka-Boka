@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using YG;
 
-namespace Data
+namespace DZGames.TokaBoka.Data
 {
     [Serializable]
     public class SettingsData

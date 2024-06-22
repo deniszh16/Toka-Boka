@@ -1,6 +1,6 @@
-﻿using Data;
+﻿using DZGames.TokaBoka.Data;
 
-namespace Services.SaveLoad
+namespace DZGames.TokaBoka.Services
 {
     public interface ISaveLoadService
     {

@@ -1,12 +1,11 @@
-﻿using Logic.StateMachine.States;
-using Services.YandexService;
-using Services.StateMachine;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
+using DZGames.TokaBoka.StateMachine;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class ResumeButton : MonoBehaviour
     {

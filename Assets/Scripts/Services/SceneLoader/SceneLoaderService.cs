@@ -1,40 +1,40 @@
-﻿using System.Collections;
+﻿using UnityEngine.SceneManagement;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System;
 
-namespace Services.SceneLoader
+namespace DZGames.TokaBoka.Services
 {
     public class SceneLoaderService : MonoBehaviour, ISceneLoaderService
     {
         [Header("Экран затемнения")]
         [SerializeField] private CanvasGroup _blackout;
 
-        public void LoadSceneAsync(Scenes scene, bool screensaver, float delay) =>
-            _ = StartCoroutine(LoadSceneAsyncCoroutine(scene.ToString(), screensaver, delay));
-
-        public void LoadLevelAsync(int levelNumber) =>
-            _ = StartCoroutine(LoadSceneAsyncCoroutine($"{Scenes.Level}_{levelNumber}", screensaver: true, delay: 0));
-
-        private IEnumerator LoadSceneAsyncCoroutine(string scene, bool screensaver, float delay)
+        public async UniTask LoadSceneAsync(int scene, bool screensaver, float delay, CancellationToken token)
         {
             if (delay > 0)
-                yield return new WaitForSeconds(delay);
-
+                await UniTask.Delay(TimeSpan.FromSeconds(delay), cancellationToken: token);
+            
             if (screensaver)
             {
                 _blackout.blocksRaycasts = true;
                 _blackout.alpha = 1f;
             }
-
-            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene);
-            while (asyncOperation.isDone != true)
-                yield return null;
-
+            
+            await SceneManager.LoadSceneAsync(scene).WithCancellation(token);
+            
             if (screensaver)
             {
                 _blackout.blocksRaycasts = false;
                 _blackout.alpha = 0;
             }
+        }
+
+        public async UniTask LoadLevelAsync(int levelNumber, CancellationToken token)
+        {
+            int level = (int)Scenes.Level + levelNumber - 1;
+            await LoadSceneAsync(scene: level, screensaver: true, delay: 0f, token);
         }
     }
 }

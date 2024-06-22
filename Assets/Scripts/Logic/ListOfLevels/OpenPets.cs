@@ -1,10 +1,10 @@
-﻿using Services.PersistentProgress;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.Localization;
-using Zenject;
+using VContainer;
 using TMPro;
 
-namespace Logic.ListOfLevels
+namespace DZGames.TokaBoka.ListOfLevels
 {
     public class OpenPets : MonoBehaviour
     {
@@ -15,8 +15,8 @@ namespace Logic.ListOfLevels
         [SerializeField] private TextMeshProUGUI _quantityText;
 
         private int _numberOfPets;
-        private IPersistentProgressService _progressService;
-
+        private IPersistentProgressService _progressService; 
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService) =>
             _progressService = progressService;

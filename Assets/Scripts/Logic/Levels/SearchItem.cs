@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections;
-using Logic.UI.Buttons;
-using Logic.UI.Levels;
+using DZGames.TokaBoka.UI;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace Logic.Levels
+namespace DZGames.TokaBoka.Levels
 {
     public class SearchItem : MonoBehaviour
     {

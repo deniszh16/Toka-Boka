@@ -66,10 +66,7 @@ crashlytics-build.properties
 # Ignoring folders
 .idea/
 .vscode/
-Sprites/
-LoadedAssets/
 
 # Ignoring files
 *.gitattributes
-*.keystore
 *.log

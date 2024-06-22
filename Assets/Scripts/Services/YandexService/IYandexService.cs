@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace Services.YandexService
+namespace DZGames.TokaBoka.Services
 {
     public interface IYandexService
     {
         public event Action<int> AdsViewed;
-
-        public bool Initialization { get; }
 
         public void Init();
         public void ShowFullScreenAds();

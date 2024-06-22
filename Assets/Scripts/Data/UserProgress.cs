@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Data
+namespace DZGames.TokaBoka.Data
 {
     [Serializable]
     public class UserProgress

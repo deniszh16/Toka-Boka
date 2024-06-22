@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 
-namespace Logic.UI.Levels
+namespace DZGames.TokaBoka.UI
 {
     public class ItemCounter : MonoBehaviour
     {

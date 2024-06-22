@@ -1,12 +1,9 @@
-﻿using Services.StateMachine.States;
-using Services.PersistentProgress;
-using Services.StateMachine;
-using Services.SaveLoad;
-using Logic.UI.Levels;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
+using DZGames.TokaBoka.UI;
 using UnityEngine;
 
-namespace Logic.StateMachine.States
+namespace DZGames.TokaBoka.StateMachine
 {
     public class CompletedState : BaseStates
     {

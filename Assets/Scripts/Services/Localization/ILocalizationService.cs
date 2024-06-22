@@ -1,4 +1,4 @@
-﻿namespace Services.Localization
+﻿namespace DZGames.TokaBoka.Services
 {
     public interface ILocalizationService
     {

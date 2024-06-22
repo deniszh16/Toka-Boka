@@ -1,13 +1,11 @@
-﻿using Services.PersistentProgress;
-using Services.Localization;
-using Services.SceneLoader;
-using Services.SaveLoad;
-using Services.Sound;
+﻿using System.Threading;
+using Cysharp.Threading.Tasks;
+using DZGames.TokaBoka.Data;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
-using Zenject;
-using Data;
+using VContainer;
 
-namespace Bootstraper
+namespace DZGames.TokaBoka.Bootstrapper
 {
     public class GameBootstraper : MonoBehaviour
     {
@@ -39,13 +37,10 @@ namespace Bootstraper
             LoadProgressOrInitNew();
             _localizationService.SetLocale(_progressService.GetUserProgress.SettingsData.Locale);
             _soundService.SoundActivity = _progressService.GetUserProgress.SettingsData.Sound;
-            _sceneLoaderService.LoadSceneAsync(Scenes.MainMenu, screensaver: false, delay: 1f);
+            _sceneLoaderService.LoadSceneAsync((int)Scenes.MainMenu, screensaver: false, delay: 1f, CancellationToken.None).Forget();
         }
 
-        private void LoadProgressOrInitNew()
-        {
-            _progressService.GetUserProgress =
-                _saveLoadService.LoadProgress() ?? new UserProgress();
-        }
+        private void LoadProgressOrInitNew() =>
+            _progressService.SetUserProgress(_saveLoadService.LoadProgress() ?? new UserProgress());
     }
 }

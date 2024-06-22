@@ -1,8 +1,7 @@
-﻿using Services.PersistentProgress;
+﻿using DZGames.TokaBoka.Data;
 using UnityEngine;
-using Data;
 
-namespace Services.SaveLoad
+namespace DZGames.TokaBoka.Services
 {
     public class SaveLoadService : ISaveLoadService
     {

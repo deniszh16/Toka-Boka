@@ -1,9 +1,10 @@
-﻿using Data;
+﻿using DZGames.TokaBoka.Data;
 
-namespace Services.PersistentProgress
+namespace DZGames.TokaBoka.Services
 {
     public interface IPersistentProgressService
     {
-        public UserProgress GetUserProgress { get; set; }
+        public UserProgress GetUserProgress { get; }
+        public void SetUserProgress(UserProgress progress);
     }
 }

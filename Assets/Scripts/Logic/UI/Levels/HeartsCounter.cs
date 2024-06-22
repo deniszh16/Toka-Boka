@@ -1,9 +1,9 @@
-﻿using Services.PersistentProgress;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
-using Zenject;
+using VContainer;
 using TMPro;
 
-namespace Logic.UI.Levels
+namespace DZGames.TokaBoka.UI
 {
     public class HeartsCounter : MonoBehaviour
     {
@@ -14,7 +14,7 @@ namespace Logic.UI.Levels
         private static readonly int NotEnough = Animator.StringToHash("NotEnough");
 
         private IPersistentProgressService _progressService;
-
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService) =>
             _progressService = progressService;

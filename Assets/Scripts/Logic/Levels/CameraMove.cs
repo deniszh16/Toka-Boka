@@ -1,10 +1,10 @@
-﻿using UnityEngine.EventSystems;
-using Services.UpdateService;
+﻿using DZGames.TokaBoka.Services;
+using UnityEngine.EventSystems;
 using UnityEngine;
 using Cinemachine;
 using DG.Tweening;
 
-namespace Logic.Levels
+namespace DZGames.TokaBoka.Levels
 {
     public class CameraMove : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

@@ -1,4 +1,4 @@
-﻿namespace Services.StateMachine.States
+﻿namespace DZGames.TokaBoka.Services
 {
     public abstract class BaseStates : IState
     {

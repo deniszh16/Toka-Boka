@@ -1,4 +1,4 @@
-﻿namespace Services.Sound
+﻿namespace DZGames.TokaBoka.Services
 {
     public enum SoundsEnum
     {

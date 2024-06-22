@@ -1,9 +1,8 @@
-﻿using Logic.UI.Levels;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class TogglePause : MonoBehaviour
     {

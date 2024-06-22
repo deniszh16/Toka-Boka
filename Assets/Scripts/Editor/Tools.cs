@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Editor
+namespace DZGames.TokaBoka.Editor
 {
     public static class Tools
     {

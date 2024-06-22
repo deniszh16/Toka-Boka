@@ -1,9 +1,9 @@
-﻿using Services.Localization;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class LanguageButton : MonoBehaviour
     {

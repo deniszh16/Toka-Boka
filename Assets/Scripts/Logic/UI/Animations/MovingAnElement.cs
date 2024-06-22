@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Logic.UI.Animations
+namespace DZGames.TokaBoka.UI
 {
     public class MovingAnElement : MonoBehaviour
     {

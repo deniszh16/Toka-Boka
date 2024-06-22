@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 
-namespace Logic.ListOfLevels
+namespace DZGames.TokaBoka.ListOfLevels
 {
     public class NumberOfStars : MonoBehaviour
     {

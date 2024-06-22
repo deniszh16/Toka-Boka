@@ -1,8 +1,8 @@
-﻿using Services.Sound;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
-using Zenject;
+using VContainer;
 
-namespace Logic.Sounds
+namespace DZGames.TokaBoka.Sounds
 {
     public class PlayingSound : MonoBehaviour
     {
@@ -13,7 +13,7 @@ namespace Logic.Sounds
         [SerializeField] private SoundsEnum _sound;
         
         private ISoundService _soundService;
-
+        
         [Inject]
         private void Construct(ISoundService soundService) =>
             _soundService = soundService;

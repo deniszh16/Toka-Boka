@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Logic.UI.Achievements
+namespace DZGames.TokaBoka.UI
 {
     public class Achievement : MonoBehaviour
     {

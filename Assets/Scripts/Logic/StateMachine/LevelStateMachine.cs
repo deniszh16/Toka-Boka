@@ -1,16 +1,10 @@
-﻿using Services.PersistentProgress;
-using Logic.StateMachine.States;
-using Services.UpdateService;
-using Services.StateMachine;
-using Services.SaveLoad;
-using Logic.UI.Buttons;
-using Logic.UI.Levels;
-using Services.Sound;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
+using DZGames.TokaBoka.UI;
 using UnityEngine;
-using Zenject;
+using VContainer;
 
-namespace Logic.StateMachine
+namespace DZGames.TokaBoka.StateMachine
 {
     public class LevelStateMachine : MonoBehaviour
     {
@@ -31,7 +25,7 @@ namespace Logic.StateMachine
         private ItemCounter _itemCounter;
         private HintButton _hintButton;
         private LevelUI _levelUI;
-
+        
         [Inject]
         private void Construct(GameStateMachine stateMachine, IMonoUpdateService monoUpdateService, IPersistentProgressService progressService,
             ISaveLoadService saveLoadService, ISoundService soundService, CurrentLevel currentLevel, CameraMove cameraMove, LevelItems levelItems, SearchItem searchItem,

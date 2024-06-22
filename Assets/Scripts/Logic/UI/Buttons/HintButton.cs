@@ -1,11 +1,10 @@
-﻿using Services.PersistentProgress;
-using Services.SaveLoad;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class HintButton : MonoBehaviour
     {
@@ -26,7 +25,7 @@ namespace Logic.UI.Buttons
         private IPersistentProgressService _progressService;
         private ISaveLoadService _saveLoadService;
         private CameraMove _cameraMove;
-
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
             CameraMove cameraMove)

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services.UpdateService
+namespace DZGames.TokaBoka.Services
 {
     public interface IMonoUpdateService
     {

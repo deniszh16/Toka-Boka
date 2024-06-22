@@ -1,9 +1,11 @@
-﻿using Services.SceneLoader;
+﻿using System.Threading;
+using Cysharp.Threading.Tasks;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class SceneOpenButton : MonoBehaviour
     {
@@ -14,18 +16,25 @@ namespace Logic.UI.Buttons
         [SerializeField] private Scenes _scene;
 
         private ISceneLoaderService _sceneLoaderService;
-
+        private CancellationTokenSource _cancellationTokenSource;
+        
         [Inject]
         private void Construct(ISceneLoaderService sceneLoaderService) =>
             _sceneLoaderService = sceneLoaderService;
 
-        private void OnEnable() =>
+        private void OnEnable()
+        {
             _button.onClick.AddListener(GoToScene);
+            _cancellationTokenSource = new CancellationTokenSource();
+        }
 
         private void GoToScene() =>
-            _sceneLoaderService.LoadSceneAsync(_scene, screensaver: true, delay: 0f);
+            _sceneLoaderService.LoadSceneAsync((int)_scene, screensaver: true, delay: 0f, _cancellationTokenSource.Token).Forget();
         
-        private void OnDisable() =>
+        private void OnDisable()
+        {
             _button.onClick.RemoveListener(GoToScene);
+            _cancellationTokenSource.Dispose();
+        }
     }
 }

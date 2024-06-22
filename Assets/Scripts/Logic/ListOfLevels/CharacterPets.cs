@@ -1,9 +1,8 @@
-﻿using Services.PersistentProgress;
-using Services.SaveLoad;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Logic.ListOfLevels
+namespace DZGames.TokaBoka.ListOfLevels
 {
     public class CharacterPets : MonoBehaviour
     {

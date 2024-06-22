@@ -1,12 +1,12 @@
-﻿using Logic.StateMachine.States;
-using Services.StateMachine;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using Zenject;
+using DZGames.TokaBoka.Services;
+using DZGames.TokaBoka.StateMachine;
+using VContainer;
 using TMPro;
 
-namespace Logic.UI.Levels
+namespace DZGames.TokaBoka.UI
 {
     public class LevelUI : MonoBehaviour
     {

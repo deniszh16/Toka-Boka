@@ -1,8 +1,7 @@
-﻿using Services.UpdateService;
-using Services.Sound;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 
-namespace Logic.Levels
+namespace DZGames.TokaBoka.Levels
 {
     public class ItemSelection : MonoBehaviour
     {
@@ -32,8 +31,7 @@ namespace Logic.Levels
         private ISoundService _soundService;
         private IMonoUpdateService _monoUpdateService;
         
-        public void Init(ISoundService soundService, IMonoUpdateService monoUpdateService,
-            SearchItem searchItem)
+        public void Init(ISoundService soundService, IMonoUpdateService monoUpdateService, SearchItem searchItem)
         {
             if (_monoUpdateService == null)
             {
@@ -99,6 +97,6 @@ namespace Logic.Levels
         }
 
         private void OnDestroy() =>
-            _monoUpdateService.RemoveFromUpdate(MyUpdate);
+            _monoUpdateService?.RemoveFromUpdate(MyUpdate);
     }
 }

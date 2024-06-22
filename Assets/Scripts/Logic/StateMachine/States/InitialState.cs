@@ -1,11 +1,8 @@
-﻿using Services.StateMachine.States;
-using Services.PersistentProgress;
-using Services.StateMachine;
-using Logic.UI.Buttons;
-using Logic.UI.Levels;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
+using DZGames.TokaBoka.UI;
 
-namespace Logic.StateMachine.States
+namespace DZGames.TokaBoka.StateMachine
 {
     public class InitialState : BaseStates
     {

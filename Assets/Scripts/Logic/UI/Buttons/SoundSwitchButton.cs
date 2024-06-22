@@ -1,9 +1,9 @@
-﻿using Services.Sound;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class SoundSwitchButton : MonoBehaviour
     {
@@ -16,7 +16,7 @@ namespace Logic.UI.Buttons
         [SerializeField] private Sprite _inactive;
 
         private ISoundService _soundService;
-
+        
         [Inject]
         private void Construct(ISoundService soundService) =>
             _soundService = soundService;

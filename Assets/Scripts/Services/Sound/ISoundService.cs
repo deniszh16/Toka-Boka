@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services.Sound
+namespace DZGames.TokaBoka.Services
 {
     public interface ISoundService
     {

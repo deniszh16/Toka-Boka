@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Logic.Levels
+namespace DZGames.TokaBoka.Levels
 {
     public class Item : MonoBehaviour
     {

@@ -1,13 +1,11 @@
-﻿using Services.PersistentProgress;
-using Services.SceneLoader;
-using Services.SaveLoad;
-using Services.Sound;
+﻿using System.Threading;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using Zenject;
+using VContainer;
 
-namespace Logic.ListOfLevels
+namespace DZGames.TokaBoka.ListOfLevels
 {
     public class LevelSelection : MonoBehaviour
     {
@@ -40,7 +38,7 @@ namespace Logic.ListOfLevels
         private ISoundService _soundService;
         
         private OpenPets _openPets;
-
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
             ISceneLoaderService sceneLoaderService, ISoundService soundService, OpenPets openPets)
@@ -55,7 +53,10 @@ namespace Logic.ListOfLevels
         private void Start()
         {
             _selectedLevel = _progressService.GetUserProgress.Progress;
-            if (_selectedLevel >= 9) _selectedLevel = 8;
+            
+            // TODO: Убрать, когда будут добавлены остальные уровни
+            if (_selectedLevel >= 1) _selectedLevel = 1;
+            
             _characterNumber = _selectedLevel - 1;
             _openPets.UpdateNumberOfPets(_characterNumber);
             
@@ -123,7 +124,7 @@ namespace Logic.ListOfLevels
         public void GoToLevel()
         {
             _soundService.StopBackgroundMusic();
-            _sceneLoaderService.LoadLevelAsync(_selectedLevel);
+            _sceneLoaderService.LoadLevelAsync(_selectedLevel, CancellationToken.None);
         }
 
         private void OnDestroy() =>

@@ -2,19 +2,14 @@
 using UnityEngine;
 using YG;
 
-namespace Services.YandexService
+namespace DZGames.TokaBoka.Services
 {
     public class YandexService : MonoBehaviour, IYandexService
     {
         public event Action<int> AdsViewed;
-        
-        public bool Initialization { get; private set; }
 
-        public void Init()
-        {
+        public void Init() =>
             YandexGame.RewardVideoEvent += GiveRewardForViewing;
-            Initialization = true;
-        }
 
         public void ShowFullScreenAds() =>
             YandexGame.FullscreenShow();

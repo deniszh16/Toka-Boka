@@ -1,13 +1,13 @@
-﻿using Services.YandexService;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class AdsButton : MonoBehaviour
     {
         private IYandexService _yandexService;
-
+        
         [Inject]
         private void Construct(IYandexService yandexService) =>
             _yandexService = yandexService;

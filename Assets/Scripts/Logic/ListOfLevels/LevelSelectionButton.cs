@@ -1,9 +1,9 @@
-﻿using Services.PersistentProgress;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.ListOfLevels
+namespace DZGames.TokaBoka.ListOfLevels
 {
     public class LevelSelectionButton : MonoBehaviour
     {
@@ -27,8 +27,8 @@ namespace Logic.ListOfLevels
         [SerializeField] private Sprite _levelPassed;
         
         private IPersistentProgressService _progressService;
-        private LevelSelection _levelSelection;
-
+        private LevelSelection _levelSelection; 
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService, LevelSelection levelSelection)
         {
@@ -58,7 +58,8 @@ namespace Logic.ListOfLevels
         private void CustomizeButton(GameObject buttonElement, Sprite sprite)
         {
             _button.onClick.AddListener(SelectLevel);
-            _button.interactable = _number < 9;
+            // TODO: Убрать, когда будут добавлены остальные уровни
+            _button.interactable = _number < 2;
 
             buttonElement.SetActive(true);
             _iconLock.SetActive(false);

@@ -1,10 +1,11 @@
-﻿using Services.SceneLoader;
-using Logic.Levels;
+﻿using System.Threading;
+using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class LevelRestartButton : MonoBehaviour
     {
@@ -13,7 +14,7 @@ namespace Logic.UI.Buttons
 
         private ISceneLoaderService _sceneLoader;
         private CurrentLevel _currentLevel;
-
+        
         [Inject]
         private void Construct(ISceneLoaderService sceneLoaderService, CurrentLevel currentLevel)
         {
@@ -25,7 +26,7 @@ namespace Logic.UI.Buttons
             _button.onClick.AddListener(ReloadLevel);
 
         private void ReloadLevel() =>
-            _sceneLoader.LoadLevelAsync(_currentLevel.LevelNumber);
+            _sceneLoader.LoadLevelAsync(_currentLevel.LevelNumber, CancellationToken.None);
 
         private void OnDisable() =>
             _button.onClick.RemoveListener(ReloadLevel);

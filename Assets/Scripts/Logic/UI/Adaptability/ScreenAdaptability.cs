@@ -1,9 +1,9 @@
-﻿using Services.UpdateService;
+﻿using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Adaptability
+namespace DZGames.TokaBoka.UI
 {
     public class ScreenAdaptability : MonoBehaviour
     {
@@ -22,7 +22,7 @@ namespace Logic.UI.Adaptability
         
         private IMonoUpdateService _monoUpdateService;
 
-        [Inject]
+       [Inject]
         private void Construct(IMonoUpdateService monoUpdateService) =>
             _monoUpdateService = monoUpdateService;
 
@@ -53,6 +53,6 @@ namespace Logic.UI.Adaptability
         }
 
         private void OnDisable() =>
-            _monoUpdateService.RemoveFromUpdate(MyUpdate);
+            _monoUpdateService?.RemoveFromUpdate(MyUpdate);
     }
 }

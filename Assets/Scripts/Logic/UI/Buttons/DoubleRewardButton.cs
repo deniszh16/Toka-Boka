@@ -1,13 +1,10 @@
-﻿using Services.PersistentProgress;
-using Services.YandexService;
-using Services.SaveLoad;
-using Logic.UI.Levels;
-using Logic.Levels;
+﻿using DZGames.TokaBoka.Levels;
+using DZGames.TokaBoka.Services;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
+using VContainer;
 
-namespace Logic.UI.Buttons
+namespace DZGames.TokaBoka.UI
 {
     public class DoubleRewardButton : MonoBehaviour
     {
@@ -22,7 +19,7 @@ namespace Logic.UI.Buttons
         
         private CurrentLevel _currentLevel;
         private LevelUI _levelUI;
-
+        
         [Inject]
         private void Construct(IPersistentProgressService progressService, ISaveLoadService saveLoadService,
             IYandexService yandexService, CurrentLevel currentLevel, LevelUI levelUI)
